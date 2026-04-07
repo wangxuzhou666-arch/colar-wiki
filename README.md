@@ -2,7 +2,7 @@
 
 A Wikipedia-styled personal résumé built as a multi-page LLM-maintained wiki.
 
-Live site: _(coming soon — deploy to Vercel)_
+Live site: **https://colar-wiki.vercel.app/wiki/Colar_Wang/**
 
 > Visual homage to Wikipedia · architecture inspired by Karpathy's
 > [LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) pattern.

@@ -31,6 +31,8 @@ infobox:
     - label: Employer
       html: '<a href="/wiki/ByteDance_TikTok_internship/">ByteDance / TikTok</a> <i>(incoming, Summer 2026)</i>'
     - section: Contact
+    - label: Website
+      html: '<a href="https://colar-wiki.vercel.app/wiki/Colar_Wang/">colar-wiki.vercel.app</a>'
     - label: LinkedIn
       html: '<a href="https://www.linkedin.com/in/xuzhou-wang/">linkedin.com/in/xuzhou-wang</a>'
     - label: GitHub
@@ -191,7 +193,9 @@ project history, spans the following areas:
 
 ## External links
 
+- **[Colarpedia — this site](https://colar-wiki.vercel.app/wiki/Colar_Wang/)** — the canonical, continuously-maintained version of this article
 - [GitHub — wangxuzhou666-arch](https://github.com/wangxuzhou666-arch) — source code and project repositories
+- [GitHub — colar-wiki source](https://github.com/wangxuzhou666-arch/colar-wiki) — the repository that renders this wiki
 - [LinkedIn — Xuzhou Wang](https://www.linkedin.com/in/xuzhou-wang/)
 - [KitchenSurvivor on the App Store](https://apps.apple.com/app/id6757759255)
 - [AgentConfig — live application](https://agentconfig-mkqocnc24-wangxuzhou666-archs-projects.vercel.app/)

@@ -3,6 +3,12 @@
 Append-only record of ingests, updates, and lint passes.
 Format: `## [YYYY-MM-DD] <type> | <short description>`
 
+## [2026-04-07] update | record canonical site URL
+
+- updated: wiki/Colar_Wang.md — infobox Contact: added Website row pointing to https://colar-wiki.vercel.app/wiki/Colar_Wang/
+- updated: wiki/Colar_Wang.md — External links: promoted Colarpedia site to top of list, added colar-wiki GitHub source repository
+- updated: README.md — replaced "coming soon" placeholder with live URL
+
 ## [2026-04-07] update | portrait + product URLs
 
 - added: public/portrait.jpg (Wang in the Swiss Alps, 2025)
