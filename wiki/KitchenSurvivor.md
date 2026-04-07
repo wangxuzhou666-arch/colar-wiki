@@ -20,8 +20,12 @@ infobox:
       value: November 2025
     - label: Status
       value: Active development
+    - label: User ratings
+      value: 100+ (Apple App Store)
     - label: Architecture
       value: Hybrid edge–cloud
+    - label: Models
+      value: DeepSeek LLM
     - label: License
       value: Proprietary
     - section: Links
@@ -58,17 +62,27 @@ decision.
 ## Architecture
 
 KitchenSurvivor is built on a **hybrid edge–cloud pipeline** that
-separates on-device optical character and ingredient recognition from
-cloud-hosted large-language-model reasoning. Wang has described the
-architecture as an "input-to-content" automation loop designed to
-preserve sub-second perceived latency without transmitting raw
-photographic input to the cloud, on privacy grounds.
+separates on-device optical character and ingredient recognition
+(OCR) from cloud-hosted large-language-model reasoning. Cloud
+inference is routed through **DeepSeek**'s LLM, with results streamed
+back to the client over **NDJSON** (newline-delimited JSON). Wang has
+described the architecture as an "input-to-content" automation loop
+designed to preserve sub-second perceived latency without
+transmitting raw photographic input to the cloud, on privacy grounds.
 
 The inference pipeline implements **token-level streaming** and
 explicit resource garbage collection. Internal benchmarks cited by
-Wang report a reduction of approximately 40 percent in cloud inference
-overhead relative to a naive reference implementation, and a
-time-to-first-useful-content below one second for typical inputs.[^1]
+Wang report a reduction of approximately 40 percent in cloud
+inference overhead relative to a naive reference implementation, and
+a time-to-first-useful-content below one second for typical
+inputs.[^1]
+
+The iOS client itself is written in **Swift** with **SwiftUI** and
+uses Swift's structured concurrency for lifecycle management. Wang
+has described the client-side work as designed around a "high-
+availability lifecycle manager" that auto-prunes orphaned background
+tasks; he has credited this design with eliminating the background
+battery drain that early beta testers reported.
 
 ## Trust and safety
 
@@ -88,7 +102,12 @@ methodology Wang applies across his work.
 
 ## Reception
 
-*This section is a stub.*
+As of April 2026, KitchenSurvivor has received over 100 ratings on
+the Apple App Store.[^1] Wang has cited early-stage focus-group
+feedback as the principal input to the product's "dual-filter"
+interaction logic, and has credited that logic with a measurable
+improvement in task-completion rates during the application's early
+months on the store.
 
 ## See also
 

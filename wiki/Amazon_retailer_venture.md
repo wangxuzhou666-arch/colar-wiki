@@ -1,19 +1,25 @@
 ---
-title: Amazon retailer venture
-subtitle: Cross-border e-commerce startup co-founded by Colar Wang (2023–2025)
-description: Colar Wang's co-founded Amazon marketplace venture in London, 2023–2025 — described retrospectively as his "pre-agent period."
+title: Kyraton Home (UK) Ltd.
+subtitle: Cross-border Amazon e-commerce venture co-founded by Colar Wang (2023–2025)
+description: Kyraton Home (UK) Ltd., a cross-border Amazon marketplace venture co-founded by Colar Wang in London, 2023–2025 — described retrospectively as his "pre-agent period."
 infobox:
-  title: Amazon retailer venture
-  image_caption: Amazon marketplace venture, London
+  title: Kyraton Home (UK) Ltd.
+  image_caption: Kyraton Home, London Amazon marketplace venture
   rows:
     - label: Person
       html: '<a href="/wiki/Colar_Wang/">Colar Wang</a>'
+    - label: Legal entity
+      value: Kyraton Home (UK) Ltd.
     - label: Role
-      value: Co-Founder &amp; Product Lead
+      value: |
+        Co-Founder &amp;
+        Head of Analytics
     - label: Focus
       value: E-commerce, growth, data
     - label: Marketplace
       value: Amazon
+    - label: Sector
+      value: Kitchenware, home goods
     - label: Location
       value: London, United Kingdom
     - label: Dates
@@ -24,8 +30,11 @@ infobox:
 
 From June 2023 to May 2025, in parallel with his undergraduate studies
 at the [[University of Nottingham]], [[Colar Wang]] co-founded and
-operated a cross-border e-commerce venture on the **Amazon**
-marketplace, based in London, United Kingdom.
+operated **Kyraton Home (UK) Ltd.**, a cross-border e-commerce venture
+on the **Amazon** marketplace based in London, United Kingdom. The
+venture specialized in the kitchenware and home-goods segments, and
+Wang served as Co-Founder &amp; Head of Analytics throughout its
+two-year run.
 
 Wang has retrospectively characterized the venture as his *"pre-agent
 period"* — an early, informal experiment in using language models and
@@ -34,6 +43,10 @@ require human operators. In Wang's telling, the venture was formative
 less for its commercial outcomes than for the engineering instincts it
 established: a bias toward closed-loop systems, statistical
 decision-making, and the explicit modeling of operational uncertainty.
+
+The venture scaled monthly sales to over 100 units across its target
+kitchenware and home-goods categories by the end of its run, driven
+largely by the data and automation work described below.
 
 ## Work
 

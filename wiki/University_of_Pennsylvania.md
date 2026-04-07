@@ -49,6 +49,26 @@ tracks, has emphasized:
 - **Simulation Modeling**
 - **Marketing Analytics**
 
+## Project leadership
+
+### Campus-Scale Img2GPS Localization (2025)
+
+As Project Lead between October and December 2025, during his first
+semester at UPenn, Wang directed the development of a **Campus-Scale
+Img2GPS Localization** system — a high-precision image-to-GPS
+geolocation model intended for campus-scale navigation. The project
+reported a **29.7 percent reduction in localization error** relative
+to its baseline, and achieved a **2.5-fold acceleration in model
+convergence** through a rigorous trade-off analysis between
+computational overhead and spatial accuracy.
+
+A defining technical contribution was a **stage-wise adaptation
+strategy** that reduced the model's parameter count by approximately
+96 percent, enabling deployment in resource-constrained environments
+without compromising core accuracy. Wang has cited this compression
+experience as directly relevant to the edge-side design decisions
+later adopted in [[KitchenSurvivor]].
+
 ## Context within the broader biography
 
 Wang's move to Philadelphia in August 2025 immediately preceded the
@@ -56,7 +76,8 @@ founding of [[KitchenSurvivor]] in November 2025, and coincided with
 the conception of [[AgentConfig]] in early 2026. Both products draw
 methodologically on the quantitative and modeling foundations of the
 program, and Wang has cited the simulation-modeling and applied-ML
-coursework as directly relevant to the
+coursework — as well as the Img2GPS project above — as directly
+relevant to the
 [[KitchenSurvivor|edge–cloud inference pipeline]] he designed.
 
 ## See also

@@ -11,7 +11,7 @@ infobox:
     - label: Employer
       value: China Galaxy Securities Co., Ltd.
     - label: Role
-      value: Data Product Intern
+      value: Quantitative Research Intern
     - label: Team
       value: Quantitative Research
     - label: Location
@@ -28,12 +28,17 @@ infobox:
       html: '<a href="https://www.chinastock.com.cn/">chinastock.com.cn</a>'
 ---
 
-In the summer of 2024, [[Colar Wang]] served as a **Data Product
-Intern** on the quantitative research desk at **China Galaxy Securities
-Co., Ltd.** in Shanghai.[^1] The internship, which ran from July to
-September 2024, was Wang's principal exposure to institutional
-quantitative research and directly informed the validation-oriented
-engineering style he has carried into his subsequent AI product work.
+In the summer of 2024, [[Colar Wang]] served as a **Quantitative
+Research Intern** at **China Galaxy Securities Co., Ltd.** in
+Shanghai.[^1] The internship, which ran from July to September 2024,
+was Wang's principal exposure to institutional quantitative research
+and directly informed the validation-oriented engineering style he
+has carried into his subsequent AI product work. It followed an
+earlier winter 2023–2024 internship at
+[[CITIC_Futures|CITIC Futures]] and a summer 2023 role at
+[[China_International_Capital_Corporation|CICC]], together forming
+Wang's three consecutive Chinese-finance internships during his
+undergraduate years.
 
 ## Work
 
@@ -44,9 +49,9 @@ Wang's work at Galaxy Securities centered on three related threads:
 Wang worked on productizing a hybrid **LSTM–XGBoost** modeling
 framework into an automated trading system, combining sequence-learning
 signals (LSTM) with tabular gradient boosting (XGBoost) to capture
-non-linear intraday patterns. A simulated backtest on historical data
-achieved an annualized return of approximately 33 percent under a
-high-frequency signal-generation regime.
+non-linear intraday patterns. A simulated backtest of the framework on
+historical data achieved an annualized return of approximately 50
+percent under a high-frequency signal-generation regime.
 
 ### Real-time feature engineering
 
@@ -76,6 +81,8 @@ role at ByteDance]].
 
 - [[Colar Wang]]
 - [[University of Nottingham]] — concurrent institution
+- [[CITIC_Futures]] — prior internship
+- [[China_International_Capital_Corporation]] — earliest internship
 - [[KitchenSurvivor]]
 - [[ByteDance_TikTok_internship]]
 
