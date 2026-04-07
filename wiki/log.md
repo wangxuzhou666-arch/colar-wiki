@@ -3,6 +3,12 @@
 Append-only record of ingests, updates, and lint passes.
 Format: `## [YYYY-MM-DD] <type> | <short description>`
 
+## [2026-04-07] update | portrait + product URLs
+
+- added: public/portrait.jpg (Wang in the Swiss Alps, 2025)
+- updated: wiki/Colar_Wang.md — infobox now shows portrait; GitHub added to Contact section; External links section added; inline product URLs added to Notable works
+- updated: wiki/Colar_Wang.md — image_caption corrected from "Philadelphia" to "Swiss Alps" to match photo
+
 ## [2026-04-07] init | wiki created
 
 - created: CLAUDE.md (schema)

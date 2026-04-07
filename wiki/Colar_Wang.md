@@ -4,7 +4,8 @@ subtitle: Chinese systems engineer, entrepreneur, and AI product researcher
 description: Biographical article on Colar Wang, Chinese systems engineer, founder of KitchenSurvivor and AgentConfig, and incoming AI Product Operations intern at ByteDance / TikTok.
 infobox:
   title: Colar Wang
-  image_caption: Wang in Philadelphia, 2026
+  image: /portrait.jpg
+  image_caption: Wang in the Swiss Alps, 2025
   rows:
     - label: Born
       value: |
@@ -30,8 +31,10 @@ infobox:
     - label: Employer
       html: '<a href="/wiki/ByteDance_TikTok_internship/">ByteDance / TikTok</a> <i>(incoming, Summer 2026)</i>'
     - section: Contact
-    - label: Website
+    - label: LinkedIn
       html: '<a href="https://www.linkedin.com/in/xuzhou-wang/">linkedin.com/in/xuzhou-wang</a>'
+    - label: GitHub
+      html: '<a href="https://github.com/wangxuzhou666-arch">github.com/wangxuzhou666-arch</a>'
     - label: Email
       html: '<a href="mailto:xuzhou.wang.upenn@gmail.com">xuzhou.wang.upenn@gmail.com</a>'
 ---
@@ -128,18 +131,21 @@ platform.
 
 ### KitchenSurvivor
 
-[[KitchenSurvivor]] is a multimodal generative-AI iOS application
-framed around an "AI Kitchen OS" concept that attempts to close the
-gap between the contents of a user's refrigerator and a set of
-actionable meal options. It was published on the Apple App Store in
-2025.[^3]
+[[KitchenSurvivor]] (Chinese: 云端小灶) is a multimodal generative-AI
+iOS application framed around an "AI Kitchen OS" concept that attempts
+to close the gap between the contents of a user's refrigerator and a
+set of actionable meal options. It was published on the Apple App
+Store in November 2025 and is available at
+[apps.apple.com/app/id6757759255](https://apps.apple.com/app/id6757759255).[^3]
 
 ### AgentConfig
 
 [[AgentConfig]] is a web-based advisory tool for configuring AI
 agents, targeted primarily at Chinese-speaking knowledge workers,
 conceived and built by Wang in early 2026 as an independent project
-parallel to his graduate studies.[^4]
+parallel to his graduate studies. A public instance is deployed on
+Vercel at
+[agentconfig-mkqocnc24-wangxuzhou666-archs-projects.vercel.app](https://agentconfig-mkqocnc24-wangxuzhou666-archs-projects.vercel.app/).[^4]
 
 ## Views and methodology
 
@@ -182,6 +188,13 @@ project history, spans the following areas:
 - [[China_Galaxy_Securities]]
 - [[Amazon_retailer_venture]]
 - [[First-principles_thinking]]
+
+## External links
+
+- [GitHub — wangxuzhou666-arch](https://github.com/wangxuzhou666-arch) — source code and project repositories
+- [LinkedIn — Xuzhou Wang](https://www.linkedin.com/in/xuzhou-wang/)
+- [KitchenSurvivor on the App Store](https://apps.apple.com/app/id6757759255)
+- [AgentConfig — live application](https://agentconfig-mkqocnc24-wangxuzhou666-archs-projects.vercel.app/)
 
 ## References
 
