@@ -29,22 +29,8 @@
   --lh-body: 1.65;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --wiki-text: #e6e6e6;
-    --wiki-text-soft: #a2a9b1;
-    --wiki-link: #6ea4ff;
-    --wiki-link-visited: #a991ff;
-    --wiki-link-red: #ff6b6b;
-    --wiki-link-hover-bg: #1a2838;
-    --wiki-bg: #101418;
-    --wiki-bg-alt: #1b1f24;
-    --wiki-bg-chrome: #161a1f;
-    --wiki-border: #54595d;
-    --wiki-border-light: #3a3f44;
-    --wiki-border-darker: #a2a9b1;
-  }
-}
+/* Dark mode disabled by user request — Colarpedia is always rendered in
+   the classic white-background Wikipedia palette regardless of OS theme. */
 
 * { box-sizing: border-box; }
 

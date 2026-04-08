@@ -16,6 +16,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Force the classic light Wikipedia palette regardless of OS theme.
+            This prevents browsers from applying their automatic dark-mode
+            color inversion to form controls and scrollbars. */}
+        <meta name="color-scheme" content="light only" />
+      </head>
       <body>{children}</body>
     </html>
   );
