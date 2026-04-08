@@ -41,19 +41,21 @@ infobox:
       html: '<a href="mailto:xuzhou.wang.upenn@gmail.com">xuzhou.wang.upenn@gmail.com</a>'
 ---
 
-**Xuzhou "Colar" Wang** (Chinese: 王旭洲; born 2002) is a Chinese systems
-engineer, entrepreneur, and AI product researcher based in Philadelphia,
-Pennsylvania.[^1] He is a graduate student in Systems Engineering at the
-[[University of Pennsylvania]],[^2] and the founder of the multimodal
-generative-AI product [[KitchenSurvivor]][^3] and the agent-configuration
-advisory tool [[AgentConfig]].[^4]
+**Xuzhou "Colar" Wang** (Chinese: 王旭洲; born 2002) is a Chinese
+systems engineer, founder, and AI product researcher based in
+Philadelphia, Pennsylvania.[^1] He is a graduate student in Systems
+Engineering at the [[University of Pennsylvania]],[^2] the founder of
+the multimodal generative-AI consumer product [[KitchenSurvivor]],[^3]
+and the founder of the agent-configuration advisory tool
+[[AgentConfig]].[^4]
 
-Wang's work sits at the intersection of quantitative modeling,
-large-language-model systems, and consumer AI product design. Before
-his graduate studies he completed a Bachelor of Science in Financial
-Mathematics at the [[University of Nottingham]],[^5] and held three
-consecutive research and operating roles across the Chinese financial
-sector: investment banking at
+Wang operates at the intersection of quantitative modeling,
+large-language-model systems, and consumer AI product design, with a
+stated focus on turning probabilistic model behavior into measurable
+end-user trust. Before his graduate studies he completed a Bachelor
+of Science in Financial Mathematics at the
+[[University of Nottingham]],[^5] and held three consecutive research
+roles across the Chinese financial sector: investment banking at
 [[China_International_Capital_Corporation|China International Capital
 Corporation]], futures-market research at
 [[CITIC_Futures|CITIC Futures]], and quantitative trading research at
@@ -101,6 +103,21 @@ Lead, with end-to-end responsibility for product direction, system
 architecture, and the trust-and-safety model described in the
 [[KitchenSurvivor|main article]].
 
+As Product Lead, Wang owns the full discovery-to-launch loop: user
+research, product requirements, interface prototyping, release
+gating, and post-launch metric review. Among the decisions documented
+in the [[KitchenSurvivor|main article]], he elevated "recipe
+executability" as the product's north-star quality metric — a
+measure of whether a generated recipe is physically cookable by the
+user with the ingredients they declared — and ranks it above both
+generation latency and creative variety when the three conflict.
+Under that framing the product has reported a recipe-executability
+rate in the region of 95 percent, alongside a roughly 90 percent
+reduction in perceived time-to-first-token through a streaming
+inference architecture, and a 40 percent reduction in client-side
+memory overhead attributed to a structured-concurrency task lifecycle
+manager.[^3]
+
 ### China Galaxy Securities (2024)
 
 In the summer of 2024 Wang served as a Quantitative Research Intern at
@@ -137,7 +154,10 @@ Teen Safety team in San Jose, California, for the summer of 2026.[^6]
 The role is situated within TikTok's Trust &amp; Safety organization
 and focuses on the operationalization of large-language-model and
 classifier-based systems for the protection of minor users on the
-platform.
+platform. Wang has publicly described the position as a continuation
+of the trust-and-safety work prototyped in [[KitchenSurvivor]], where
+the central product problem is the translation of probabilistic model
+behavior into auditable user-facing guarantees.
 
 ## Notable works
 
@@ -173,8 +193,25 @@ tools such as [[AgentConfig]], where he has argued that the first
 principle of agent configuration is user intent articulation, not
 prompt syntax.
 
-> *This section is a stub. Wang's stated views will be expanded as
-> more public writing becomes available.*
+A second recurring theme in Wang's public commentary is the treatment
+of model reliability as a product concern rather than a research
+concern. In notes circulated to early readers of this article, he has
+argued that the central design question for consumer generative-AI
+products is not model capability but the translation of probabilistic
+outputs into "user-auditable guarantees" — measurable properties a
+user can verify on their own without reading a model card. The
+"recipe executability" metric used in [[KitchenSurvivor]] is offered
+as a worked example of this translation: a probabilistic language
+model is wrapped in a deterministic validation layer that a user can
+observe in real time.[^8]
+
+A third theme is his characterization of AI agents as
+end-user–configurable software. In writing associated with
+[[AgentConfig]], Wang has argued that current agent products treat
+configuration as a vendor-side activity (prompt engineering, system
+prompts, fine-tuning) and that the next defensible product surface
+is a configuration interface legible to non-technical users, framed
+around stated intent rather than prompt syntax.[^4]
 
 ## Academic projects
 
@@ -209,18 +246,23 @@ of 1.3 under backtest. The full project report is available as a
 Wang's working toolkit, drawn from his published résumé and public
 project history, spans the following areas:
 
-- **Engineering and AI:** Python (pandas, NumPy, scikit-learn,
-  PyTorch), SQL (window functions, complex joins), Swift (iOS /
-  SwiftUI), R, ETL pipelines, REST API design, large-language-model
-  integration (Claude, DeepSeek).
-- **Cloud and tooling:** AWS (EC2, S3), Firebase, Vercel, Tableau,
-  Git, A/B testing frameworks, Wind Financial Terminal.
-- **Product and growth:** go-to-market strategy, statistical
-  hypothesis testing, market segmentation, user research, agile
-  delivery (Jira), interface prototyping (Figma).
+- **Generative-AI product engineering:** large-language-model
+  integration (Claude, DeepSeek), prompt and evaluation design,
+  streaming inference (NDJSON), hallucination mitigation via
+  guardrail architectures, retrieval-augmented generation.
+- **Data and analytics:** SQL (window functions, CTEs, complex
+  joins), Python (pandas, NumPy, scikit-learn, PyTorch), R,
+  A/B testing and experimentation design, funnel and cohort
+  analysis, Tableau.
+- **Product management:** user research, product requirements
+  documents, RICE prioritization, north-star metric definition,
+  agile delivery (Jira), interface prototyping (Figma).
+- **Software and infrastructure:** Swift (iOS / SwiftUI) with
+  structured concurrency, REST API design, ETL pipelines, Git, AWS
+  (EC2, S3), Firebase, Vercel.
 - **Quantitative methods:** time-series modeling (LSTM, XGBoost),
-  simulation modeling, stochastic demand forecasting, regime-aware
-  validation, risk modeling.
+  simulation modeling, regime-aware validation, stochastic
+  forecasting, risk modeling, Wind Financial Terminal.
 
 ## Personal life
 
