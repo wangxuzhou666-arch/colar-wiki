@@ -181,21 +181,44 @@ Vercel at
 
 ## Views and methodology
 
-Wang's public statements on product design repeatedly return to the
-application of [[First-principles_thinking|first-principles thinking]]
-to product problems: the practice of decomposing a problem to its most
-elementary constraints before accepting any existing solution as a
-template.[^8] He has applied this framing both to consumer AI products
-such as [[KitchenSurvivor]] — where the "first principle" is a user's
-latent question ("what can I eat tonight?") rather than any
-intermediate category such as recipes or inventory — and to developer
-tools such as [[AgentConfig]], where he has argued that the first
-principle of agent configuration is user intent articulation, not
-prompt syntax.
+The organising claim of Wang's public commentary is that the present
+moment is, in his own framing, "the best time in human history to
+be a person with more imagination than bandwidth." He has argued
+that the arrival of capable large-language-model agents collapses
+the historical distance between *having an idea* and *shipping an
+idea*: what previously required a twenty-person team and a two-year
+roadmap can, for an operator fluent with agent tooling, be
+prototyped in weeks and brought to real users in months. In this
+framing, AI agents are not the subject of his work but the
+**force-multiplier** that makes his work possible at all — an
+external substrate for imagination, rather than a product category
+to be studied for its own sake.
 
-A second recurring theme in Wang's public commentary is the treatment
-of model reliability as a product concern rather than a research
-concern. In notes circulated to early readers of this article, he has
+Wang has positioned his own career as an explicit test of this
+claim: each of his shipped products — [[KitchenSurvivor]],
+[[AgentConfig]], and the academic systems documented under
+*[[#academic-projects|Academic projects]]* — is described by him
+as "a slice of the same imagination pipeline," a single worked
+example of an idea that would previously have been unbuildable by
+one person on a student schedule, and that is only now physically
+possible because of the agent tooling available in 2026.
+
+Beneath that organising claim, Wang's commentary on product design
+repeatedly returns to the application of
+[[First-principles_thinking|first-principles thinking]] to product
+problems: the practice of decomposing a problem to its most
+elementary constraints before accepting any existing solution as a
+template.[^8] He has applied this framing both to consumer AI
+products such as [[KitchenSurvivor]] — where the "first principle"
+is a user's latent question ("what can I eat tonight?") rather than
+any intermediate category such as recipes or inventory — and to
+developer tools such as [[AgentConfig]], where he has argued that
+the first principle of agent configuration is user intent
+articulation, not prompt syntax.
+
+A second recurring theme in Wang's public commentary is the
+treatment of model reliability as a product concern rather than a
+research concern. In notes circulated to early readers of this article, he has
 argued that the central design question for consumer generative-AI
 products is not model capability but the translation of probabilistic
 outputs into "user-auditable guarantees" — measurable properties a
