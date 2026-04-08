@@ -4,7 +4,7 @@ subtitle: 王旭洲的本科阶段 (2022–2025)
 description: 王旭洲在诺丁汉大学的金融数学本科学习经历。
 infobox:
   title: 诺丁汉大学
-  image: /nottingham-shield.svg
+  image: /nottingham-shield.webp
   image_caption: 诺丁汉大学校徽
   rows:
     - label: 学生
