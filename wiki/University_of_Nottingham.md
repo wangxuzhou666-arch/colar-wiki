@@ -4,7 +4,8 @@ subtitle: Undergraduate study of Colar Wang (2022–2025)
 description: Colar Wang's undergraduate degree in Financial Mathematics at the University of Nottingham.
 infobox:
   title: University of Nottingham
-  image_caption: University Park Campus, Nottingham, United Kingdom
+  image: /nottingham-shield.png
+  image_caption: Coat of arms of the University of Nottingham
   rows:
     - label: Person
       html: '<a href="/wiki/Colar_Wang/">Colar Wang</a>'
@@ -50,10 +51,10 @@ Wang's undergraduate coursework covered:
 - **Financial Econometrics**
 
 These subjects provided the foundation for his subsequent work in
-quantitative research at [[China Galaxy Securities]] and for the
-statistical-modeling components of the
-[[Amazon_retailer_venture|Amazon retailer venture]] he co-founded in
-London during the same period.
+quantitative research at
+[[China_International_Capital_Corporation|CICC]],
+[[CITIC_Futures|CITIC Futures]], and
+[[China Galaxy Securities]] during his undergraduate years.
 
 ## Project leadership
 
@@ -75,16 +76,14 @@ his AI product work.
 
 ## Parallel activities
 
-During his time at Nottingham, Wang co-founded and operated
-[[Amazon_retailer_venture|Kyraton Home (UK) Ltd.]] in London
-(June 2023 – May 2025) and completed three internships in Chinese
-finance: at
+During his time at Nottingham, Wang completed three consecutive
+internships in Chinese finance: at
 [[China_International_Capital_Corporation|CICC]] in summer 2023,
 [[CITIC_Futures|CITIC Futures]] in winter 2023–2024, and
 [[China Galaxy Securities]] in summer 2024. He has described the
 undergraduate period as formative for his later work, both
 mathematically (through the financial-mathematics curriculum) and
-operationally (through the parallel startup and internships).
+operationally (through the parallel internships).
 
 ## See also
 
@@ -93,7 +92,6 @@ operationally (through the parallel startup and internships).
 - [[China Galaxy Securities]]
 - [[CITIC_Futures]]
 - [[China_International_Capital_Corporation]]
-- [[Amazon_retailer_venture]]
 
 ## References
 

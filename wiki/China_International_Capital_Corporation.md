@@ -4,7 +4,8 @@ subtitle: Investment banking internship of Colar Wang (2023)
 description: Colar Wang's summer 2023 investment banking internship at China International Capital Corporation (CICC) in Shanghai.
 infobox:
   title: China International Capital Corporation
-  image_caption: China International Capital Corporation (CICC), Shanghai
+  image: /cicc-logo.png
+  image_caption: China International Capital Corporation (CICC, 中金公司)
   rows:
     - label: Person
       html: '<a href="/wiki/Colar_Wang/">Colar Wang</a>'
@@ -29,11 +30,9 @@ infobox:
 
 In the summer of 2023, [[Colar Wang]] served as an **Investment Bank
 Intern** at **China International Capital Corporation** (CICC, 中金
-公司) in Shanghai, from June through July 2023.[^1] The internship,
-Wang's earliest professional role in Chinese institutional finance,
-overlapped chronologically with the founding of his cross-border
-e-commerce venture [[Amazon_retailer_venture|Kyraton Home (UK) Ltd.]]
-in the same month.
+公司) in Shanghai, from June through July 2023.[^1] The internship
+was Wang's earliest professional role in Chinese institutional
+finance.
 
 ## Work
 
@@ -58,17 +57,14 @@ internal review.
 CICC was Wang's earliest professional internship, preceding his
 later roles at [[CITIC_Futures|CITIC Futures]] (winter 2023–2024)
 and [[China Galaxy Securities]] (summer 2024). Together these three
-roles form the Chinese-finance half of Wang's undergraduate
-experience — the other half being his parallel cross-border
-e-commerce venture [[Amazon_retailer_venture|Kyraton Home]] in
-London.
+roles form Wang's undergraduate exposure to the institutional
+Chinese financial sector.
 
 ## See also
 
 - [[Colar Wang]]
 - [[CITIC_Futures]]
 - [[China Galaxy Securities]]
-- [[Amazon_retailer_venture]]
 
 ## References
 

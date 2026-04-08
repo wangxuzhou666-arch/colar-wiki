@@ -4,7 +4,8 @@ subtitle: Futures Department winter internship of Colar Wang (2023–2024)
 description: Colar Wang's winter internship at CITIC Futures Co., Ltd., Shanghai, December 2023 – February 2024.
 infobox:
   title: CITIC Futures
-  image_caption: CITIC Futures Co., Ltd., Shanghai
+  image: /citic-logo.png
+  image_caption: CITIC Group (parent of CITIC Futures Co., Ltd.)
   rows:
     - label: Person
       html: '<a href="/wiki/Colar_Wang/">Colar Wang</a>'
@@ -56,13 +57,12 @@ KitchenSurvivor.
 ## Context within the broader biography
 
 The CITIC Futures internship fell chronologically between Wang's
-founding of [[Amazon_retailer_venture|Kyraton Home (UK) Ltd.]] in
-June 2023 and his summer 2024 internship at
-[[China Galaxy Securities]]. Together with his earlier internship
-at [[China_International_Capital_Corporation|CICC]] in the summer
-of 2023, these four overlapping roles made Wang's undergraduate
-period one of intensive parallel exposure to the Chinese financial
-sector.
+earlier summer 2023 internship at
+[[China_International_Capital_Corporation|CICC]] and his summer
+2024 role at [[China Galaxy Securities]]. These three consecutive
+internships gave Wang exposure to the investment-banking, futures,
+and quantitative-research sides of Chinese institutional finance
+during his undergraduate years.
 
 ## See also
 

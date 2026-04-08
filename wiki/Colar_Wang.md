@@ -49,16 +49,15 @@ generative-AI product [[KitchenSurvivor]][^3] and the agent-configuration
 advisory tool [[AgentConfig]].[^4]
 
 Wang's work sits at the intersection of quantitative modeling,
-large-language-model systems, and consumer AI product design. Before his
-graduate studies he completed a Bachelor of Science in Financial
-Mathematics at the [[University of Nottingham]],[^5] and held research
-and operating roles across the Chinese and British financial sectors:
-investment banking at [[China_International_Capital_Corporation|China
-International Capital Corporation]], futures-market research at
-[[CITIC_Futures|CITIC Futures]], quantitative trading research at
-[[China Galaxy Securities]], and a cross-border e-commerce venture
-([[Amazon_retailer_venture|Kyraton Home (UK) Ltd.]]) — an earlier effort
-Wang has characterized as his "pre-agent period."
+large-language-model systems, and consumer AI product design. Before
+his graduate studies he completed a Bachelor of Science in Financial
+Mathematics at the [[University of Nottingham]],[^5] and held three
+consecutive research and operating roles across the Chinese financial
+sector: investment banking at
+[[China_International_Capital_Corporation|China International Capital
+Corporation]], futures-market research at
+[[CITIC_Futures|CITIC Futures]], and quantitative trading research at
+[[China Galaxy Securities]].
 
 He is scheduled to join [[ByteDance_TikTok_internship|ByteDance / TikTok]]
 as an AI Product Operations intern on the Teen Safety team in San Jose,
@@ -102,20 +101,6 @@ Lead, with end-to-end responsibility for product direction, system
 architecture, and the trust-and-safety model described in the
 [[KitchenSurvivor|main article]].
 
-### Kyraton Home / Amazon retailer venture (2023–2025)
-
-From June 2023 to May 2025, in parallel with his undergraduate studies
-in Nottingham, Wang co-founded and operated
-[[Amazon_retailer_venture|Kyraton Home (UK) Ltd.]], a cross-border
-e-commerce venture on the Amazon marketplace based in London. Across
-the venture's two-year run Wang held the title of Co-Founder &amp;
-Head of Analytics. The work combined programmatic advertising,
-NLP-driven market intelligence, and stochastic demand modeling — an
-early, informal experiment in using language models and statistical
-pipelines to automate operating decisions that would conventionally
-require human judgment. Wang has retrospectively described the venture
-as his "pre-agent period."
-
 ### China Galaxy Securities (2024)
 
 In the summer of 2024 Wang served as a Quantitative Research Intern at
@@ -142,9 +127,7 @@ In the summer of 2023 Wang served as an Investment Bank Intern at
 Corporation (CICC)]] in Shanghai, where he conducted quantitative
 analysis of the semiconductor market using the Wind Financial Terminal
 and supported IPO prospectus preparation. This was Wang's earliest
-professional exposure to the institutional side of Chinese finance,
-and overlapped chronologically with the founding of
-[[Amazon_retailer_venture|Kyraton Home]].[^10]
+professional exposure to the institutional side of Chinese finance.[^10]
 
 ### ByteDance / TikTok (incoming, 2026)
 
@@ -229,8 +212,7 @@ project history, spans the following areas:
   SwiftUI), R, ETL pipelines, REST API design, large-language-model
   integration (Claude, DeepSeek).
 - **Cloud and tooling:** AWS (EC2, S3), Firebase, Vercel, Tableau,
-  Git, A/B testing frameworks, Amazon Ads API, Wind Financial
-  Terminal.
+  Git, A/B testing frameworks, Wind Financial Terminal.
 - **Product and growth:** go-to-market strategy, statistical
   hypothesis testing, market segmentation, user research, agile
   delivery (Jira), interface prototyping (Figma).
@@ -256,7 +238,6 @@ professionally fluent in English.
 - [[China_Galaxy_Securities]]
 - [[CITIC_Futures]]
 - [[China_International_Capital_Corporation]]
-- [[Amazon_retailer_venture]]
 - [[First-principles_thinking]]
 
 ## External links

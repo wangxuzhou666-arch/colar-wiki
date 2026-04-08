@@ -4,7 +4,8 @@ subtitle: Graduate study of Colar Wang (2025–2027)
 description: Colar Wang's graduate studies at the University of Pennsylvania School of Engineering and Applied Science.
 infobox:
   title: University of Pennsylvania
-  image_caption: School of Engineering and Applied Science, Philadelphia
+  image: /upenn-shield.png
+  image_caption: Coat of arms of the University of Pennsylvania
   rows:
     - label: Person
       html: '<a href="/wiki/Colar_Wang/">Colar Wang</a>'

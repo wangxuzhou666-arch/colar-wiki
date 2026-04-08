@@ -4,7 +4,8 @@ subtitle: Quantitative research internship of Colar Wang (2024)
 description: Colar Wang's Data Product internship on the quantitative research desk at China Galaxy Securities, Shanghai, summer 2024.
 infobox:
   title: China Galaxy Securities
-  image_caption: China Galaxy Securities Co., Ltd., Shanghai
+  image: /galaxy-logo.png
+  image_caption: China Galaxy Securities Co., Ltd.
   rows:
     - label: Person
       html: '<a href="/wiki/Colar_Wang/">Colar Wang</a>'

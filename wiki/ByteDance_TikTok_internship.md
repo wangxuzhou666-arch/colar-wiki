@@ -4,7 +4,8 @@ subtitle: Incoming AI Product Operations role of Colar Wang (Summer 2026)
 description: Colar Wang's incoming internship with ByteDance / TikTok on the Teen Safety team, Summer 2026.
 infobox:
   title: ByteDance / TikTok
-  image_caption: ByteDance / TikTok, San Jose office
+  image: /bytedance-logo.png
+  image_caption: ByteDance Ltd., parent company of TikTok
   rows:
     - label: Person
       html: '<a href="/wiki/Colar_Wang/">Colar Wang</a>'

@@ -3,6 +3,24 @@
 Append-only record of ingests, updates, and lint passes.
 Format: `## [YYYY-MM-DD] <type> | <short description>`
 
+## [2026-04-07] update | logos for schools and companies, removed Kyraton
+
+Removed:
+- deleted: wiki/Amazon_retailer_venture.md (Kyraton Home page) — per user request, the venture is no longer represented in the wiki
+- deleted: components/TOC.jsx (orphaned from old hardcoded version)
+- updated: wiki/Colar_Wang.md — removed Kyraton from lead, Career section, See also, Technical skills (Amazon Ads API)
+- updated: wiki/University_of_Nottingham.md, wiki/CITIC_Futures.md, wiki/China_International_Capital_Corporation.md, wiki/First-principles_thinking.md, wiki/index.md — all backlinks to Kyraton removed
+- updated: components/WikiChrome.jsx sidebar — Kyraton link removed
+
+Added (school crests and company logos):
+- public/upenn-shield.png — University of Pennsylvania coat of arms (Wikimedia Commons)
+- public/nottingham-shield.png — University of Nottingham coat of arms (Wikimedia Commons)
+- public/galaxy-logo.png — China Galaxy Securities corporate logo
+- public/citic-logo.png — CITIC Group logo (parent of CITIC Futures)
+- public/cicc-logo.png — China International Capital Corporation logo
+- public/bytedance-logo.png — ByteDance logo
+- updated: all six experience and education pages — infobox now displays the corresponding logo at the top, in the LinkedIn / Wikipedia infobox style
+
 ## [2026-04-07] update | KitchenSurvivor icon, AgentConfig link-only infobox, sidebar nav, raw archive
 
 - added: public/kitchensurvivor-icon.jpg (1024x1024 app icon)

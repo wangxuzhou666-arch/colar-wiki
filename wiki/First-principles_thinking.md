@@ -41,11 +41,12 @@ record:
 ## History in the biography
 
 Wang has traced the explicit adoption of this methodology to his
-[[Amazon_retailer_venture|Amazon retailer venture]] period
-(2023–2025), during which he built NLP pipelines that replaced
-human-defined categories with directly measured demand gaps. He has
-described this as the moment he stopped trusting "received product
-taxonomies" in favor of going back to latent user behavior.
+quantitative research period at
+[[China Galaxy Securities]] in 2024, where validation-first
+engineering practice forced a habit of decomposing every model claim
+to its measurable foundations before accepting it as actionable. He
+has described this as the moment he stopped trusting "received
+product taxonomies" in favor of going back to latent user behavior.
 
 > *This page is a stub. It will be expanded as more of Wang's public
 > writing becomes available.*
@@ -55,4 +56,4 @@ taxonomies" in favor of going back to latent user behavior.
 - [[Colar Wang]]
 - [[KitchenSurvivor]]
 - [[AgentConfig]]
-- [[Amazon_retailer_venture]]
+- [[China Galaxy Securities]]

@@ -22,7 +22,6 @@ LLM on every ingest (see `CLAUDE.md` → Operations → Ingest).
 - [[ByteDance_TikTok_internship]] — AI Product Operations, Teen Safety (Summer 2026, incoming)
 - [[China Galaxy Securities]] — Quantitative Research Intern (Summer 2024)
 - [[CITIC_Futures]] — Futures Department Intern (Winter 2023–2024)
-- [[Amazon_retailer_venture]] — Co-Founder &amp; Head of Analytics, Kyraton Home (UK) Ltd. (2023–2025)
 - [[China_International_Capital_Corporation]] — Investment Bank Intern (Summer 2023)
 
 ## Concepts
