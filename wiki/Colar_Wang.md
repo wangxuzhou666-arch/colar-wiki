@@ -157,7 +157,7 @@ agents, targeted primarily at Chinese-speaking knowledge workers,
 conceived and built by Wang in early 2026 as an independent project
 parallel to his graduate studies. A public instance is deployed on
 Vercel at
-[agentconfig-mkqocnc24-wangxuzhou666-archs-projects.vercel.app](https://agentconfig-mkqocnc24-wangxuzhou666-archs-projects.vercel.app/).[^4]
+[agentconfig-theta.vercel.app](https://agentconfig-theta.vercel.app/).[^4]
 
 ## Views and methodology
 
@@ -249,7 +249,7 @@ professionally fluent in English.
 - [GitHub — colar-wiki source](https://github.com/wangxuzhou666-arch/colar-wiki) — the repository that renders this wiki
 - [LinkedIn — Xuzhou Wang](https://www.linkedin.com/in/xuzhou-wang/)
 - [KitchenSurvivor on the App Store](https://apps.apple.com/app/id6757759255)
-- [AgentConfig — live application](https://agentconfig-mkqocnc24-wangxuzhou666-archs-projects.vercel.app/)
+- [AgentConfig — live application](https://agentconfig-theta.vercel.app/)
 
 ## References
 
@@ -259,7 +259,7 @@ professionally fluent in English.
 
 [^3]: "KitchenSurvivor (云端小灶)". [Apple App Store](https://apps.apple.com/app/id6757759255). Retrieved 7 April 2026.
 
-[^4]: "AgentConfig". [agentconfig-mkqocnc24-wangxuzhou666-archs-projects.vercel.app](https://agentconfig-mkqocnc24-wangxuzhou666-archs-projects.vercel.app/). Retrieved 7 April 2026.
+[^4]: "AgentConfig". [agentconfig-theta.vercel.app](https://agentconfig-theta.vercel.app/). Retrieved 7 April 2026.
 
 [^5]: "BSc Financial Mathematics". [University of Nottingham](https://www.nottingham.ac.uk/).
 

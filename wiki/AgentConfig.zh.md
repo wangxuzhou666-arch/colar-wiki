@@ -6,7 +6,7 @@ infobox:
   title: AgentConfig
   rows:
     - label: 在线访问
-      html: '<a href="https://agentconfig-mkqocnc24-wangxuzhou666-archs-projects.vercel.app/">打开应用 →</a>'
+      html: '<a href="https://agentconfig-theta.vercel.app/">打开应用 →</a>'
     - label: 开发者
       html: '<a href="/zh/wiki/Colar_Wang/">王旭洲 (Colar Wang)</a>'
     - label: 类型
@@ -71,4 +71,4 @@ API 路由运行于 edge runtime。推理通过 **Anthropic Claude** 与
 
 ## 参考资料
 
-[^1]: "AgentConfig". [agentconfig-mkqocnc24-wangxuzhou666-archs-projects.vercel.app](https://agentconfig-mkqocnc24-wangxuzhou666-archs-projects.vercel.app/). 检索于 2026 年 4 月 7 日.
+[^1]: "AgentConfig". [agentconfig-theta.vercel.app](https://agentconfig-theta.vercel.app/). 检索于 2026 年 4 月 7 日.

@@ -128,7 +128,7 @@ App Store 上线,网址为
 [[AgentConfig]]是一款基于 Web 的 AI 智能体配置顾问工具,主要面向中文
 知识工作者。它由王旭洲于 2026 年初构思并实现,作为他研究生学业之外的
 独立项目,部署于 Vercel 平台,公开实例可访问
-[agentconfig-mkqocnc24-wangxuzhou666-archs-projects.vercel.app](https://agentconfig-mkqocnc24-wangxuzhou666-archs-projects.vercel.app/)。[^4]
+[agentconfig-theta.vercel.app](https://agentconfig-theta.vercel.app/)。[^4]
 
 ## 观点与方法论
 
@@ -207,7 +207,7 @@ AI 产品(如[[KitchenSurvivor|KitchenSurvivor]])与开发者工具(如
 - [GitHub — colar-wiki 源仓库](https://github.com/wangxuzhou666-arch/colar-wiki) — 渲染本 Wiki 的源代码仓库
 - [LinkedIn — 王旭洲](https://www.linkedin.com/in/xuzhou-wang/)
 - [KitchenSurvivor on the App Store](https://apps.apple.com/app/id6757759255)
-- [AgentConfig — 在线应用](https://agentconfig-mkqocnc24-wangxuzhou666-archs-projects.vercel.app/)
+- [AgentConfig — 在线应用](https://agentconfig-theta.vercel.app/)
 
 ## 参考资料
 
@@ -217,7 +217,7 @@ AI 产品(如[[KitchenSurvivor|KitchenSurvivor]])与开发者工具(如
 
 [^3]: "KitchenSurvivor (云端小灶)". [Apple App Store](https://apps.apple.com/app/id6757759255). 检索于 2026 年 4 月 7 日.
 
-[^4]: "AgentConfig". [agentconfig-mkqocnc24-wangxuzhou666-archs-projects.vercel.app](https://agentconfig-mkqocnc24-wangxuzhou666-archs-projects.vercel.app/). 检索于 2026 年 4 月 7 日.
+[^4]: "AgentConfig". [agentconfig-theta.vercel.app](https://agentconfig-theta.vercel.app/). 检索于 2026 年 4 月 7 日.
 
 [^5]: "BSc Financial Mathematics". [诺丁汉大学](https://www.nottingham.ac.uk/).
 

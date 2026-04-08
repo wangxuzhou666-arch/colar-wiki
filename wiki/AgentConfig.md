@@ -6,7 +6,7 @@ infobox:
   title: AgentConfig
   rows:
     - label: Live site
-      html: '<a href="https://agentconfig-mkqocnc24-wangxuzhou666-archs-projects.vercel.app/">Open application →</a>'
+      html: '<a href="https://agentconfig-theta.vercel.app/">Open application →</a>'
     - label: Developer
       html: '<a href="/wiki/Colar_Wang/">Colar Wang</a>'
     - label: Type
@@ -25,7 +25,7 @@ infobox:
       value: Proprietary
     - section: Links
     - label: Live site
-      html: '<a href="https://agentconfig-mkqocnc24-wangxuzhou666-archs-projects.vercel.app/">vercel deployment</a>'
+      html: '<a href="https://agentconfig-theta.vercel.app/">vercel deployment</a>'
 ---
 
 > *Not to be confused with Anthropic's
@@ -83,4 +83,4 @@ Chinese-speaking user base. A public instance is available.[^1]
 
 ## References
 
-[^1]: "AgentConfig". [agentconfig-mkqocnc24-wangxuzhou666-archs-projects.vercel.app](https://agentconfig-mkqocnc24-wangxuzhou666-archs-projects.vercel.app/). Retrieved 7 April 2026.
+[^1]: "AgentConfig". [agentconfig-theta.vercel.app](https://agentconfig-theta.vercel.app/). Retrieved 7 April 2026.
