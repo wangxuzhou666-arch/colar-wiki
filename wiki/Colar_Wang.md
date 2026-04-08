@@ -190,7 +190,8 @@ project reported a 29.7 percent reduction in localization error and
 accelerated model convergence by a factor of 2.5, in part through a
 stage-wise adaptation strategy that reduced model parameter count by
 approximately 96 percent for deployment in resource-constrained
-environments.
+environments. The full project report is available as a
+[PDF](/papers/img2gps-localization.pdf).
 
 ### AI-Driven Crypto Portfolio Optimizer (2024–2025)
 
@@ -200,7 +201,8 @@ portfolio-allocation system covering 17 distinct crypto-assets. The
 system synthesized deep-learning return forecasts with volatility
 signals to drive automated rebalancing, and reported a roughly 90
 percent reduction in forecasting error and a simulated Sharpe ratio
-of 1.3 under backtest.
+of 1.3 under backtest. The full project report is available as a
+[PDF](/papers/crypto-portfolio-optimizer.pdf).
 
 ## Technical skills
 

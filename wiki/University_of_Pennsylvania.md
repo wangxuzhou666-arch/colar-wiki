@@ -68,7 +68,8 @@ strategy** that reduced the model's parameter count by approximately
 96 percent, enabling deployment in resource-constrained environments
 without compromising core accuracy. Wang has cited this compression
 experience as directly relevant to the edge-side design decisions
-later adopted in [[KitchenSurvivor]].
+later adopted in [[KitchenSurvivor]]. The full project report is
+available as a [PDF](/papers/img2gps-localization.pdf).
 
 ## Context within the broader biography
 

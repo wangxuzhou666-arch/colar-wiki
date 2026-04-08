@@ -72,7 +72,8 @@ under backtest.
 Wang has described the project as the point at which he first
 committed, publicly, to a bias toward "data-adaptive systems rather
 than rule-adaptive systems" — a framing he has since carried into
-his AI product work.
+his AI product work. The full project report is available as a
+[PDF](/papers/crypto-portfolio-optimizer.pdf).
 
 ## Parallel activities
 
