@@ -3,6 +3,17 @@
 Append-only record of ingests, updates, and lint passes.
 Format: `## [YYYY-MM-DD] <type> | <short description>`
 
+## [2026-04-08] feature | bilingual English / Chinese with top-left toggle
+
+- lib/wiki.js: getPage / getAllPagesForSearch / preprocessWikiLinks now accept a `lang` parameter. Chinese mode reads <slug>.zh.md and falls back to <slug>.md if missing; wikilink prefixes become /zh/wiki/
+- components/WikiPage.jsx: lang-aware [edit] link (points to .zh.md in Chinese mode), tagline translated
+- components/WikiChrome.jsx: STRINGS table for en/zh; top-left language toggle button next to the Colarpedia logo; every tab, sidebar heading, footer line, and search placeholder translated
+- components/SearchBox.jsx: lang-aware placeholder and result URLs
+- app/zh/wiki/[slug]/page.jsx: new Chinese route mirror (generateStaticParams produces identical slug set)
+- app/globals.css: .lang-toggle button style
+- created 10 Chinese translations: Colar_Wang.zh.md, KitchenSurvivor.zh.md, AgentConfig.zh.md, University_of_Pennsylvania.zh.md, University_of_Nottingham.zh.md, ByteDance_TikTok_internship.zh.md, China_Galaxy_Securities.zh.md, CITIC_Futures.zh.md, China_International_Capital_Corporation.zh.md, First-principles_thinking.zh.md
+- build now produces 20 static pages (10 en + 10 zh), all at /wiki/<slug>/ and /zh/wiki/<slug>/
+
 ## [2026-04-07] update | publish Galaxy quant project to GitHub, link from wiki
 
 - created GitHub repo: github.com/wangxuzhou666-arch/china-galaxy-securities-quant

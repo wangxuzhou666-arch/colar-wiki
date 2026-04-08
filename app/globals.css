@@ -89,6 +89,22 @@ a.external::after {
   max-width: 420px;
   margin-left: auto;
 }
+.lang-toggle {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  padding: 4px 12px;
+  border: 1px solid var(--wiki-border);
+  background: var(--wiki-bg);
+  color: var(--wiki-link);
+  text-decoration: none;
+  align-self: center;
+  white-space: nowrap;
+  font-weight: 700;
+}
+.lang-toggle:hover {
+  background: var(--wiki-bg-alt);
+  text-decoration: none;
+}
 .wiki-search input {
   width: 100%;
   padding: 6px 10px;

@@ -6,7 +6,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
-export default function SearchBox({ pages }) {
+export default function SearchBox({ pages, lang = "en" }) {
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState(false);
   const wrapRef = useRef(null);
@@ -21,6 +21,9 @@ export default function SearchBox({ pages }) {
     return () => document.removeEventListener("mousedown", onClick);
   }, []);
 
+  const placeholder = lang === "zh" ? "搜索 Colarpedia" : "Search Colarpedia";
+  const prefix = lang === "zh" ? "/zh/wiki" : "/wiki";
+
   const q = query.trim().toLowerCase();
   const matches = q
     ? pages
@@ -34,7 +37,7 @@ export default function SearchBox({ pages }) {
     : [];
 
   function go(slug) {
-    window.location.href = `/wiki/${slug}/`;
+    window.location.href = `${prefix}/${slug}/`;
   }
 
   function onSubmit(e) {
@@ -52,8 +55,8 @@ export default function SearchBox({ pages }) {
     >
       <input
         type="text"
-        placeholder="Search Colarpedia"
-        aria-label="Search Colarpedia"
+        placeholder={placeholder}
+        aria-label={placeholder}
         value={query}
         onChange={(e) => {
           setQuery(e.target.value);
@@ -84,7 +87,7 @@ export default function SearchBox({ pages }) {
           {matches.map((p) => (
             <li key={p.slug}>
               <a
-                href={`/wiki/${p.slug}/`}
+                href={`${prefix}/${p.slug}/`}
                 style={{
                   display: "block",
                   padding: "6px 10px",

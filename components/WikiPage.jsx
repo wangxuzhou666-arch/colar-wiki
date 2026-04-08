@@ -1,6 +1,6 @@
 // WikiPage — renders a single wiki article from parsed markdown.
-// Handles: title block, frontmatter-driven infobox, body markdown,
-// auto-generated [edit] link on h2, and the GitHub edit URL.
+// Lang-aware: when lang === 'zh', the [edit] link points to the
+// .zh.md file and infobox/wikilink prefixes use /zh/wiki/.
 
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -13,8 +13,13 @@ import { preprocessWikiLinks } from "@/lib/wiki";
 const GITHUB_EDIT_BASE =
   "https://github.com/wangxuzhou666-arch/colar-wiki/edit/main/wiki";
 
-export default function WikiPage({ slug, frontmatter, body, slugsSet }) {
-  const processed = preprocessWikiLinks(body, slugsSet);
+const STRINGS = {
+  en: { tagline: "From Colarpedia, the free résumé", edit: "edit" },
+  zh: { tagline: "来自 Colarpedia，自由的个人百科", edit: "编辑" },
+};
+
+export default function WikiPage({ slug, frontmatter, body, slugsSet, lang = "en" }) {
+  const processed = preprocessWikiLinks(body, slugsSet, lang);
 
   const {
     title = slug.replace(/_/g, " "),
@@ -22,7 +27,9 @@ export default function WikiPage({ slug, frontmatter, body, slugsSet }) {
     infobox,
   } = frontmatter || {};
 
-  const editHref = `${GITHUB_EDIT_BASE}/${slug}.md`;
+  const fileName = lang === "zh" ? `${slug}.zh.md` : `${slug}.md`;
+  const editHref = `${GITHUB_EDIT_BASE}/${fileName}`;
+  const t = STRINGS[lang] || STRINGS.en;
 
   return (
     <main className="wiki-main" id="main-content">
@@ -30,12 +37,12 @@ export default function WikiPage({ slug, frontmatter, body, slugsSet }) {
         {title}
         <span className="edit-link" style={{ fontSize: "12px" }}>
           <a href={editHref} target="_blank" rel="noreferrer">
-            edit
+            {t.edit}
           </a>
         </span>
       </h1>
       {subtitle && <p className="wiki-title-sub">{subtitle}</p>}
-      <p className="wiki-tagline">From Colarpedia, the free résumé</p>
+      <p className="wiki-tagline">{t.tagline}</p>
 
       {infobox && <Infobox data={infobox} />}
 
@@ -49,14 +56,17 @@ export default function WikiPage({ slug, frontmatter, body, slugsSet }) {
                 {children}
                 <span className="edit-link">
                   <a href={editHref} target="_blank" rel="noreferrer">
-                    edit
+                    {t.edit}
                   </a>
                 </span>
               </h2>
             ),
             a: ({ node, href, className, children, ...props }) => {
               const isExternal =
-                href && (href.startsWith("http://") || href.startsWith("https://") || href.startsWith("mailto:"));
+                href &&
+                (href.startsWith("http://") ||
+                  href.startsWith("https://") ||
+                  href.startsWith("mailto:"));
               const isRedlink = className && className.includes("redlink");
               const classes = [];
               if (isExternal) classes.push("external");
