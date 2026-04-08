@@ -3,6 +3,15 @@
 Append-only record of ingests, updates, and lint passes.
 Format: `## [YYYY-MM-DD] <type> | <short description>`
 
+## [2026-04-07] update | KitchenSurvivor icon, AgentConfig link-only infobox, sidebar nav, raw archive
+
+- added: public/kitchensurvivor-icon.jpg (1024x1024 app icon)
+- updated: wiki/KitchenSurvivor.md infobox now displays the app icon
+- updated: wiki/AgentConfig.md infobox no longer displays an image placeholder; added "Live site" row at top with prominent link to the Vercel deployment
+- updated: components/WikiChrome.jsx sidebar Experience list now includes Kyraton Home, CITIC Futures, and CICC alongside Galaxy Securities and ByteDance
+- archived: raw/Xuzhou Wang Resume (1).pdf, Xuzhou Wang 2.pdf, Xuzhou Wang 3.pdf, Xuzhou Wang Rseume 4.pdf, Xuzhou Wang Rseume5.pdf, Xuzhou Wang Rseume 6.pdf — six original CV versions, source for the wiki narrative
+- created: raw/README.md — explains the immutability and contents of raw/
+
 ## [2026-04-07] ingest | resume consolidation (v2–v6)
 
 Sources: raw/Xuzhou Wang 2.pdf, Xuzhou Wang 3.pdf, Xuzhou Wang Rseume 4.pdf, Xuzhou Wang Rseume5.pdf, Xuzhou Wang Rseume 6.pdf (5 additional resume versions beyond the initial Resume (1).pdf)

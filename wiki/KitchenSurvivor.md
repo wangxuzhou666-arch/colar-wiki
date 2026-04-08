@@ -4,7 +4,8 @@ subtitle: Multimodal generative-AI consumer application (2025)
 description: KitchenSurvivor (云端小灶) is a multimodal generative-AI iOS application developed by Colar Wang.
 infobox:
   title: KitchenSurvivor
-  image_caption: KitchenSurvivor iOS application, 2025
+  image: /kitchensurvivor-icon.jpg
+  image_caption: KitchenSurvivor application icon
   rows:
     - label: Chinese name
       value: 云端小灶

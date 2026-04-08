@@ -4,8 +4,9 @@ subtitle: Web-based AI agent configuration advisor (2026)
 description: AgentConfig is a web-based advisory tool for configuring AI agents, built by Colar Wang.
 infobox:
   title: AgentConfig
-  image_caption: AgentConfig web application, 2026
   rows:
+    - label: Live site
+      html: '<a href="https://agentconfig-mkqocnc24-wangxuzhou666-archs-projects.vercel.app/">Open application →</a>'
     - label: Developer
       html: '<a href="/wiki/Colar_Wang/">Colar Wang</a>'
     - label: Type

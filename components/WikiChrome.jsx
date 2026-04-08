@@ -58,8 +58,10 @@ export function WikiSidebar() {
       <h4>Experience</h4>
       <ul>
         <li><a href="/wiki/ByteDance_TikTok_internship/">ByteDance / TikTok</a></li>
+        <li><a href="/wiki/Amazon_retailer_venture/">Kyraton Home</a></li>
         <li><a href="/wiki/China_Galaxy_Securities/">China Galaxy Securities</a></li>
-        <li><a href="/wiki/Amazon_retailer_venture/">Amazon venture</a></li>
+        <li><a href="/wiki/CITIC_Futures/">CITIC Futures</a></li>
+        <li><a href="/wiki/China_International_Capital_Corporation/">CICC</a></li>
       </ul>
 
       <h4>Education</h4>
