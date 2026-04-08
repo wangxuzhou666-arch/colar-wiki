@@ -1,39 +1,72 @@
 // Shared Wikipedia-style shell: top bar, tabs, sidebar, footer.
-// The sidebar lists real wiki pages; all links go to /wiki/<slug>/.
+// All tabs (Article / Talk / View source / History) link to real
+// destinations — Talk and History route to GitHub equivalents for the
+// current page's source markdown file.
 
-export function WikiTopBar() {
+import SearchBox from "./SearchBox";
+
+const GH_OWNER = "wangxuzhou666-arch";
+const GH_REPO = "colar-wiki";
+const GH_BASE = `https://github.com/${GH_OWNER}/${GH_REPO}`;
+
+export function WikiTopBar({ slug, pages }) {
+  const fileEditUrl = slug
+    ? `${GH_BASE}/edit/main/wiki/${slug}.md`
+    : `${GH_BASE}`;
+  const fileHistoryUrl = slug
+    ? `${GH_BASE}/commits/main/wiki/${slug}.md`
+    : `${GH_BASE}/commits/main`;
+  const issuesUrl = slug
+    ? `${GH_BASE}/issues/new?title=${encodeURIComponent(`Talk: ${slug}`)}`
+    : `${GH_BASE}/issues`;
+
   return (
     <>
       <div className="wiki-topbar">
         <div className="wiki-topbar-inner">
-          <a href="/wiki/Colar_Wang/" className="wiki-logo" style={{ textDecoration: "none" }}>
+          <a
+            href="/wiki/Colar_Wang/"
+            className="wiki-logo"
+            style={{ textDecoration: "none" }}
+          >
             Colarpedia
             <span>The Free Résumé</span>
           </a>
-          <div className="wiki-search">
-            <input
-              type="text"
-              placeholder="Search Colarpedia"
-              aria-label="Search Colarpedia"
-              disabled
-            />
-          </div>
+          <SearchBox pages={pages || []} />
         </div>
       </div>
       <div className="wiki-tabs">
         <div className="wiki-tabs-inner">
-          <a href="#" className="active">Article</a>
-          <a href="#talk">Talk</a>
-          <a href="#read">Read</a>
+          <a href="#" className="active">
+            Article
+          </a>
           <a
-            href="https://github.com/wangxuzhou666-arch/colar-wiki"
+            href={issuesUrl}
             className="external"
             target="_blank"
             rel="noreferrer"
+            title="Open a GitHub issue to discuss this page"
+          >
+            Talk
+          </a>
+          <a
+            href={fileEditUrl}
+            className="external"
+            target="_blank"
+            rel="noreferrer"
+            title="Edit this page on GitHub"
           >
             View source
           </a>
-          <a href="#history">History</a>
+          <a
+            href={fileHistoryUrl}
+            className="external"
+            target="_blank"
+            rel="noreferrer"
+            title="View this page's commit history on GitHub"
+          >
+            History
+          </a>
         </div>
       </div>
     </>
@@ -45,33 +78,55 @@ export function WikiSidebar() {
     <aside className="wiki-sidebar" aria-label="Navigation">
       <h4>Navigation</h4>
       <ul>
-        <li><a href="/wiki/Colar_Wang/">Main page</a></li>
-        <li><a href="/wiki/Colar_Wang/#see-also">Contents</a></li>
+        <li>
+          <a href="/wiki/Colar_Wang/">Main page</a>
+        </li>
+        <li>
+          <a href="/wiki/Colar_Wang/#see-also">Contents</a>
+        </li>
       </ul>
 
       <h4>Notable works</h4>
       <ul>
-        <li><a href="/wiki/KitchenSurvivor/">KitchenSurvivor</a></li>
-        <li><a href="/wiki/AgentConfig/">AgentConfig</a></li>
+        <li>
+          <a href="/wiki/KitchenSurvivor/">KitchenSurvivor</a>
+        </li>
+        <li>
+          <a href="/wiki/AgentConfig/">AgentConfig</a>
+        </li>
       </ul>
 
       <h4>Experience</h4>
       <ul>
-        <li><a href="/wiki/ByteDance_TikTok_internship/">ByteDance / TikTok</a></li>
-        <li><a href="/wiki/China_Galaxy_Securities/">China Galaxy Securities</a></li>
-        <li><a href="/wiki/CITIC_Futures/">CITIC Futures</a></li>
-        <li><a href="/wiki/China_International_Capital_Corporation/">CICC</a></li>
+        <li>
+          <a href="/wiki/ByteDance_TikTok_internship/">ByteDance / TikTok</a>
+        </li>
+        <li>
+          <a href="/wiki/China_Galaxy_Securities/">China Galaxy Securities</a>
+        </li>
+        <li>
+          <a href="/wiki/CITIC_Futures/">CITIC Futures</a>
+        </li>
+        <li>
+          <a href="/wiki/China_International_Capital_Corporation/">CICC</a>
+        </li>
       </ul>
 
       <h4>Education</h4>
       <ul>
-        <li><a href="/wiki/University_of_Pennsylvania/">U. of Pennsylvania</a></li>
-        <li><a href="/wiki/University_of_Nottingham/">U. of Nottingham</a></li>
+        <li>
+          <a href="/wiki/University_of_Pennsylvania/">U. of Pennsylvania</a>
+        </li>
+        <li>
+          <a href="/wiki/University_of_Nottingham/">U. of Nottingham</a>
+        </li>
       </ul>
 
       <h4>Concepts</h4>
       <ul>
-        <li><a href="/wiki/First-principles_thinking/">First-principles thinking</a></li>
+        <li>
+          <a href="/wiki/First-principles_thinking/">First-principles thinking</a>
+        </li>
       </ul>
 
       <h4>Contribute</h4>
@@ -89,11 +144,6 @@ export function WikiSidebar() {
         <li>
           <a href="mailto:xuzhou.wang.upenn@gmail.com">Email the author</a>
         </li>
-      </ul>
-
-      <h4>Tools</h4>
-      <ul>
-        <li><a href="javascript:window.print()">Print / PDF</a></li>
       </ul>
     </aside>
   );
@@ -133,9 +183,9 @@ export function WikiFooter() {
   );
 }
 
-// Inline [edit] link for section headings — kept exported for backward compat.
-export function EditLink({ section }) {
-  const href = `https://github.com/wangxuzhou666-arch/colar-wiki/edit/main/wiki`;
+// Inline [edit] link kept exported for backward compat.
+export function EditLink() {
+  const href = `${GH_BASE}/edit/main/wiki`;
   return (
     <span className="edit-link">
       <a href={href} target="_blank" rel="noreferrer">
