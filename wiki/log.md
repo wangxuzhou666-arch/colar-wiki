@@ -3,6 +3,12 @@
 Append-only record of ingests, updates, and lint passes.
 Format: `## [YYYY-MM-DD] <type> | <short description>`
 
+## [2026-04-07] update | publish Galaxy quant project to GitHub, link from wiki
+
+- created GitHub repo: github.com/wangxuzhou666-arch/china-galaxy-securities-quant
+  contents: Hybrid_Approach.ipynb (104 cells, EDA → XGBoost windows 2/5/10/20 → feature importance → LSTM → hybrid) + 13 rendered PDF reports + 1 PNG, sourced from C:\Users\Colar\Desktop\简历\材料\quant 文件
+- updated: wiki/China_Galaxy_Securities.md infobox now has "Source code" link in Links section, body paragraph references the published archive, footnote [^2] added
+
 ## [2026-04-07] update | logos for schools and companies, removed Kyraton
 
 Removed:

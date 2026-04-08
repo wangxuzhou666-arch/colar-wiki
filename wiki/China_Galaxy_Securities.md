@@ -25,6 +25,8 @@ infobox:
         real-time feature engineering,
         model validation
     - section: Links
+    - label: Source code
+      html: '<a href="https://github.com/wangxuzhou666-arch/china-galaxy-securities-quant">github.com/.../china-galaxy-securities-quant</a>'
     - label: Company
       html: '<a href="https://www.chinastock.com.cn/">chinastock.com.cn</a>'
 ---
@@ -53,6 +55,13 @@ signals (LSTM) with tabular gradient boosting (XGBoost) to capture
 non-linear intraday patterns. A simulated backtest of the framework on
 historical data achieved an annualized return of approximately 50
 percent under a high-frequency signal-generation regime.
+
+The Jupyter notebook and the full set of rendered PDF reports for
+this work — covering EDA, candlestick feature engineering at four
+rolling-window scales, XGBoost / LSTM / hybrid modeling, and the
+linear-regression baseline comparison — have been published as an
+open archive at
+[github.com/wangxuzhou666-arch/china-galaxy-securities-quant](https://github.com/wangxuzhou666-arch/china-galaxy-securities-quant).[^2]
 
 ### Real-time feature engineering
 
@@ -90,3 +99,5 @@ role at ByteDance]].
 ## References
 
 [^1]: "China Galaxy Securities Co., Ltd.". [chinastock.com.cn](https://www.chinastock.com.cn/).
+
+[^2]: Wang, C. (2024). "Hybrid LSTM-XGBoost Quantitative Research". [github.com/wangxuzhou666-arch/china-galaxy-securities-quant](https://github.com/wangxuzhou666-arch/china-galaxy-securities-quant).
