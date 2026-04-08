@@ -4,7 +4,7 @@ subtitle: Undergraduate study of Colar Wang (2022–2025)
 description: Colar Wang's undergraduate degree in Financial Mathematics at the University of Nottingham.
 infobox:
   title: University of Nottingham
-  image: /nottingham-shield.png
+  image: /nottingham-shield.svg
   image_caption: Coat of arms of the University of Nottingham
   rows:
     - label: Person
