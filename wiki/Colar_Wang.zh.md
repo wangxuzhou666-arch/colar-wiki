@@ -37,8 +37,6 @@ infobox:
       html: '<a href="https://www.linkedin.com/in/xuzhou-wang/">linkedin.com/in/xuzhou-wang</a>'
     - label: GitHub
       html: '<a href="https://github.com/wangxuzhou666-arch">github.com/wangxuzhou666-arch</a>'
-    - label: 电子邮箱
-      html: '<a href="mailto:xuzhou.wang.upenn@gmail.com">xuzhou.wang.upenn@gmail.com</a>'
 ---
 
 **王旭洲**(英文名 **Xuzhou "Colar" Wang**,2002 年生)是一位中国

@@ -37,8 +37,6 @@ infobox:
       html: '<a href="https://www.linkedin.com/in/xuzhou-wang/">linkedin.com/in/xuzhou-wang</a>'
     - label: GitHub
       html: '<a href="https://github.com/wangxuzhou666-arch">github.com/wangxuzhou666-arch</a>'
-    - label: Email
-      html: '<a href="mailto:xuzhou.wang.upenn@gmail.com">xuzhou.wang.upenn@gmail.com</a>'
 ---
 
 **Xuzhou "Colar" Wang** (Chinese: 王旭洲; born 2002) is a Chinese
