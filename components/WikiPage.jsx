@@ -14,8 +14,8 @@ const GITHUB_EDIT_BASE =
   "https://github.com/wangxuzhou666-arch/colar-wiki/edit/main/wiki";
 
 const STRINGS = {
-  en: { tagline: "From Colarpedia, the free résumé", edit: "edit" },
-  zh: { tagline: "来自 Colarpedia，自由的个人百科", edit: "编辑" },
+  en: { edit: "edit" },
+  zh: { edit: "编辑" },
 };
 
 export default function WikiPage({ slug, frontmatter, body, slugsSet, lang = "en" }) {
@@ -42,7 +42,6 @@ export default function WikiPage({ slug, frontmatter, body, slugsSet, lang = "en
         </span>
       </h1>
       {subtitle && <p className="wiki-title-sub">{subtitle}</p>}
-      <p className="wiki-tagline">{t.tagline}</p>
 
       {infobox && <Infobox data={infobox} />}
 

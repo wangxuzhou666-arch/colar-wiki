@@ -20,7 +20,7 @@ infobox:
     - label: 模型
       value: Claude (Anthropic)、DeepSeek
     - label: 状态
-      value: 公开 MVP
+      value: 公开 MVP (不再活跃开发)
     - label: 许可证
       value: 专有
 ---
@@ -62,6 +62,15 @@ prompt-engineering 词汇的中文知识工作者而言,**"简单本身就是功
 API 路由运行于 edge runtime。推理通过 **Anthropic Claude** 与
 **DeepSeek** 的组合进行路由,选择依据是面向中文用户的成本与延迟
 考虑。公开实例可访问。[^1]
+
+## 后续发展
+
+王旭洲将 AgentConfig 描述为在"智能体配置应对非技术用户可读"这一
+命题上的早期实验。此后他在基础设施层面继续推进这一方向,构建了一套
+包含一百多个专项智能体定义的开源集合,旨在使智能体能力在不同开发
+工具间可移植。虽然 AgentConfig 本身不再处于活跃开发状态,但其公开
+实例仍可访问,该产品被王旭洲视为其后续基础设施工作的重要概念
+前身。
 
 ## 参见
 

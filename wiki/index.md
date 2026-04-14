@@ -10,7 +10,7 @@ LLM on every ingest (see `CLAUDE.md` → Operations → Ingest).
 ## Notable works
 
 - [[KitchenSurvivor]] — multimodal social AI cooking platform for international students (iOS, 2025–present)
-- [[AgentConfig]] — web-based AI agent configuration advisor for Chinese-speaking knowledge workers (2026–present)
+- [[AgentConfig]] — web-based AI agent configuration advisor for Chinese-speaking knowledge workers (early 2026, no longer in active development)
 
 ## Education
 
@@ -26,7 +26,7 @@ LLM on every ingest (see `CLAUDE.md` → Operations → Ingest).
 
 ## Concepts
 
-- [[First-principles_thinking]] — product-design methodology
+- [[First-principles_thinking]] — product-design methodology: decomposing product problems to elementary constraints before accepting existing solutions
 
 ## Meta
 

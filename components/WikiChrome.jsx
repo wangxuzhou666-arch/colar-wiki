@@ -109,7 +109,6 @@ export function WikiTopBar({ slug, pages, lang = "en" }) {
             style={{ textDecoration: "none" }}
           >
             {t.siteName}
-            <span>{t.siteTagline}</span>
           </a>
           <a
             href={otherUrl}

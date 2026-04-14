@@ -3,6 +3,16 @@
 Append-only record of ingests, updates, and lint passes.
 Format: `## [YYYY-MM-DD] <type> | <short description>`
 
+## [2026-04-13] update | content refresh — views, agency-agents, AgentConfig status, first-principles expansion
+
+- updated: wiki/Colar_Wang.md — lead paragraph now references agency-agents open-source collection and harness engineering infrastructure; Views and methodology section restructured into three named subsections (First-principles decomposition, User-auditable guarantees, Agents as end-user–configurable software) with strengthened narrative threading from KitchenSurvivor to ByteDance; Technical skills updated with React Native (Expo) and Supabase; footnotes [^11] added for agency-agents
+- updated: wiki/Colar_Wang.zh.md — mirrored all English changes: lead paragraph, Views section with three subsections, technical skills, footnotes
+- updated: wiki/AgentConfig.md — infobox status changed to "Public MVP (no longer in active development)"; new "Subsequent development" section documenting transition to agent infrastructure work
+- updated: wiki/AgentConfig.zh.md — mirrored: status updated, new "后续发展" section added
+- updated: wiki/First-principles_thinking.md — expanded from stub to full article: added methodology context (Aristotle → Musk → Wang's product-design application), three applied contexts (KitchenSurvivor, AgentConfig, agent infrastructure), relationship to user-auditable guarantees, removed stub notice
+- updated: wiki/First-principles_thinking.zh.md — mirrored full expansion from English version
+- updated: wiki/index.md — AgentConfig status clarified, First-principles description expanded
+
 ## [2026-04-08] feature | bilingual English / Chinese with top-left toggle
 
 - lib/wiki.js: getPage / getAllPagesForSearch / preprocessWikiLinks now accept a `lang` parameter. Chinese mode reads <slug>.zh.md and falls back to <slug>.md if missing; wikilink prefixes become /zh/wiki/

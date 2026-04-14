@@ -44,29 +44,17 @@ systems engineer, founder, and AI product researcher based in
 Philadelphia, Pennsylvania.[^1] He is a graduate student in Systems
 Engineering at the [[University of Pennsylvania]],[^2] the founder of
 the multimodal generative-AI consumer product [[KitchenSurvivor]],[^3]
-and the founder of the agent-configuration advisory tool
+and the creator of the agent-configuration advisory tool
 [[AgentConfig]].[^4]
 
-Wang operates at the intersection of quantitative modeling,
-large-language-model systems, and consumer AI product design, with a
-stated focus on turning probabilistic model behavior into measurable
-end-user trust. Before his graduate studies he completed a Bachelor
-of Science in Financial Mathematics at the
-[[University of Nottingham]],[^5] and held three consecutive research
-roles across the Chinese financial sector: investment banking at
-[[China_International_Capital_Corporation|China International Capital
-Corporation]], futures-market research at
-[[CITIC_Futures|CITIC Futures]], and quantitative trading research at
-[[China Galaxy Securities]].
-
-He is scheduled to join [[ByteDance_TikTok_internship|ByteDance / TikTok]]
-as an AI Product Operations intern on the Teen Safety team in San Jose,
-California, in the summer of 2026.[^6]
-
-Wang describes his methodology as the application of
-[[First-principles_thinking|first-principles thinking]] to product
-design, with a stated interest in treating AI agents as end-user
-configurable software rather than vendor-configured services.
+Before his graduate studies Wang completed a Bachelor of Science in
+Financial Mathematics at the [[University of Nottingham]][^5] and held
+three consecutive research roles in the Chinese financial sector, at
+[[China_International_Capital_Corporation|CICC]],
+[[CITIC_Futures|CITIC Futures]], and
+[[China_Galaxy_Securities|China Galaxy Securities]]. He is scheduled to
+join [[ByteDance_TikTok_internship|ByteDance / TikTok]] as an AI
+Product Operations intern in the summer of 2026.[^6]
 
 ## Education
 
@@ -86,130 +74,99 @@ August 2027.
 
 ## Career
 
-> *This section summarizes Wang's principal roles in reverse
-> chronological order. For standalone product entries, see*
-> *[Notable works](#notable-works).*
+> *For standalone product articles, see [[KitchenSurvivor]] and
+> [[AgentConfig]].*
 
 ### KitchenSurvivor (2025–present)
 
-In November 2025, shortly after arriving at the University of
-Pennsylvania, Wang founded [[KitchenSurvivor]] (Chinese: 云端小灶), a
-multimodal generative-AI consumer product aimed at the daily
-"grocery-to-dining" problem faced by international students and
-early-career overseas residents.[^3] He serves as Founder and Product
-Lead, with end-to-end responsibility for product direction, system
-architecture, and the trust-and-safety model described in the
-[[KitchenSurvivor|main article]].
-
-As Product Lead, Wang owns the full discovery-to-launch loop: user
-research, product requirements, interface prototyping, release
-gating, and post-launch metric review. Among the decisions documented
-in the [[KitchenSurvivor|main article]], he elevated "recipe
-executability" as the product's north-star quality metric — a
-measure of whether a generated recipe is physically cookable by the
-user with the ingredients they declared — and ranks it above both
-generation latency and creative variety when the three conflict.
-Under that framing the product has reported a recipe-executability
-rate in the region of 95 percent, alongside a roughly 90 percent
-reduction in perceived time-to-first-token through a streaming
-inference architecture, and a 40 percent reduction in client-side
-memory overhead attributed to a structured-concurrency task lifecycle
-manager.[^3]
+In November 2025 Wang founded [[KitchenSurvivor]] (Chinese: 云端小灶),
+a multimodal generative-AI consumer product aimed at the daily
+"grocery-to-dining" problem faced by international students.[^3] As
+Founder and Product Lead, he owns the full discovery-to-launch loop
+and elevated "recipe executability" — whether a generated recipe is
+physically cookable with declared ingredients — as the product's
+north-star metric. Detailed architecture and performance figures are
+documented in the [[KitchenSurvivor|main article]].[^3]
 
 ### China Galaxy Securities (2024)
 
 In the summer of 2024 Wang served as a Quantitative Research Intern at
-[[China_Galaxy_Securities|China Galaxy Securities Co., Ltd.]] in
-Shanghai, where he worked on productizing a hybrid LSTM–XGBoost
-modeling framework and on real-time feature-engineering infrastructure
-for a high-frequency trading system. A simulated backtest of the
-framework achieved an approximately 50 percent annualized return under
-a high-frequency signal-generation regime.[^7]
+[[China_Galaxy_Securities|China Galaxy Securities]] in Shanghai, where
+he productized a hybrid LSTM–XGBoost modeling framework for a
+high-frequency trading system. A simulated backtest achieved an
+approximately 50 percent annualized return.[^7]
 
-### CITIC Futures (2023–2024)
+### Earlier financial roles (2023–2024)
 
-Between December 2023 and February 2024 Wang completed a winter
-internship at [[CITIC_Futures|CITIC Futures Co., Ltd.]] in Shanghai,
-where he worked in the Futures Department on Python-based strategy
-prototyping and on an investment-governance compliance framework. The
-internship was Wang's first formal exposure to the derivatives side
-of Chinese institutional finance.[^9]
-
-### China International Capital Corporation (2023)
-
-In the summer of 2023 Wang served as an Investment Bank Intern at
-[[China_International_Capital_Corporation|China International Capital
-Corporation (CICC)]] in Shanghai, where he conducted quantitative
-analysis of the semiconductor market using the Wind Financial Terminal
-and supported IPO prospectus preparation. This was Wang's earliest
-professional exposure to the institutional side of Chinese finance.[^10]
+Before his quantitative research work, Wang held two internships in
+Chinese institutional finance: an Investment Bank Intern position at
+[[China_International_Capital_Corporation|CICC]] in Shanghai (summer
+2023), where he conducted semiconductor-market analysis and supported
+IPO prospectus preparation;[^10] and a Futures Department Intern
+position at [[CITIC_Futures|CITIC Futures]] (winter 2023–2024), where
+he worked on Python-based strategy prototyping and investment-governance
+compliance.[^9]
 
 ### ByteDance / TikTok (incoming, 2026)
 
 Wang is scheduled to join ByteDance's TikTok division as an
 [[ByteDance_TikTok_internship|AI Product Operations intern]] on the
 Teen Safety team in San Jose, California, for the summer of 2026.[^6]
-The role is situated within TikTok's Trust &amp; Safety organization
-and focuses on the operationalization of large-language-model and
-classifier-based systems for the protection of minor users on the
-platform. Wang has publicly described the position as a continuation
-of the trust-and-safety work prototyped in [[KitchenSurvivor]], where
-the central product problem is the translation of probabilistic model
-behavior into auditable user-facing guarantees.
-
-## Notable works
-
-### KitchenSurvivor
-
-[[KitchenSurvivor]] (Chinese: 云端小灶) is a multimodal generative-AI
-iOS application framed around an "AI Kitchen OS" concept that attempts
-to close the gap between the contents of a user's refrigerator and a
-set of actionable meal options. It was published on the Apple App
-Store in November 2025 and is available at
-[apps.apple.com/app/id6757759255](https://apps.apple.com/app/id6757759255).[^3]
-
-### AgentConfig
-
-[[AgentConfig]] is a web-based advisory tool for configuring AI
-agents, targeted primarily at Chinese-speaking knowledge workers,
-conceived and built by Wang in early 2026 as an independent project
-parallel to his graduate studies. A public instance is deployed on
-Vercel at
-[agentconfig-theta.vercel.app](https://agentconfig-theta.vercel.app/).[^4]
+The role focuses on operationalizing LLM and classifier-based content
+moderation for the protection of minor users on the platform.
 
 ## Views and methodology
 
-Wang's public statements on product design repeatedly return to the
-application of [[First-principles_thinking|first-principles thinking]]
-to product problems: the practice of decomposing a problem to its most
-elementary constraints before accepting any existing solution as a
-template.[^8] He has applied this framing both to consumer AI products
-such as [[KitchenSurvivor]] — where the "first principle" is a user's
-latent question ("what can I eat tonight?") rather than any
-intermediate category such as recipes or inventory — and to developer
-tools such as [[AgentConfig]], where he has argued that the first
-principle of agent configuration is user intent articulation, not
-prompt syntax.
+Wang's public statements on product design repeatedly return to three
+interconnected themes, each grounded in a specific product or
+infrastructure project.
 
-A second recurring theme in Wang's public commentary is the treatment
-of model reliability as a product concern rather than a research
-concern. In notes circulated to early readers of this article, he has
-argued that the central design question for consumer generative-AI
-products is not model capability but the translation of probabilistic
-outputs into "user-auditable guarantees" — measurable properties a
-user can verify on their own without reading a model card. The
-"recipe executability" metric used in [[KitchenSurvivor]] is offered
-as a worked example of this translation: a probabilistic language
-model is wrapped in a deterministic validation layer that a user can
-observe in real time.[^8]
+### First-principles decomposition
+
+The first and most frequently cited theme is the application of
+[[First-principles_thinking|first-principles thinking]] to product
+problems: the practice of decomposing a problem to its most elementary
+constraints before accepting any existing solution as a template.[^8]
+Wang has applied this framing to both of his shipped products: in
+[[KitchenSurvivor]], the "first principle" is a user's latent question
+("what can I eat tonight?") rather than any intermediate category such
+as recipes or inventory; in [[AgentConfig]], the first principle of
+agent configuration is user intent articulation, not prompt syntax.
+
+### User-auditable guarantees
+
+A second recurring theme is the treatment of model reliability as a
+product concern rather than a research concern. Wang has argued that
+the central design question for consumer generative-AI products is not
+model capability but the translation of probabilistic outputs into
+"user-auditable guarantees" — measurable properties a user can verify
+on their own without reading a model card.[^8] The "recipe
+executability" metric used in [[KitchenSurvivor]] is offered as a
+worked example of this translation: a probabilistic language model is
+wrapped in a deterministic validation layer that a user can observe in
+real time. Wang has described the
+[[ByteDance_TikTok_internship|ByteDance / TikTok]] Teen Safety
+internship as a continuation of this same design problem at platform
+scale — the operationalization of classifier-based content moderation
+into guarantees that are auditable by both the platform and its
+users.[^6]
+
+### Agents as end-user–configurable software
 
 A third theme is his characterization of AI agents as
-end-user–configurable software. In writing associated with
-[[AgentConfig]], Wang has argued that current agent products treat
-configuration as a vendor-side activity (prompt engineering, system
-prompts, fine-tuning) and that the next defensible product surface
-is a configuration interface legible to non-technical users, framed
-around stated intent rather than prompt syntax.[^4]
+end-user–configurable software. In [[AgentConfig]], Wang argued that
+current agent products treat configuration as a vendor-side activity
+(prompt engineering, system prompts, fine-tuning) and that the next
+defensible product surface is a configuration interface legible to
+non-technical users, framed around stated intent rather than prompt
+syntax.[^4] He has since pursued this thesis at the infrastructure
+level through an open-source collection of over one hundred specialized
+agent definitions, each designed as a portable, personality-driven
+domain expert that can be converted across multiple development
+tools.[^11] Wang has described this "harness engineering" pattern — in
+which agents are orchestrated by a central harness rather than
+hard-coded into applications — as the infrastructure layer that
+underlies his product work.
 
 ## Academic projects
 
@@ -241,26 +198,11 @@ of 1.3 under backtest. The full project report is available as a
 
 ## Technical skills
 
-Wang's working toolkit, drawn from his published résumé and public
-project history, spans the following areas:
-
-- **Generative-AI product engineering:** large-language-model
-  integration (Claude, DeepSeek), prompt and evaluation design,
-  streaming inference (NDJSON), hallucination mitigation via
-  guardrail architectures, retrieval-augmented generation.
-- **Data and analytics:** SQL (window functions, CTEs, complex
-  joins), Python (pandas, NumPy, scikit-learn, PyTorch), R,
-  A/B testing and experimentation design, funnel and cohort
-  analysis, Tableau.
-- **Product management:** user research, product requirements
-  documents, RICE prioritization, north-star metric definition,
-  agile delivery (Jira), interface prototyping (Figma).
-- **Software and infrastructure:** Swift (iOS / SwiftUI) with
-  structured concurrency, REST API design, ETL pipelines, Git, AWS
-  (EC2, S3), Firebase, Vercel.
-- **Quantitative methods:** time-series modeling (LSTM, XGBoost),
-  simulation modeling, regime-aware validation, stochastic
-  forecasting, risk modeling, Wind Financial Terminal.
+Wang's working toolkit spans generative-AI product engineering (LLM
+integration, streaming inference, guardrail architectures),
+quantitative modeling (Python, SQL, PyTorch, time-series and simulation
+methods), and full-stack product development (Swift / SwiftUI, React
+Native, REST APIs, AWS, Firebase, Supabase, Vercel).
 
 ## Personal life
 
@@ -312,3 +254,5 @@ professionally fluent in English.
 [^9]: "CITIC Futures Co., Ltd.". [citicsf.com](https://www.citicsf.com/).
 
 [^10]: "China International Capital Corporation". [cicc.com](https://www.cicc.com/).
+
+[^11]: Wang, C. (2026). "agency-agents". [GitHub](https://github.com/wangxuzhou666-arch). Open-source agent-definition collection.

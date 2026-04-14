@@ -28,7 +28,7 @@ infobox:
     - label: Experimentation
       value: Built-in A/B testing infrastructure
     - label: Status
-      value: Public MVP
+      value: Public MVP (no longer in active development)
     - label: License
       value: Proprietary
     - section: Links
@@ -193,6 +193,18 @@ recommendation ranking, and default chat-clarifier behavior against
 live traffic. The product is available in Chinese (primary) and
 English through a lightweight in-app language switcher backed by a
 translations module.
+
+## Subsequent development
+
+Wang has described AgentConfig as an early experiment in the thesis
+that agent configuration should be legible to non-technical users. He
+has since pursued this direction at the infrastructure level through
+an open-source collection of over one hundred specialized agent
+definitions, designed to make agent capabilities portable across
+development tools. While AgentConfig itself is no longer in active
+development, its public instance remains available and the product is
+cited by Wang as an important conceptual predecessor to his later
+infrastructure work.
 
 ## See also
 
