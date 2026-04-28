@@ -1,7 +1,7 @@
 ---
 title: Colar Wang
-subtitle: Chinese systems engineer, entrepreneur, and AI product researcher
-description: Biographical article on Colar Wang, Chinese systems engineer, founder of KitchenSurvivor and AgentConfig, and incoming AI Product Operations intern at ByteDance / TikTok.
+subtitle: Graduate student at the University of Pennsylvania; builder of KitchenSurvivor and AgentConfig
+description: Biographical article on Colar Wang, graduate student at the University of Pennsylvania, builder of KitchenSurvivor and AgentConfig, and incoming AI Product Operations intern at ByteDance / TikTok.
 infobox:
   title: Colar Wang
   image: /portrait.jpg
@@ -22,14 +22,10 @@ infobox:
       html: '<a href="/wiki/University_of_Nottingham/">University of Nottingham</a> (BSc, 2025)<br/><a href="/wiki/University_of_Pennsylvania/">University of Pennsylvania</a> (MSE, expected 2027)'
     - label: Occupation
       value: |
-        Systems engineer, entrepreneur,
-        AI product researcher
-    - label: Years active
-      value: 2023–present
-    - label: Known for
-      html: '<a href="/wiki/KitchenSurvivor/">KitchenSurvivor</a>, <a href="/wiki/AgentConfig/">AgentConfig</a>'
-    - label: Employer
-      html: '<a href="/wiki/ByteDance_TikTok_internship/">ByteDance / TikTok</a> <i>(incoming, Summer 2026)</i>'
+        Graduate student
+        Independent product builder
+    - label: Upcoming role
+      html: '<a href="/wiki/ByteDance_TikTok_internship/">ByteDance / TikTok</a> <i>(Summer 2026 intern)</i>'
     - section: Contact
     - label: Website
       html: '<a href="https://colar-wiki.vercel.app/wiki/Colar_Wang/">colar-wiki.vercel.app</a>'
@@ -40,11 +36,11 @@ infobox:
 ---
 
 **Xuzhou "Colar" Wang** (Chinese: 王旭洲; born 2002) is a Chinese
-systems engineer, founder, and AI product researcher based in
-Philadelphia, Pennsylvania.[^1] He is a graduate student in Systems
-Engineering at the [[University of Pennsylvania]],[^2] the founder of
-the multimodal generative-AI consumer product [[KitchenSurvivor]],[^3]
-and the creator of the agent-configuration advisory tool
+graduate student and independent product builder based in
+Philadelphia, Pennsylvania.[^1] He is enrolled in the Master of Science
+in Systems Engineering program at the [[University of Pennsylvania]],[^2]
+and is the builder of the multimodal generative-AI consumer product
+[[KitchenSurvivor]][^3] and the agent-configuration advisory tool
 [[AgentConfig]].[^4]
 
 Before his graduate studies Wang completed a Bachelor of Science in
@@ -115,58 +111,41 @@ Teen Safety team in San Jose, California, for the summer of 2026.[^6]
 The role focuses on operationalizing LLM and classifier-based content
 moderation for the protection of minor users on the platform.
 
-## Views and methodology
+## Approach
 
-Wang's public statements on product design repeatedly return to three
-interconnected themes, each grounded in a specific product or
-infrastructure project.
+In his product work Wang follows three working principles, each
+grounded in a specific shipped product.
 
 ### First-principles decomposition
 
-The first and most frequently cited theme is the application of
-[[First-principles_thinking|first-principles thinking]] to product
-problems: the practice of decomposing a problem to its most elementary
-constraints before accepting any existing solution as a template.[^8]
-Wang has applied this framing to both of his shipped products: in
-[[KitchenSurvivor]], the "first principle" is a user's latent question
-("what can I eat tonight?") rather than any intermediate category such
-as recipes or inventory; in [[AgentConfig]], the first principle of
-agent configuration is user intent articulation, not prompt syntax.
+The first principle is to decompose a product problem to its most
+elementary constraints before accepting an existing template. In
+[[KitchenSurvivor]], the elementary problem is a user's latent
+question ("what can I eat tonight?") rather than any intermediate
+category such as recipes or inventory; in [[AgentConfig]], the
+elementary problem of agent configuration is intent articulation,
+not prompt syntax.
 
 ### User-auditable guarantees
 
-A second recurring theme is the treatment of model reliability as a
-product concern rather than a research concern. Wang has argued that
-the central design question for consumer generative-AI products is not
-model capability but the translation of probabilistic outputs into
-"user-auditable guarantees" — measurable properties a user can verify
-on their own without reading a model card.[^8] The "recipe
-executability" metric used in [[KitchenSurvivor]] is offered as a
-worked example of this translation: a probabilistic language model is
-wrapped in a deterministic validation layer that a user can observe in
-real time. Wang has described the
-[[ByteDance_TikTok_internship|ByteDance / TikTok]] Teen Safety
-internship as a continuation of this same design problem at platform
-scale — the operationalization of classifier-based content moderation
-into guarantees that are auditable by both the platform and its
-users.[^6]
+The second principle treats model reliability as a product concern
+rather than a research concern: the goal is to translate probabilistic
+outputs into measurable properties a user can verify without reading
+a model card. The "recipe executability" metric in [[KitchenSurvivor]]
+wraps a probabilistic language model in a deterministic validation
+layer that a user can observe in real time.
 
 ### Agents as end-user–configurable software
 
-A third theme is his characterization of AI agents as
-end-user–configurable software. In [[AgentConfig]], Wang argued that
-current agent products treat configuration as a vendor-side activity
-(prompt engineering, system prompts, fine-tuning) and that the next
-defensible product surface is a configuration interface legible to
-non-technical users, framed around stated intent rather than prompt
-syntax.[^4] He has since pursued this thesis at the infrastructure
-level through an open-source collection of over one hundred specialized
-agent definitions, each designed as a portable, personality-driven
-domain expert that can be converted across multiple development
-tools.[^11] Wang has described this "harness engineering" pattern — in
-which agents are orchestrated by a central harness rather than
-hard-coded into applications — as the infrastructure layer that
-underlies his product work.
+The third principle treats AI agents as end-user–configurable software.
+[[AgentConfig]] is built on the position that current agent products
+treat configuration as a vendor-side activity (prompt engineering,
+system prompts, fine-tuning) and that the next defensible product
+surface is a configuration interface framed around stated intent
+rather than prompt syntax.[^4] At the infrastructure level the same
+thesis underlies an open-source collection of specialized agent
+definitions, designed as portable, personality-driven domain experts
+that can be converted across development tools.[^11]
 
 ## Academic projects
 
@@ -175,21 +154,22 @@ technical projects during his university studies.
 
 ### Campus-Scale Img2GPS Localization (2025)
 
-As Project Lead at the [[University of Pennsylvania]] between October
-and December 2025, Wang directed the development of a high-precision
-image-to-GPS geolocation system for campus-scale navigation. The
-project reported a 29.7 percent reduction in localization error and
-accelerated model convergence by a factor of 2.5, in part through a
-stage-wise adaptation strategy that reduced model parameter count by
-approximately 96 percent for deployment in resource-constrained
-environments. The full project report is available as a
+In a coursework project at the [[University of Pennsylvania]] between
+October and December 2025, Wang led a small team building a
+high-precision image-to-GPS geolocation system for campus-scale
+navigation. The project reported a 29.7 percent reduction in
+localization error and accelerated model convergence by a factor of
+2.5, in part through a stage-wise adaptation strategy that reduced
+model parameter count by approximately 96 percent for deployment in
+resource-constrained environments. The full project report is available as a
 [PDF](/papers/img2gps-localization.pdf).
 
 ### AI-Driven Crypto Portfolio Optimizer (2024–2025)
 
-As Team Lead at the [[University of Nottingham]] between October 2024
-and March 2025, Wang directed the development of a deep-learning
-portfolio-allocation system covering 17 distinct crypto-assets. The
+In his final-year project at the [[University of Nottingham]] between
+October 2024 and March 2025, Wang led a small team building a
+deep-learning portfolio-allocation system covering 17 distinct
+crypto-assets. The
 system synthesized deep-learning return forecasts with volatility
 signals to drive automated rebalancing, and reported a roughly 90
 percent reduction in forecasting error and a simulated Sharpe ratio
@@ -248,8 +228,6 @@ professionally fluent in English.
 [^6]: ByteDance Ltd. (2026). "Offer of internship: AI Product Operations Intern, TikTok Teen Safety, Summer 2026". *Internal correspondence.*
 
 [^7]: "China Galaxy Securities Co., Ltd.". [chinastock.com.cn](https://www.chinastock.com.cn/).
-
-[^8]: Wang, C. (2026). "Notes on first-principles product design." *Personal correspondence.*
 
 [^9]: "CITIC Futures Co., Ltd.". [citicsf.com](https://www.citicsf.com/).
 

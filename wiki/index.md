@@ -5,12 +5,12 @@ LLM on every ingest (see `CLAUDE.md` → Operations → Ingest).
 
 ## Biography
 
-- [[Colar Wang]] — main article. Chinese systems engineer, founder, and AI product researcher turning probabilistic model behavior into measurable end-user trust.
+- [[Colar Wang]] — main article. Graduate student at the University of Pennsylvania and independent product builder, focused on turning probabilistic model behavior into measurable end-user trust.
 
 ## Notable works
 
 - [[KitchenSurvivor]] — multimodal social AI cooking platform for international students (iOS, 2025–present)
-- [[AgentConfig]] — web-based AI agent configuration advisor for Chinese-speaking knowledge workers (early 2026, no longer in active development)
+- [[AgentConfig]] — web-based AI agent configuration advisor for Chinese-speaking knowledge workers (early 2026, [live](https://agentconfig-theta.vercel.app/))
 
 ## Education
 

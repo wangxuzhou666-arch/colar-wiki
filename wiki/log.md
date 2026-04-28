@@ -3,6 +3,12 @@
 Append-only record of ingests, updates, and lint passes.
 Format: `## [YYYY-MM-DD] <type> | <short description>`
 
+## [2026-04-28] update | brutal audit pass — strip LARP framing from bio and Views section
+
+- updated: wiki/Colar_Wang.md — subtitle and lead rewritten without "systems engineer / founder / AI product researcher" triple title; infobox: removed "Years active" and "Known for" rows, simplified Occupation to "Graduate student / Independent product builder", relabeled Employer → Upcoming role; "Views and methodology" condensed and renamed to "Approach", removed self-citation footnote [^8] (Personal correspondence) and its inline references, removed "over one hundred specialized" claim; Academic projects: "Project Lead / directed development" → "coursework project / led a small team"
+- updated: wiki/Colar_Wang.zh.md — mirrored all English changes
+- updated: wiki/index.md — bio one-liner aligned to new voice; AgentConfig description corrected from "no longer in active development" → "live" (site is still serving)
+
 ## [2026-04-13] update | content refresh — views, agency-agents, AgentConfig status, first-principles expansion
 
 - updated: wiki/Colar_Wang.md — lead paragraph now references agency-agents open-source collection and harness engineering infrastructure; Views and methodology section restructured into three named subsections (First-principles decomposition, User-auditable guarantees, Agents as end-user–configurable software) with strengthened narrative threading from KitchenSurvivor to ByteDance; Technical skills updated with React Native (Expo) and Supabase; footnotes [^11] added for agency-agents
