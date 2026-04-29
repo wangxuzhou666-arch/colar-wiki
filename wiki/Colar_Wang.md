@@ -49,8 +49,8 @@ three consecutive research roles in the Chinese financial sector, at
 [[China_International_Capital_Corporation|CICC]],
 [[CITIC_Futures|CITIC Futures]], and
 [[China_Galaxy_Securities|China Galaxy Securities]]. He is scheduled to
-join [[ByteDance_TikTok_internship|ByteDance / TikTok]] as an AI
-Product Operations intern in the summer of 2026.[^6]
+join [[ByteDance_TikTok_internship|ByteDance / TikTok]] as an AI Product
+Operations intern in the summer of 2026.
 
 ## Education
 
@@ -107,45 +107,9 @@ compliance.[^9]
 
 Wang is scheduled to join ByteDance's TikTok division as an
 [[ByteDance_TikTok_internship|AI Product Operations intern]] on the
-Teen Safety team in San Jose, California, for the summer of 2026.[^6]
+Teen Safety team in San Jose, California, for the summer of 2026.
 The role focuses on operationalizing LLM and classifier-based content
 moderation for the protection of minor users on the platform.
-
-## Approach
-
-In his product work Wang follows three working principles, each
-grounded in a specific shipped product.
-
-### First-principles decomposition
-
-The first principle is to decompose a product problem to its most
-elementary constraints before accepting an existing template. In
-[[KitchenSurvivor]], the elementary problem is a user's latent
-question ("what can I eat tonight?") rather than any intermediate
-category such as recipes or inventory; in [[AgentConfig]], the
-elementary problem of agent configuration is intent articulation,
-not prompt syntax.
-
-### User-auditable guarantees
-
-The second principle treats model reliability as a product concern
-rather than a research concern: the goal is to translate probabilistic
-outputs into measurable properties a user can verify without reading
-a model card. The "recipe executability" metric in [[KitchenSurvivor]]
-wraps a probabilistic language model in a deterministic validation
-layer that a user can observe in real time.
-
-### Agents as end-user–configurable software
-
-The third principle treats AI agents as end-user–configurable software.
-[[AgentConfig]] is built on the position that current agent products
-treat configuration as a vendor-side activity (prompt engineering,
-system prompts, fine-tuning) and that the next defensible product
-surface is a configuration interface framed around stated intent
-rather than prompt syntax.[^4] At the infrastructure level the same
-thesis underlies an open-source collection of specialized agent
-definitions, designed as portable, personality-driven domain experts
-that can be converted across development tools.[^11]
 
 ## Academic projects
 
@@ -176,22 +140,6 @@ percent reduction in forecasting error and a simulated Sharpe ratio
 of 1.3 under backtest. The full project report is available as a
 [PDF](/papers/crypto-portfolio-optimizer.pdf).
 
-## Technical skills
-
-Wang's working toolkit spans generative-AI product engineering (LLM
-integration, streaming inference, guardrail architectures),
-quantitative modeling (Python, SQL, PyTorch, time-series and simulation
-methods), and full-stack product development (Swift / SwiftUI, React
-Native, REST APIs, AWS, Firebase, Supabase, Vercel).
-
-## Personal life
-
-Wang was born in Shanghai and has lived in the United Kingdom and the
-United States during his university years. Outside of his professional
-and academic work, he is a competitive badminton player and a
-practitioner of hip-hop dance. He is a native Mandarin speaker and is
-professionally fluent in English.
-
 ## See also
 
 - [[KitchenSurvivor]]
@@ -202,7 +150,6 @@ professionally fluent in English.
 - [[China_Galaxy_Securities]]
 - [[CITIC_Futures]]
 - [[China_International_Capital_Corporation]]
-- [[First-principles_thinking]]
 
 ## External links
 
@@ -225,12 +172,8 @@ professionally fluent in English.
 
 [^5]: "BSc Financial Mathematics". [University of Nottingham](https://www.nottingham.ac.uk/).
 
-[^6]: ByteDance Ltd. (2026). "Offer of internship: AI Product Operations Intern, TikTok Teen Safety, Summer 2026". *Internal correspondence.*
-
 [^7]: "China Galaxy Securities Co., Ltd.". [chinastock.com.cn](https://www.chinastock.com.cn/).
 
 [^9]: "CITIC Futures Co., Ltd.". [citicsf.com](https://www.citicsf.com/).
 
 [^10]: "China International Capital Corporation". [cicc.com](https://www.cicc.com/).
-
-[^11]: Wang, C. (2026). "agency-agents". [GitHub](https://github.com/wangxuzhou666-arch). Open-source agent-definition collection.

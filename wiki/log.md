@@ -3,6 +3,104 @@
 Append-only record of ingests, updates, and lint passes.
 Format: `## [YYYY-MM-DD] <type> | <short description>`
 
+## [2026-04-29] update | drop hatnotes + bump Galaxy figure DPI
+
+Two small polish passes:
+1. **Hatnotes removed** — both the KitchenSurvivor "This article is about the 2025 multimodal-AI consumer product. For the general phenomenon of overseas student cooking, see cooking abroad (page does not exist)" disambiguation and the AgentConfig "Not to be confused with Anthropic's Claude Agent SDK" disambiguation were italic blockquote hatnotes that consumed visual space at the top of each product page without serving real disambiguation needs (KS does not collide with another article in this wiki; the AgentConfig vs Claude Agent SDK confusion is a non-issue for the realistic readership). Removed from both en and zh mirrors.
+2. **Galaxy figures re-rendered at 300 dpi** — the three quant-project figures (`eda-returns.png`, `feature-importance.png`, `final-prediction.png`) were originally rendered at 200 dpi (2339×1653). Bumped to 300 dpi (3509×2480) so the small axis tick labels on the prediction-vs-validation chart and the F-score numbers on the feature-importance chart stay legible when zoomed. File sizes 126 KB / 233 KB / 202 KB respectively.
+
+- updated: wiki/KitchenSurvivor.md, wiki/KitchenSurvivor.zh.md — removed hatnote blockquote
+- updated: wiki/AgentConfig.md, wiki/AgentConfig.zh.md — removed hatnote blockquote
+- regenerated: public/galaxy/eda-returns.png, public/galaxy/feature-importance.png, public/galaxy/final-prediction.png — 200 dpi → 300 dpi
+
+## [2026-04-29] update | restore Earlier financial roles in Career section + KS figure relocation
+
+Two follow-ups after the entity-page restore:
+
+1. **Career section restoration** — author requested the CICC and CITIC Futures finance internships be re-narrated in the main bio's Career section (not just the sidebar). Restored: lead paragraph wording back to "three consecutive research roles in the Chinese financial sector" with all three wikilinks; Career section gains the `### Earlier financial roles (2023–2024)` subsection between Galaxy and ByteDance, describing the IB Intern role at CICC (summer 2023, semiconductor-market / IPO prospectus work) and the Futures Department Intern at CITIC (winter 2023–2024, Python strategy prototyping and compliance); See also re-adds both wikilinks; References re-adds footnotes `[^9]` (CITIC) and `[^10]` (CICC).
+2. **KS figure 1 (app-home-feed) relocation** — the figure was previously embedded immediately after the lead, which collided with the floating infobox and produced a large left-column whitespace block (the figure-portrait class capped width at 360 px and centered, but the parent column was constrained by the infobox float). Per author's hint, figure 1 was moved to the end of the Features section, right before `## Architecture`, where the left column has accumulated past the infobox height. CSS gained `clear: both` on `.figure-portrait` as a belt-and-braces fallback if a future short-section configuration ever re-introduces the same overlap.
+
+- updated: wiki/Colar_Wang.md — lead paragraph restored to three-internship phrasing; Career section regains `### Earlier financial roles (2023–2024)` subsection; See also re-adds `[[CITIC_Futures]]` and `[[China_International_Capital_Corporation]]`; References re-adds footnotes `[^9]` and `[^10]`
+- updated: wiki/Colar_Wang.zh.md — mirrored
+- updated: wiki/KitchenSurvivor.md — figure 1 (`app-home-feed`) moved from immediately after the lead to the tail of the Features section, between `### Location and privacy controls` and `## Architecture`
+- updated: wiki/KitchenSurvivor.zh.md — both figures (`app-home-feed` and `share-card-lobster`) moved from immediately after the lead to between `## 架构` and `## 信任与安全` (the zh version has no Features subsections, so the shorter article body forces both figures to share the same later location)
+- updated: app/globals.css — `.wiki-main figure.figure-portrait` block gains `clear: both`
+
+## [2026-04-29] update | partial Round 2 reversal + figure layout polish
+
+Three follow-ups after the Round 3 KS embed pass:
+
+1. **Restore CITIC + CICC entity pages** — author requested the sidebar Experience list to show all four roles, not the post-R2 two (ByteDance + Galaxy). The two entity pages were `git restore`-d from HEAD (which was the last commit before R2's deletes), and the sidebar `<li>` entries for `CITIC_Futures` and `China_International_Capital_Corporation` were re-added to `WikiChrome.jsx`. The `Colar_Wang.md` lead paragraph and Career section were left in their R2-condensed state (single Galaxy mention only); restoring the entity pages alone gives the sidebar what the author asked for without re-introducing the "three consecutive Chinese-finance internships" prose into the main bio.
+2. **Drop sidebar `Contents` link** — the second `<li>` under nav, which pointed to `Colar_Wang#see-also`, was removed. Wikipedia's "Contents" convention refers to in-article TOC, not a cross-page jump to See also; the link had no real navigation function and was misleading.
+3. **Swap mis-named KitchenSurvivor screenshot files** — initial copy from source paths placed each jpg under the wrong target name: `app-home-feed.jpg` actually held the lobster share-card image and vice-versa, causing every figure-caption pairing to render mismatched on the page. Source-to-target mapping was corrected (`微信图片_20260317083313.jpg` → `app-home-feed.jpg`; `微信图片_20260210223111.jpg` → `share-card-lobster.jpg`), so caption text and image content now agree.
+4. **Figure CSS — portrait class** — vertical phone screenshots were rendering at 760 px wide (full content column), which forced ~1300 px tall figures and wasted layout space alongside the floating infobox. Added `.figure-portrait` to `globals.css` (max-width 360 px, centered) and applied it to the two KS figures (en + zh). Galaxy's three landscape figures were left without the class so they keep the default full-width treatment.
+
+- updated: components/WikiChrome.jsx — removed `Contents` `<li>` from nav block; re-added `CITIC_Futures` and `China_International_Capital_Corporation` `<li>` entries to Experience block
+- restored: wiki/CITIC_Futures.md, wiki/CITIC_Futures.zh.md, wiki/China_International_Capital_Corporation.md, wiki/China_International_Capital_Corporation.zh.md (via `git restore`, content unchanged from pre-R2 HEAD)
+- updated: app/globals.css — added `.wiki-main figure.figure-portrait { max-width: 360px; margin-left: auto; margin-right: auto; }` block
+- updated: wiki/KitchenSurvivor.md, wiki/KitchenSurvivor.zh.md — both `<figure>` tags upgraded to `<figure class="figure-portrait">`
+- updated: public/kitchensurvivor/app-home-feed.jpg, public/kitchensurvivor/share-card-lobster.jpg — swapped to match filename semantics
+
+## [2026-04-29] update | Round 3 brutal audit — KitchenSurvivor self-canonization layer, screenshots embedded
+
+Multi-agent audit (Brand / UX / Reality / Editorial) on the KS entity page returned converging verdicts: the page was a product spec disguised as a Wikipedia article, with self-canonized terminology (`"dual-layer verification"` capitalized, `"north-star quality metric"`, `"input-to-content automation loop"`, `"high-availability lifecycle manager"`), self-quotes (`"meeting the user wherever their hands are"`, `"labels are not stylistic choices but product claims"`), and unsourced quantitative claims (`40% memory reduction`, `time-to-first-useful-content < 1s`) that would not survive a 30-second interview probe. Reality Checker flagged the ByteDance-prototype bridge as the highest-LARP-density passage (a side project framing itself as an internship preview).
+
+R3 took the compromise path that Brand wanted (retain `recipe executability ~95%` as the brand anchor) plus what Reality wanted (drop term capitalization, drop `north-star`, drop ByteDance bridge, qualify the 95% with `based on internal review`). Cultural positioning section is collapsed: `Kitchen Mood` table inlined into AI recipe generation; `Difficulty tiers` section deleted (redundant with Mood on the same point). Reception section deleted entirely with `100+ ratings` moved into the lead. Two app screenshots are embedded for the first time on a product page: home feed under the lead, share-card under the social-feed subsection.
+
+- updated: wiki/KitchenSurvivor.md — lead rewritten to two sentences with `100+ ratings by April 2026` inline; Background condensed from two paragraphs to one (dropped the abstract `cognitive tax that falls on someone…` framing); Multimodal capture: dropped `meeting the user wherever their hands are` self-quote; AI recipe generation: dropped `core generative surface` filler opener, dropped `(see below)` cross-reference, inlined `Kitchen Mood` table directly into the section; deleted entire `## Product language and cultural positioning` section including `### Difficulty tiers` table and the `labels are product claims` paragraph; Architecture cut ~50% (dropped `hybrid client–cloud architecture` opener, `high-availability lifecycle manager` self-quote, `40% memory reduction` claim, `input-to-content automation loop` self-quote, `time-to-first-useful-content below one second` double-metric framing); Trust and safety: removed `what Wang has termed "dual-layer verification"` term-coining language → `The system combines…`, removed `north-star quality metric and which`, qualified `~95%` with `based on internal review`, deleted ByteDance bridge sentence; Reception section deleted entirely
+- updated: wiki/KitchenSurvivor.md — embedded `<figure>` block for `/kitchensurvivor/app-home-feed.jpg` (云灶台 home feed UI screenshot) immediately after the lead, and `<figure>` block for `/kitchensurvivor/share-card-lobster.jpg` (柠檬黄油芝士焗龙虾 share card with QR-code) at the end of the Social feed and community subsection
+- updated: wiki/KitchenSurvivor.zh.md — mirrored: lead rewritten with 100+ ratings inline; Background condensed; Architecture compressed (dropped 输入到内容 automation loop / 40% / sub-second / 高可用生命周期管理器 self-quote); Trust section rewritten without 双层验证 capitalization, with 95% executability inline; Reception section deleted; both figures embedded in the lead block (zh page does not have a Social feed subsection in the current version)
+- created: public/kitchensurvivor/app-home-feed.jpg (154 KB)
+- created: public/kitchensurvivor/share-card-lobster.jpg (355 KB)
+- carried forward (no change): infobox; technical-stack listing in infobox (Swift / SwiftUI / FastAPI / Firebase / SSE / WebSocket / DeepSeek / OpenAI); Smart Fridge / Multimodal capture / Personalization / Location and privacy controls feature subsections; Trust and safety still retains the 95% number per author direction (Round 2 numbers-retention rule extends here)
+
+## [2026-04-29] update | Galaxy entity page — embed three visual figures from quant project archive
+
+After Round 2 left the Galaxy entity page narratively complete but visually thin (only the corporate logo in the infobox, body text uninterrupted), three representative figures from the published `china-galaxy-securities-quant` GitHub archive are embedded inline. Selection is restrained per Wikipedia thumbnail convention: one figure per body subsection, captioned bilingually, with global figure styling added to the design system rather than hard-coded inline.
+
+Figure selection covers the project narrative arc:
+1. **EDA returns distribution** — exploratory log-return analysis across AAPL and four peer equities, anchoring the data-source assumption that motivated heavy-tailed regime modeling.
+2. **Final hybrid prediction** — held-out AAPL test prediction with MAE 4.51 over 28 trading days, the highest-information-density figure in the archive.
+3. **XGBoost feature importance** — F-score ranking validating the candlestick feature engineering decision.
+
+A fourth candidate figure (`7.xgboost 模型对比linear regression和true return.pdf`) was deliberately excluded: the rendered chart legend reads `Linear Regression` / `Random Forest` / `True Returns`, which contradicts the PDF filename's "XGBoost vs Linear Regression" framing — including it would risk an interview-defensibility hit.
+
+- created: public/galaxy/eda-returns.png (231 KB, 2339×1653 @ 200 dpi)
+- created: public/galaxy/feature-importance.png (126 KB, same size)
+- created: public/galaxy/final-prediction.png (135 KB, same size)
+- updated: app/globals.css — added `.wiki-main figure` / `figcaption` block (Wikipedia thumbborder convention: 1px light-grey border, alt-bg fill, sans-serif 12 px caption)
+- updated: wiki/China_Galaxy_Securities.md — three `<figure>` blocks inserted: EDA after Hybrid LSTM-XGBoost lead paragraph, final-prediction after the GitHub archive callout, feature-importance after the Real-time feature engineering paragraph
+- updated: wiki/China_Galaxy_Securities.zh.md — mirrored, with translated `figcaption` text
+- carried forward (no change): all numeric claims; raw `7.xgb.png` standalone figure not used because of redundant axis vs final-prediction.png; Img2GPS and Crypto Optimizer figures deferred (already linked as PDFs)
+
+## [2026-04-28] update | Round 2 brutal audit — drop CICC + CITIC entity pages, consolidate Career
+
+Multi-agent audit Round 2: CICC and CITIC Futures internships were each given their own entity page in earlier ingests, mirroring Wang's three-internship Chinese-finance background. Brand / Recruiter / Trend Researcher converged on this being structural over-reach for an AI-product-leaning bio (per Trend benchmark: Karpathy doesn't give Stanford its own wiki page; Alexandr Wang Wikipedia entry mentions internships inline). The two pages are removed; their inline mention in `Colar_Wang` lead is collapsed to "a quantitative research internship at Galaxy in 2024", and the "Earlier financial roles" subsection is deleted. Galaxy entity page is kept (it has a published GitHub source-code archive that anchors a substantive narrative). All quantitative claims (50% backtest return at Galaxy, 30% stability improvement, 29.7% / 96% / 2.5× academic-project metrics, 90% forecasting-error reduction, Sharpe 1.3) are explicitly retained per author direction — Round 2 is structural pruning only, not data downgrade.
+
+- deleted: wiki/CITIC_Futures.md and wiki/CITIC_Futures.zh.md
+- deleted: wiki/China_International_Capital_Corporation.md and wiki/China_International_Capital_Corporation.zh.md
+- updated: wiki/Colar_Wang.md — lead paragraph: removed `[[CICC]]` and `[[CITIC_Futures]]` wikilinks (which would now be redlinks), collapsed "three consecutive research roles in the Chinese financial sector" → "a quantitative research internship at China Galaxy Securities in 2024"; Career section: removed `### Earlier financial roles (2023–2024)` subsection wholesale; See also: removed `[[CITIC_Futures]]` and `[[China_International_Capital_Corporation]]`; References: removed footnotes `[^9]` (CITIC) and `[^10]` (CICC) — orphaned after page deletion
+- updated: wiki/Colar_Wang.zh.md — mirrored
+- updated: wiki/China_Galaxy_Securities.md — lead paragraph: removed sentence chaining Galaxy to CITIC Futures and CICC ("three consecutive Chinese-finance internships"); See also: removed CITIC + CICC entries; numeric claims (50% annualized return, 30% stability improvement) are retained
+- updated: wiki/China_Galaxy_Securities.zh.md — mirrored
+- updated: wiki/index.md — removed CITIC + CICC entries from Employment list
+- updated: components/WikiChrome.jsx — removed CITIC + CICC links from sidebar Experience block
+- carried forward (no change, retained per author direction): all quantitative claims across `Colar_Wang.md` Academic projects (Img2GPS 29.7% / 96% / 2.5×; Crypto Optimizer 90% / Sharpe 1.3) and Galaxy entity page (50% / 30%)
+
+## [2026-04-28] update | Round 1 brutal audit — drop self-canonization layer (Approach + First-principles page)
+
+Multi-agent audit (Brand / UX / Reality / Recruiter / Trend / Editorial) converged: largest LARP signal in the wiki was the explicit Approach methodology section paired with a standalone First-principles_thinking concept page — i.e. a 23-year-old with two products self-canonizing a working philosophy via a "tradition page" his bio links to. Karpathy (5,000-word personal page) and Alexandr Wang (Wikipedia, 2,800 words) carry no equivalent. Round 1 removes that layer wholesale; data-defensibility (project metrics, footnote LARP) and bio-density (single-product subtitle, double-language strategy) are deferred to Round 2.
+
+- deleted: wiki/First-principles_thinking.md and wiki/First-principles_thinking.zh.md (entire concept page removed)
+- updated: wiki/Colar_Wang.md — removed `## Approach` section (three named principles); removed `## Technical skills` section (résumé-style toolkit list, redundant with product-page infoboxes); removed `## Personal life` section (badminton / hip-hop / languages — zero decision value for any reader segment); removed `[[First-principles_thinking]]` from See also; cut footnote `[^6]` (ByteDance "Internal correspondence" — try-hard, role is publicly verifiable via LinkedIn) at both inline marks and definition; cut footnote `[^11]` (self-citation to own agency-agents GitHub — orphan after Approach removal)
+- updated: wiki/Colar_Wang.zh.md — mirrored all of the above (工作方法 / 技术能力 / 个人生活 sections; 参见 link; 脚注 [^6] [^11])
+- updated: wiki/KitchenSurvivor.md — Trust-and-safety section: removed sentence linking the dual-layer protocol to the (now-deleted) first-principles methodology; kept ByteDance prototype framing; removed `[[First-principles_thinking]]` from See also
+- updated: wiki/KitchenSurvivor.zh.md — mirrored
+- updated: wiki/AgentConfig.md — removed paragraph framing AgentConfig as "an application of first-principles thinking" in the Concept section; removed `[[First-principles_thinking]]` from See also
+- updated: wiki/AgentConfig.zh.md — mirrored
+- updated: wiki/index.md — removed `## Concepts` section (now empty after First-principles deletion)
+- updated: components/WikiChrome.jsx — removed sidebar `## Concepts` block (the only entry was the deleted First-principles_thinking page)
+
 ## [2026-04-28] update | brutal audit pass — strip LARP framing from bio and Views section
 
 - updated: wiki/Colar_Wang.md — subtitle and lead rewritten without "systems engineer / founder / AI product researcher" triple title; infobox: removed "Years active" and "Known for" rows, simplified Occupation to "Graduate student / Independent product builder", relabeled Employer → Upcoming role; "Views and methodology" condensed and renamed to "Approach", removed self-citation footnote [^8] (Personal correspondence) and its inline references, removed "over one hundred specialized" claim; Academic projects: "Project Lead / directed development" → "coursework project / led a small team"

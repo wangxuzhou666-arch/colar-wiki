@@ -49,7 +49,7 @@ infobox:
 [[China_Galaxy_Securities|中国银河证券]]担任三段连续的研究实习角色。
 他将于 2026 年夏季加入
 [[ByteDance_TikTok_internship|字节跳动 / TikTok]],担任 AI 产品运营
-实习生。[^6]
+实习生。
 
 ## 教育背景
 
@@ -93,36 +93,7 @@ Scholarship),该奖学金大约授予国际申请者中前 5% 的学生。[^5]
 
 王旭洲将于 2026 年夏季加入字节跳动 TikTok 部门,在加州圣何塞
 担任[[ByteDance_TikTok_internship|AI 产品运营实习生]],负责大语言
-模型与分类器在未成年人保护中的运营化。[^6]
-
-## 工作方法
-
-王旭洲在产品工作中遵循三个工作原则,每个原则都以具体上线的产品
-为依托。
-
-### 第一性原理分解
-
-第一个原则是在接受任何现成方案作为模板之前,先将产品问题分解到
-最基本的约束。在[[KitchenSurvivor]]中,最基本的问题是用户的潜在
-意图(*"今晚我能吃什么?"*),而不是任何中间类别(如菜谱或库存);
-在[[AgentConfig]]中,智能体配置的最基本问题是用户意图的清晰表达,
-而不是 prompt 语法。
-
-### 用户可审计的保证
-
-第二个原则是将模型可靠性视为产品问题而非研究问题:目标是把概率性
-输出转化为用户无需阅读模型说明书即可自行验证的可度量属性。
-[[KitchenSurvivor]]中的"菜谱可执行性"指标即是一例:一个概率性
-语言模型被包裹在一层确定性验证逻辑中,用户可以实时观察其结果。
-
-### 智能体作为终端用户可配置的软件
-
-第三个原则是将 AI 智能体定性为终端用户可配置的软件。
-[[AgentConfig]]基于这样的判断:当前的智能体产品将配置视为厂商侧
-活动(prompt 工程、系统 prompt、微调),而下一个可防御的产品界面
-应当是一个围绕用户意图而非 prompt 语法的配置界面。[^4] 在基础
-设施层面,同样的判断支撑着一套专项智能体定义的开源集合,每个定义
-被设计为可在多种开发工具间转换的、具有独立人格的领域专家。[^11]
+模型与分类器在未成年人保护中的运营化。
 
 ## 学术项目
 
@@ -149,19 +120,6 @@ Scholarship),该奖学金大约授予国际申请者中前 5% 的学生。[^5]
 误差下降**与约 **1.3 的模拟夏普比率**。完整项目报告可参见
 [项目报告 PDF](/papers/crypto-portfolio-optimizer.pdf)。
 
-## 技术能力
-
-王旭洲的工具栈涵盖生成式 AI 产品工程(大语言模型集成、流式推理、
-guardrail 架构)、量化建模(Python、SQL、PyTorch、时间序列与仿真
-方法),以及全栈产品开发(Swift / SwiftUI、React Native、REST API、
-AWS、Firebase、Supabase、Vercel)。
-
-## 个人生活
-
-王旭洲生于上海,本科与硕士阶段先后在英国与美国生活。在职业与学术
-工作之外,他是一名竞技羽毛球运动员与街舞 (Hip-hop) 爱好者。他的母语
-是普通话,英语达到专业水平。
-
 ## 参见
 
 - [[KitchenSurvivor]]
@@ -172,7 +130,6 @@ AWS、Firebase、Supabase、Vercel)。
 - [[China_Galaxy_Securities|中国银河证券]]
 - [[CITIC_Futures|中信期货]]
 - [[China_International_Capital_Corporation|中国国际金融公司]]
-- [[First-principles_thinking|第一性原理思维]]
 
 ## 外部链接
 
@@ -195,12 +152,8 @@ AWS、Firebase、Supabase、Vercel)。
 
 [^5]: "BSc Financial Mathematics". [诺丁汉大学](https://www.nottingham.ac.uk/).
 
-[^6]: 字节跳动有限公司 (2026). "实习录用通知:AI 产品运营实习生,TikTok 青少年安全团队,2026 年夏季". *内部通信*.
-
 [^7]: "中国银河证券股份有限公司". [chinastock.com.cn](https://www.chinastock.com.cn/).
 
 [^9]: "中信期货有限公司". [citicsf.com](https://www.citicsf.com/).
 
 [^10]: "中国国际金融公司". [cicc.com](https://www.cicc.com/).
-
-[^11]: 王旭洲 (2026). "agency-agents". [GitHub](https://github.com/wangxuzhou666-arch). 开源智能体定义集合.

@@ -36,9 +36,6 @@ infobox:
       html: '<a href="https://agentconfig-theta.vercel.app/">agentconfig-theta.vercel.app</a>'
 ---
 
-> *Not to be confused with Anthropic's
-> [Claude Agent SDK](https://docs.anthropic.com/).*
-
 **AgentConfig** is a web-based advisory tool for configuring AI agents,
 targeted primarily at Chinese-speaking knowledge workers who do not
 write code.[^1] It was conceived and built by [[Colar Wang]] in early
@@ -61,13 +58,6 @@ bottleneck in agent adoption."** The product therefore functions as a
 structured interview that translates a user's informal description of
 their daily work into a concrete, buildable agent stack, together
 with the starter code and install steps needed to run it.
-
-Wang has framed this as an application of
-[[First-principles_thinking]]: the first principle of agent
-configuration, in his reading, is *user intent articulation*, not
-prompt syntax — and the first principle of recommending an agent
-stack to a non-technical user is not comprehensiveness, but
-*executability on a Monday morning*.
 
 ## User flow
 
@@ -210,7 +200,6 @@ infrastructure work.
 
 - [[Colar Wang]]
 - [[KitchenSurvivor]]
-- [[First-principles_thinking]]
 
 ## References
 

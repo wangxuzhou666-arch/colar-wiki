@@ -165,7 +165,6 @@ export function WikiSidebar({ lang = "en" }) {
       <h4>{t.nav}</h4>
       <ul>
         <li><a href={wikiHref("Colar_Wang", lang)}>{t.mainPage}</a></li>
-        <li><a href={`${wikiHref("Colar_Wang", lang)}#see-also`}>{t.contents}</a></li>
       </ul>
 
       <h4>{t.notable}</h4>
@@ -186,11 +185,6 @@ export function WikiSidebar({ lang = "en" }) {
       <ul>
         <li><a href={wikiHref("University_of_Pennsylvania", lang)}>{t.upenn}</a></li>
         <li><a href={wikiHref("University_of_Nottingham", lang)}>{t.nottingham}</a></li>
-      </ul>
-
-      <h4>{t.concepts}</h4>
-      <ul>
-        <li><a href={wikiHref("First-principles_thinking", lang)}>{t.fpt}</a></li>
       </ul>
 
       <h4>{t.contribute}</h4>

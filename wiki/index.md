@@ -21,12 +21,6 @@ LLM on every ingest (see `CLAUDE.md` → Operations → Ingest).
 
 - [[ByteDance_TikTok_internship]] — AI Product Operations Project Intern, TikTok Platform Responsibility — Teen Experience (Summer 2026, incoming)
 - [[China Galaxy Securities]] — Quantitative Research Intern (Summer 2024)
-- [[CITIC_Futures]] — Futures Department Intern (Winter 2023–2024)
-- [[China_International_Capital_Corporation]] — Investment Bank Intern (Summer 2023)
-
-## Concepts
-
-- [[First-principles_thinking]] — product-design methodology: decomposing product problems to elementary constraints before accepting existing solutions
 
 ## Meta
 

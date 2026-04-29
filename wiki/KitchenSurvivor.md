@@ -42,52 +42,25 @@ infobox:
       html: '<a href="https://apps.apple.com/app/id6757759255">apps.apple.com</a>'
 ---
 
-> *This article is about the 2025 multimodal-AI consumer product. For
-> the general phenomenon of overseas student cooking, see
-> [[cooking_abroad|cooking abroad]] (page does not exist).*
-
 **KitchenSurvivor** (Chinese: 云端小灶, lit. *"cloud-side little stove"*)
 is a multimodal generative-AI iOS application and social cooking
-platform developed by [[Colar Wang]] in Philadelphia, released on the
-Apple App Store in November 2025.[^1] The product is framed around an
-"AI Kitchen OS" concept that aims to close the gap between what is
-physically inside a user's refrigerator and a concrete, single-step
-dining decision, specifically for international students and early-
-career overseas residents navigating the daily "grocery-to-dining"
-problem.
-
-Functionally, KitchenSurvivor combines four product surfaces that
-are conventionally shipped as separate applications: a **smart
-fridge manager**, a **streaming AI recipe generator** driven by
-large-language-model inference, a **multimodal capture layer**
-spanning vision and voice input, and a **geo-aware social feed** in
-the mold of lifestyle-sharing platforms such as Xiaohongshu. The
-stated product thesis is that these four surfaces are not separable
-for the target user, because the daily decision ("what can I eat
-tonight?") spans inventory, generation, recognition, and community
-in a single cognitive loop.
+platform developed by [[Colar Wang]], released on the Apple App Store
+in November 2025 and reaching over 100 ratings by April 2026.[^1]
+Positioned as an "AI Kitchen OS" for international students, it
+combines four surfaces typically shipped separately — a smart fridge,
+an AI recipe generator, multimodal capture, and a geo-aware social
+feed — around the daily decision *"what can I eat tonight?"*.
 
 ## Background
 
 Wang conceived KitchenSurvivor during the autumn of 2025, shortly
-after relocating from the United Kingdom to Philadelphia to begin
-his graduate studies at the [[University of Pennsylvania]]. He has
-described the motivating observation as "the specific cognitive tax
-that falls on someone opening an unfamiliar fridge in an unfamiliar
-country at the end of a long day" — a scenario for which neither
-recipe websites nor conventional meal-planning applications offer a
-satisfactory answer, because the bottleneck is not recipe retrieval
-but rather the translation of ambiguous visual input into a
-concrete, single-step decision.
-
-The product is positioned as a reaction to the standard "recipe app"
-category, which Wang has characterized as optimized for a
-well-stocked domestic kitchen with predictable ingredients. For the
-target audience — students in unfamiliar grocery geographies, with
-irregular schedules, small budgets, and mixed-dialect ingredient
-labels — Wang has argued that the product surface must absorb
-*ambiguity* as a first-class input, rather than require users to
-resolve it before asking for help.
+after relocating from the United Kingdom to Philadelphia to begin his
+graduate studies at the [[University of Pennsylvania]]. He has
+described the trigger as "opening an unfamiliar fridge in an
+unfamiliar country at the end of a long day," a case where existing
+recipe and meal-planning apps fail because the bottleneck is
+translating ambiguous visual input into a decision rather than
+retrieval.
 
 ## Features
 
@@ -111,25 +84,33 @@ built on on-device vision pipelines, supplemented by a native
 speech-recognition search sheet for hands-free ingredient entry.
 Together these three modalities — vision, voice, and typed text —
 allow the user to populate and query the Smart Fridge without
-committing to a single input channel, a design choice Wang has
-described as "meeting the user wherever their hands are."
+committing to a single input channel.
 
 ### AI recipe generation
 
-The recipe engine is the product's core generative surface. It
-accepts the user's current fridge contents, stated dietary
-constraints, and a *Kitchen Mood* (see below) and returns a ranked
-set of recipes, each expressed as an ordered ingredient list, a
-step-by-step cooking procedure, and a difficulty tier. The engine
-supports both a **JSON-response** mode for deterministic UI rendering
-and a **streaming Server-Sent Events (SSE)** mode that emits partial
-recipe tokens as they are produced by the underlying model, which
-the iOS client renders progressively behind an optimistic-UI shell.
+The recipe engine accepts the user's current fridge contents, stated
+dietary constraints, and a *Kitchen Mood* and returns a ranked set of
+recipes, each expressed as an ordered ingredient list, a step-by-step
+cooking procedure, and a difficulty tier. The engine supports both a
+**JSON-response** mode for deterministic UI rendering and a
+**streaming Server-Sent Events (SSE)** mode that emits partial recipe
+tokens as they are produced by the underlying model.
+
+The Kitchen Mood selector biases both the recipe engine and the
+persona recommendation service, with five canonical moods written in
+the idiomatic register of the Chinese overseas-student internet:
+
+| Mood | Chinese label | Rough English gloss |
+|---|---|---|
+| **Survival** | 💀 生存模式 | "just keep me alive tonight" |
+| **Indulgence** | 😋 深夜放毒 | "late-night poison" |
+| **Ascetic diet** | 🥗 减脂苦行 | "cutting calories like a monk" |
+| **Performative elegance** | 👑 伪装精致 | "faking the lifestyle" |
+| **Homesick** | 🏠 想家了 | "I miss the food from home" |
 
 A secondary **content-polish** endpoint refines user-contributed
 ingredient lists and cooking steps before they are posted to the
-social feed, enforcing a consistent voice and resolving ambiguous
-measurements.
+social feed.
 
 ### Social feed and community
 
@@ -142,6 +123,11 @@ subsystem supports one-to-one and system messages over a FastAPI
 WebSocket channel, intended to let users coordinate around shared
 kitchens, grocery runs, and meal exchanges within the same school
 or city.
+
+<figure class="figure-portrait">
+  <img src="/kitchensurvivor/share-card-lobster.jpg" alt="A user-shared recipe card for lemon-butter cheese baked lobster with QR-code deep link" />
+  <figcaption>A user-shared recipe card for 柠檬黄油芝士焗龙虾 (lemon-butter cheese baked lobster), generated through the AI recipe pipeline and exported as a WeChat-friendly share format with a QR-code deep link back to the in-app recipe.</figcaption>
+</figure>
 
 ### Personalization
 
@@ -166,119 +152,46 @@ and personal safety:
 The default setting is configured on first launch and can be
 revised at any time.
 
+<figure class="figure-portrait">
+  <img src="/kitchensurvivor/app-home-feed.jpg" alt="KitchenSurvivor home feed showing recipe cards filtered by school and mood" />
+  <figcaption>The KitchenSurvivor home feed (云灶台). Recipe cards filter by school, mood, and prep time, with a community feed of user-posted dishes underneath. The tagline reads "做饭是最便宜的解压方式" — "cooking is the cheapest way to decompress".</figcaption>
+</figure>
+
 ## Architecture
 
-KitchenSurvivor is built on a **hybrid client–cloud architecture**
-that distributes responsibility across three systems.
+The iOS client uses a lifecycle manager that auto-prunes orphaned
+background tasks, which Wang has credited with eliminating the
+background battery drain reported by early beta testers.
 
-The **iOS client** is written in **Swift** with **SwiftUI** and uses
-Swift's structured concurrency for lifecycle management. Wang has
-described the client-side work as designed around a "high-
-availability lifecycle manager" that auto-prunes orphaned background
-tasks; he has credited this design with eliminating the background
-battery drain that early beta testers reported, and with an
-approximately 40 percent reduction in client-side memory overhead
-relative to an earlier unmanaged baseline.
+The Firebase / Firestore backend handles user accounts, posts, fridge
+state, and messaging persistence. A separate FastAPI service handles
+AI proxying, streaming inference, content polish, recommendation
+scoring, user-persona analysis, image upload, and real-time chat over
+a WebSocket endpoint. The FastAPI service fronts two AI providers —
+DeepSeek and OpenAI — allowing runtime model selection and provider
+failover without client-side changes.
 
-The **primary backend** is **Firebase** with **Firestore**, which
-the iOS client accesses directly for user accounts, posts, fridge
-state, and messaging persistence. A separate **FastAPI (Python)
-service** handles AI proxying, streaming inference, content polish,
-recommendation scoring, user-persona analysis, image upload, and
-real-time chat over a **WebSocket** endpoint. The FastAPI service
-fronts two AI providers — **DeepSeek** and **OpenAI** — allowing
-runtime model selection and provider failover without client-side
-changes.
-
-Inference results from the AI providers are streamed back to the
-client over **Server-Sent Events (SSE)** and rendered progressively
-in the client UI, with a **custom streaming delegate** on
-`URLSession` handling partial-response parsing. Wang has described
-this architecture as an "input-to-content" automation loop designed
-to preserve sub-second perceived latency without transmitting raw
-photographic input to the cloud, on privacy grounds; he cites a
-time-to-first-useful-content below one second for typical inputs.
-
-## Product language and cultural positioning
-
-A distinguishing feature of KitchenSurvivor is a set of product
-categories and mode labels written in a tone that reflects the
-idiomatic voice of the Chinese overseas-student internet, rather
-than the neutral register common to Western consumer apps. Two such
-category systems are exposed to the user directly.
-
-### Kitchen Mood
-
-Each recipe-generation request is tagged with a *Kitchen Mood*
-selected by the user, which biases both the recipe engine and the
-persona recommendation service. The five canonical moods are:
-
-| Mood | Chinese label | Rough English gloss |
-|---|---|---|
-| **Survival** | 💀 生存模式 | "just keep me alive tonight" |
-| **Indulgence** | 😋 深夜放毒 | "late-night poison" |
-| **Ascetic diet** | 🥗 减脂苦行 | "cutting calories like a monk" |
-| **Performative elegance** | 👑 伪装精致 | "faking the lifestyle" |
-| **Homesick** | 🏠 想家了 | "I miss the food from home" |
-
-### Difficulty tiers
-
-Recipes are graded on a three-tier difficulty scale whose labels
-explicitly reject the standard "easy / medium / hard" taxonomy and
-instead name the *life situations* in which each tier is intended
-to be used:
-
-| Tier | Chinese label | Use case |
-|---|---|---|
-| **Emergency** | 续命急救包 | "lifeline emergency kit" |
-| **Daily** | 每日自习餐 | "everyday study meal" |
-| **Weekend** | 周末暖心局 | "weekend warmth gathering" |
-
-Wang has argued that these labels are not stylistic choices but
-product claims: that the standard difficulty taxonomy over-weights
-cooking skill and under-weights the user's *remaining daily energy*,
-which in the target audience is the binding constraint on whether a
-recipe will actually be cooked.
+Inference results are streamed back to the client over Server-Sent
+Events and rendered progressively, with a custom streaming delegate
+on `URLSession` handling partial-response parsing. Raw photographic
+input is processed locally and not transmitted to the cloud, on
+privacy grounds.
 
 ## Trust and safety
 
-A defining feature of the system is what Wang has termed
-**"dual-layer verification"**: probabilistic prompt-engineering
-constraints are combined with deterministic on-device logic to
-enforce hard safety boundaries — for example, the prohibition of
-unsafe food-pairing advice and the handling of allergen disclosures.
-The deterministic layer is also responsible for enforcing the
-product's central quality metric, **recipe executability** — a
-measure of whether a generated recipe is physically cookable by the
-user with the ingredients they have declared — which Wang has
-described as the product's north-star quality metric and which the
-team reports in the region of 95 percent.
-
-Wang has argued that this hybrid approach — rather than either
-prompting or rule-writing alone — is what makes the system usable
-in what he calls *"high-stakes low-stakes"* consumer scenarios,
-where individual decisions are minor but repeated failures would
-erode user trust. The protocol is conceptually related to the
-[[First-principles_thinking|first-principles product design]]
-methodology Wang applies across his work, and is cited by Wang as
-the prototype for the trust-and-safety work he is scheduled to
-continue at [[ByteDance_TikTok_internship|ByteDance / TikTok]] in
-the summer of 2026.
-
-## Reception
-
-As of April 2026, KitchenSurvivor has received over 100 ratings on
-the Apple App Store.[^1] Wang has cited early-stage focus-group
-feedback as the principal input to the product's dual-layer
-verification logic, and has credited that logic with a measurable
-improvement in task-completion rates during the application's early
-months on the store.
+The system combines probabilistic prompt-engineering constraints with
+deterministic on-device checks to enforce hard safety boundaries — for
+example, the prohibition of unsafe food-pairing advice and the
+handling of allergen disclosures. The deterministic layer also
+enforces the product's central quality metric, **recipe executability**
+— a measure of whether a generated recipe is physically cookable by
+the user with the ingredients they have declared — which the team
+reports as approximately 95 percent based on internal review.
 
 ## See also
 
 - [[Colar Wang]]
 - [[AgentConfig]]
-- [[First-principles_thinking]]
 
 ## References
 

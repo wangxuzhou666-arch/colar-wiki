@@ -344,6 +344,34 @@ a.external::after {
   color: var(--wiki-text);
 }
 
+/* ===== Inline figures (Wikipedia thumbborder style) ===== */
+.wiki-main figure {
+  margin: 16px 0;
+  padding: 4px;
+  border: 1px solid var(--wiki-border-light);
+  background: var(--wiki-bg-alt);
+}
+.wiki-main figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--wiki-border-light);
+}
+.wiki-main figcaption {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  color: var(--wiki-text-soft);
+  padding: 6px 4px 2px;
+  line-height: 1.45;
+}
+/* Portrait figures (phone screenshots, vertical-oriented charts) — capped width, centered, clear infobox float */
+.wiki-main figure.figure-portrait {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}
+
 /* ===== TOC ===== */
 .wiki-toc {
   display: inline-block;

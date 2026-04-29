@@ -25,8 +25,6 @@ infobox:
       value: 专有
 ---
 
-> *请勿与 Anthropic 的 [Claude Agent SDK](https://docs.anthropic.com/) 混淆。*
-
 **AgentConfig** 是一款基于 Web 的 AI 智能体配置顾问工具,主要面向
 中文知识工作者。[^1] 它由[[Colar Wang|王旭洲]]于 2026 年初构思并
 实现,是其在[[University of Pennsylvania|宾夕法尼亚大学]]研究生
@@ -40,10 +38,6 @@ AgentConfig 的核心前提是:大多数非技术用户并不需要"读"或"写"
 该产品的工作方式是一段结构化访谈:把用户对自己工作的非正式描述,
 翻译成一份具体的智能体配置规格说明,用户可以将其导出到自己使用的
 工具中。
-
-王旭洲将其定位为[[First-principles_thinking|第一性原理思维]]的应用:
-在他看来,智能体配置的第一性原理是*用户意图的清晰表达*,而不是
-prompt 语法。
 
 ## 设计哲学
 
@@ -76,7 +70,6 @@ API 路由运行于 edge runtime。推理通过 **Anthropic Claude** 与
 
 - [[Colar Wang|王旭洲]]
 - [[KitchenSurvivor]]
-- [[First-principles_thinking|第一性原理思维]]
 
 ## 参考资料
 

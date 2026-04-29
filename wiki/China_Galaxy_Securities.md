@@ -36,12 +36,7 @@ Research Intern** at **China Galaxy Securities Co., Ltd.** in
 Shanghai.[^1] The internship, which ran from July to September 2024,
 was Wang's principal exposure to institutional quantitative research
 and directly informed the validation-oriented engineering style he
-has carried into his subsequent AI product work. It followed an
-earlier winter 2023–2024 internship at
-[[CITIC_Futures|CITIC Futures]] and a summer 2023 role at
-[[China_International_Capital_Corporation|CICC]], together forming
-Wang's three consecutive Chinese-finance internships during his
-undergraduate years.
+has carried into his subsequent AI product work.
 
 ## Work
 
@@ -56,6 +51,11 @@ non-linear intraday patterns. A simulated backtest of the framework on
 historical data achieved an annualized return of approximately 50
 percent under a high-frequency signal-generation regime.
 
+<figure>
+  <img src="/galaxy/eda-returns.png" alt="Boxplot of log returns and AAPL return distribution against a normal reference" />
+  <figcaption>Exploratory analysis of log-return distributions across AAPL and four peer equities (MSFT, TSLA, AMZN, SPY), used to characterize the heavy-tailed regime structure of the input series before feature engineering.</figcaption>
+</figure>
+
 The Jupyter notebook and the full set of rendered PDF reports for
 this work — covering EDA, candlestick feature engineering at four
 rolling-window scales, XGBoost / LSTM / hybrid modeling, and the
@@ -63,12 +63,22 @@ linear-regression baseline comparison — have been published as an
 open archive at
 [github.com/wangxuzhou666-arch/china-galaxy-securities-quant](https://github.com/wangxuzhou666-arch/china-galaxy-securities-quant).[^2]
 
+<figure>
+  <img src="/galaxy/final-prediction.png" alt="Held-out test prediction of AAPL closing price against validation series" />
+  <figcaption>Held-out test prediction of AAPL closing price (red, terminal value $157.57) against the validation series (blue) with a one-σ band, with the model's reported mean absolute error of 4.51 over a 28-trading-day window.</figcaption>
+</figure>
+
 ### Real-time feature engineering
 
 He also architected a seven-module data ingestion pipeline intended to
 normalize multi-source market feeds and resolve latency bottlenecks in
 real-time feature engineering, enabling millisecond-scale model
 inference.
+
+<figure>
+  <img src="/galaxy/feature-importance.png" alt="XGBoost feature importance ranking by F-score" />
+  <figcaption>XGBoost feature-importance ranking (F-score) across the engineered candlestick and time-of-day feature set. Top-ranked features are concentrated in the rolling-window candlestick block (f55, f40, f39), validating the candlestick feature design.</figcaption>
+</figure>
 
 ### Validation and stress testing
 
@@ -91,8 +101,6 @@ role at ByteDance]].
 
 - [[Colar Wang]]
 - [[University of Nottingham]] — concurrent institution
-- [[CITIC_Futures]] — prior internship
-- [[China_International_Capital_Corporation]] — earliest internship
 - [[KitchenSurvivor]]
 - [[ByteDance_TikTok_internship]]
 
