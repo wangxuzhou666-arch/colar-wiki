@@ -3,8 +3,8 @@ import "./globals.css";
 export const metadata = {
   title: "Colar Wang - Colarpedia",
   description:
-    "Colar Wang (Chinese: 王旭洲; born 2002) is a Chinese systems engineer, entrepreneur, and AI product researcher. Currently a Master's student in Systems Engineering at the University of Pennsylvania.",
-  metadataBase: new URL("https://colar.wiki"),
+    "Colar Wang is a graduate student and independent product builder. Currently a Master's student in Systems Engineering at the University of Pennsylvania, and the builder of KitchenSurvivor and AgentConfig.",
+  metadataBase: new URL("https://colar.workplay.pro"),
   openGraph: {
     title: "Colar Wang - Colarpedia",
     description:
