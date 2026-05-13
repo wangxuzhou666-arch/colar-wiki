@@ -1,14 +1,14 @@
 ---
 title: 诺丁汉大学
-subtitle: 王旭洲的本科阶段 (2022–2025)
-description: 王旭洲在诺丁汉大学的金融数学本科学习经历。
+subtitle: Colar的本科阶段 (2022–2025)
+description: Colar在诺丁汉大学的金融数学本科学习经历。
 infobox:
   title: 诺丁汉大学
   image: /nottingham-shield.webp
   image_caption: 诺丁汉大学校徽
   rows:
     - label: 学生
-      html: '<a href="/zh/wiki/Colar_Wang/">王旭洲 (Colar Wang)</a>'
+      html: '<a href="/zh/wiki/Colar_Wang/">Colar (Colar Wang)</a>'
     - label: 项目
       value: 金融数学理学学士 (荣誉)
     - label: 时间
@@ -29,19 +29,19 @@ infobox:
       html: '<a href="https://www.nottingham.ac.uk/">nottingham.ac.uk</a>'
 ---
 
-本条目记录[[Colar Wang|王旭洲]]在**诺丁汉大学**的本科学习经历。
+本条目记录[[Colar Wang|Colar]]在**诺丁汉大学**的本科学习经历。
 他于 2022 年 9 月至 2025 年 6 月期间完成金融数学理学学士学位
 (荣誉)。[^1]
 
 ## 入学与奖学金
 
-王旭洲于 2022 年 9 月被诺丁汉大学数学科学学院的金融数学专业录取,
+Colar于 2022 年 9 月被诺丁汉大学数学科学学院的金融数学专业录取,
 获得**国际预科奖学金 (International Orientation Scholarship)**,
 该奖学金大约授予国际申请者中前 5% 的学生。[^1]
 
 ## 课程
 
-王旭洲的本科课程涵盖以下重点方向:
+Colar的本科课程涵盖以下重点方向:
 
 - **金融数学 (Mathematical Finance)**
 - **风险管理 (Risk Management)**
@@ -56,20 +56,20 @@ infobox:
 
 ### AI 驱动的加密资产组合优化器 (2024–2025)
 
-2024 年 10 月至 2025 年 3 月,即在诺丁汉的最后一年,王旭洲担任
+2024 年 10 月至 2025 年 3 月,即在诺丁汉的最后一年,Colar担任
 **AI 驱动的加密资产组合优化器**的团队负责人。该项目是一套覆盖 17 种
 加密资产的深度学习组合配置系统,将深度学习的收益率预测与波动率
 信号结合起来,驱动自动化的再平衡策略,在回测中报告了约 **90% 的
 预测误差下降**与 **1.3 的模拟夏普比率**。
 
-王旭洲将该项目描述为他第一次在公开工作中明确转向"数据自适应系统
+Colar将该项目描述为他第一次在公开工作中明确转向"数据自适应系统
 而非规则自适应系统"的时刻——这一思路他此后在 AI 产品工作中一直
 延续。完整项目报告可参见
 [项目报告 PDF](/papers/crypto-portfolio-optimizer.pdf)。
 
 ## 同期活动
 
-在诺丁汉大学就读期间,王旭洲先后完成三段中国金融行业的实习:2023 年
+在诺丁汉大学就读期间,Colar先后完成三段中国金融行业的实习:2023 年
 夏季在[[China_International_Capital_Corporation|中金公司]]、
 2023–2024 年冬季在[[CITIC_Futures|中信期货]],以及 2024 年夏季在
 [[China Galaxy Securities|中国银河证券]]。他将本科阶段描述为对其
@@ -78,7 +78,7 @@ infobox:
 
 ## 参见
 
-- [[Colar Wang|王旭洲]]
+- [[Colar Wang|Colar]]
 - [[University of Pennsylvania|宾夕法尼亚大学]] — 后续就读机构
 - [[China Galaxy Securities|中国银河证券]]
 - [[CITIC_Futures|中信期货]]

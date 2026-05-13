@@ -158,12 +158,12 @@ Added (school crests and company logos):
 - updated: wiki/KitchenSurvivor.md infobox now displays the app icon
 - updated: wiki/AgentConfig.md infobox no longer displays an image placeholder; added "Live site" row at top with prominent link to the Vercel deployment
 - updated: components/WikiChrome.jsx sidebar Experience list now includes Kyraton Home, CITIC Futures, and CICC alongside Galaxy Securities and ByteDance
-- archived: raw/Xuzhou Wang Resume (1).pdf, Xuzhou Wang 2.pdf, Xuzhou Wang 3.pdf, Xuzhou Wang Rseume 4.pdf, Xuzhou Wang Rseume5.pdf, Xuzhou Wang Rseume 6.pdf — six original CV versions, source for the wiki narrative
+- archived: raw/Colar Wang Resume (1).pdf, Colar Wang 2.pdf, Colar Wang 3.pdf, Colar Wang Rseume 4.pdf, Colar Wang Rseume5.pdf, Colar Wang Rseume 6.pdf — six original CV versions, source for the wiki narrative
 - created: raw/README.md — explains the immutability and contents of raw/
 
 ## [2026-04-07] ingest | resume consolidation (v2–v6)
 
-Sources: raw/Xuzhou Wang 2.pdf, Xuzhou Wang 3.pdf, Xuzhou Wang Rseume 4.pdf, Xuzhou Wang Rseume5.pdf, Xuzhou Wang Rseume 6.pdf (5 additional resume versions beyond the initial Resume (1).pdf)
+Sources: raw/Colar Wang 2.pdf, Colar Wang 3.pdf, Colar Wang Rseume 4.pdf, Colar Wang Rseume5.pdf, Colar Wang Rseume 6.pdf (5 additional resume versions beyond the initial Resume (1).pdf)
 
 New pages:
 - created: wiki/CITIC_Futures.md — winter 2023–2024 internship, Shanghai
@@ -203,4 +203,4 @@ Updates:
 - created: wiki/China_Galaxy_Securities.md (experience page)
 - created: wiki/Amazon_retailer_venture.md (experience page)
 - created: wiki/First-principles_thinking.md (concept stub)
-- source: raw/Xuzhou Wang Resume (1).pdf — principal source for career section
+- source: raw/Colar Wang Resume (1).pdf — principal source for career section

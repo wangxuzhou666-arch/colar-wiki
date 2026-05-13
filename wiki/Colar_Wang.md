@@ -7,17 +7,8 @@ infobox:
   image: /portrait.jpg
   image_caption: Wang in the Swiss Alps, 2025
   rows:
-    - label: Born
-      value: |
-        Xuzhou Wang (王旭洲)
-        October 2002 (age 23)
-        Shanghai, China
     - label: Nationality
       value: Chinese
-    - label: Other names
-      value: Colar Wang
-    - label: Residence
-      value: Philadelphia, Pennsylvania, U.S.
     - label: Education
       html: '<a href="/wiki/University_of_Nottingham/">University of Nottingham</a> (BSc, 2025)<br/><a href="/wiki/University_of_Pennsylvania/">University of Pennsylvania</a> (MSE, expected 2027)'
     - label: Occupation
@@ -35,9 +26,8 @@ infobox:
       html: '<a href="https://github.com/wangxuzhou666-arch">github.com/wangxuzhou666-arch</a>'
 ---
 
-**Xuzhou "Colar" Wang** (Chinese: 王旭洲; born 2002) is a Chinese
-graduate student and independent product builder based in
-Philadelphia, Pennsylvania.[^1] He is enrolled in the Master of Science
+**Colar Wang** is a graduate student and independent product builder
+based in the United States.[^1] He is enrolled in the Master of Science
 in Systems Engineering program at the [[University of Pennsylvania]],[^2]
 and is the builder of the multimodal generative-AI consumer product
 [[KitchenSurvivor]][^3] and the agent-configuration advisory tool
@@ -156,13 +146,13 @@ of 1.3 under backtest. The full project report is available as a
 - **[Colarpedia — this site](https://colar-wiki.vercel.app/wiki/Colar_Wang/)** — the canonical, continuously-maintained version of this article
 - [GitHub — wangxuzhou666-arch](https://github.com/wangxuzhou666-arch) — source code and project repositories
 - [GitHub — colar-wiki source](https://github.com/wangxuzhou666-arch/colar-wiki) — the repository that renders this wiki
-- [LinkedIn — Xuzhou Wang](https://www.linkedin.com/in/xuzhou-wang/)
+- [LinkedIn](https://www.linkedin.com/in/xuzhou-wang/)
 - [KitchenSurvivor on the App Store](https://apps.apple.com/app/id6757759255)
 - [AgentConfig — live application](https://agentconfig-theta.vercel.app/)
 
 ## References
 
-[^1]: "Xuzhou Wang". [LinkedIn](https://www.linkedin.com/in/xuzhou-wang/). Retrieved 7 April 2026.
+[^1]: "Colar Wang". [LinkedIn](https://www.linkedin.com/in/xuzhou-wang/). Retrieved 7 April 2026.
 
 [^2]: "Master of Science in Systems Engineering". [University of Pennsylvania — Electrical and Systems Engineering](https://ese.seas.upenn.edu/).
 

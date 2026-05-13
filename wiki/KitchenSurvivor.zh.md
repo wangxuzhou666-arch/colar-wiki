@@ -1,7 +1,7 @@
 ---
 title: KitchenSurvivor (云端小灶)
 subtitle: 多模态生成式 AI 消费级应用 (2025)
-description: KitchenSurvivor (云端小灶) 是一款由王旭洲开发的多模态生成式 AI iOS 应用。
+description: KitchenSurvivor (云端小灶) 是一款由Colar开发的多模态生成式 AI iOS 应用。
 infobox:
   title: KitchenSurvivor (云端小灶)
   image: /kitchensurvivor-icon.jpg
@@ -12,7 +12,7 @@ infobox:
     - label: 字面释义
       value: "\"位于云端的小灶台\""
     - label: 开发者
-      html: '<a href="/zh/wiki/Colar_Wang/">王旭洲 (Colar Wang)</a>'
+      html: '<a href="/zh/wiki/Colar_Wang/">Colar (Colar Wang)</a>'
     - label: 类型
       value: 多模态生成式 AI 消费应用
     - label: 平台
@@ -35,7 +35,7 @@ infobox:
 ---
 
 **KitchenSurvivor**(中文:**云端小灶**,字面意思为"位于云端的
-小灶台")是一款由[[Colar Wang|王旭洲]]开发的多模态生成式 AI iOS
+小灶台")是一款由[[Colar Wang|Colar]]开发的多模态生成式 AI iOS
 应用,2025 年 11 月在 Apple App Store 上线,截至 2026 年 4 月已
 获得超过 100 条评分。[^1] 该应用定位为面向海外学生的"AI 厨房
 OS",将冰箱、AI 菜谱生成、多模态采集与地理感知社交 feed 四个通常
@@ -43,7 +43,7 @@ OS",将冰箱、AI 菜谱生成、多模态采集与地理感知社交 feed 四�
 
 ## 背景
 
-王旭洲在 2025 年秋季构思了 KitchenSurvivor,当时他刚从英国搬到费城
+Colar在 2025 年秋季构思了 KitchenSurvivor,当时他刚从英国搬到费城
 开始在[[University of Pennsylvania|宾夕法尼亚大学]]的研究生学业。
 他将这一灵感的触发场景描述为"在一个漫长的工作日结束之后,在一个
 陌生的国家打开一个陌生的冰箱"——现有菜谱与备餐应用在此场景下无能
@@ -57,7 +57,7 @@ KitchenSurvivor 建立在一套边-云混合管道之上,将设备端的食材�
 出于隐私考虑不会上传到云端。
 
 iOS 客户端使用 **Swift** 与 **SwiftUI** 编写,生命周期管理器自动
-清理孤立后台任务,王旭洲认为这一设计消除了早期内测用户报告的
+清理孤立后台任务,Colar认为这一设计消除了早期内测用户报告的
 后台耗电问题。
 
 <figure class="figure-portrait">
@@ -80,7 +80,7 @@ iOS 客户端使用 **Swift** 与 **SwiftUI** 编写,生命周期管理器自动
 
 ## 参见
 
-- [[Colar Wang|王旭洲]]
+- [[Colar Wang|Colar]]
 - [[AgentConfig]]
 
 ## 参考资料
