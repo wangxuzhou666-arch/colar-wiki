@@ -78,9 +78,9 @@ documented in the [[KitchenSurvivor|main article]].[^3]
 
 In the summer of 2024 Wang served as a Quantitative Research Intern at
 [[China_Galaxy_Securities|China Galaxy Securities]] in Shanghai, where
-he productized a hybrid LSTM–XGBoost modeling framework for a
-high-frequency trading system. A simulated backtest achieved an
-approximately 50 percent annualized return.[^7]
+he productized a hybrid LSTM–XGBoost modeling framework for an
+automated trading system. A simulated backtest returned
+approximately 33 percent over the Q3 2024 window.[^7]
 
 ### Earlier financial roles (2023–2024)
 

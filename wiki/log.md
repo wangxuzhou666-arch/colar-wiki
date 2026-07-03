@@ -3,6 +3,21 @@
 Append-only record of ingests, updates, and lint passes.
 Format: `## [YYYY-MM-DD] <type> | <short description>`
 
+## [2026-07-03] update | Galaxy backtest figure standardized to 33% simulated (Q3 2024)
+
+Author direction: the Galaxy backtest figure is standardized to **33%
+simulated return over the Q3 2024 window** across all public surfaces
+(this wiki and the GitHub source-code archive README), replacing the
+earlier "approximately 50 percent annualized return under a
+high-frequency signal-generation regime" phrasing. The high-frequency
+framing is dropped at the same time — the published notebook operates
+on rolling-window bar data, not tick data — and the `Colar_Wang`
+descriptor "high-frequency trading system" reverts to "automated
+trading system", matching the entity page.
+
+- updated: wiki/China_Galaxy_Securities.md, wiki/China_Galaxy_Securities.zh.md — backtest sentence
+- updated: wiki/Colar_Wang.md, wiki/Colar_Wang.zh.md — Galaxy section figure + system descriptor
+
 ## [2026-04-29] update | drop hatnotes + bump Galaxy figure DPI
 
 Two small polish passes:

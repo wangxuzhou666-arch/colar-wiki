@@ -48,8 +48,8 @@ Wang worked on productizing a hybrid **LSTM–XGBoost** modeling
 framework into an automated trading system, combining sequence-learning
 signals (LSTM) with tabular gradient boosting (XGBoost) to capture
 non-linear intraday patterns. A simulated backtest of the framework on
-historical data achieved an annualized return of approximately 50
-percent under a high-frequency signal-generation regime.
+historical data returned approximately 33 percent over the
+Q3 2024 backtest window.
 
 <figure>
   <img src="/galaxy/eda-returns.png" alt="Boxplot of log returns and AAPL return distribution against a normal reference" />
