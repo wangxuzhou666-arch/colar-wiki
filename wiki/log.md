@@ -3,6 +3,14 @@
 Append-only record of ingests, updates, and lint passes.
 Format: `## [YYYY-MM-DD] <type> | <short description>`
 
+## [2026-07-03] update | Galaxy source-code links removed
+
+The GitHub archive formerly linked from the Galaxy entity page has been
+taken private; the Source code infobox row, the open-archive paragraph,
+and footnote [^2] are removed from the en and zh mirrors accordingly.
+
+- updated: wiki/China_Galaxy_Securities.md, wiki/China_Galaxy_Securities.zh.md
+
 ## [2026-07-03] update | Galaxy backtest figure standardized to 33% simulated (Q3 2024)
 
 Author direction: the Galaxy backtest figure is standardized to **33%

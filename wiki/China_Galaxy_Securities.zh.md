@@ -25,8 +25,6 @@ infobox:
         实时特征工程、
         模型验证
     - section: 链接
-    - label: 源代码
-      html: '<a href="https://github.com/wangxuzhou666-arch/china-galaxy-securities-quant">github.com/.../china-galaxy-securities-quant</a>'
     - label: 公司主页
       html: '<a href="https://www.chinastock.com.cn/">chinastock.com.cn</a>'
 ---
@@ -51,11 +49,6 @@ Colar参与将一套**混合 LSTM-XGBoost** 建模框架产品化为自动化交
   <img src="/galaxy/eda-returns.png" alt="对数收益分布的箱线图与正态参考叠加" />
   <figcaption>对 AAPL 与 MSFT、TSLA、AMZN、SPY 四只对照股的对数收益分布进行的探索性分析,用以在特征工程之前刻画输入序列的厚尾结构与市场状态分布。</figcaption>
 </figure>
-
-完成该工作的 Jupyter notebook 与全部渲染好的 PDF 报告——涵盖 EDA、
-四种 rolling window 尺度下的 K 线特征工程、XGBoost / LSTM / 混合
-建模与线性回归基线的对比——已作为开放归档发布于
-[github.com/wangxuzhou666-arch/china-galaxy-securities-quant](https://github.com/wangxuzhou666-arch/china-galaxy-securities-quant)。[^2]
 
 <figure>
   <img src="/galaxy/final-prediction.png" alt="测试集上 AAPL 收盘价预测与验证序列对比" />
@@ -98,4 +91,3 @@ Colar将这次实习视作"以验证为先"的工程实践的奠基性经历,并
 
 [^1]: "中国银河证券股份有限公司". [chinastock.com.cn](https://www.chinastock.com.cn/).
 
-[^2]: Colar (2024). "Hybrid LSTM-XGBoost Quantitative Research". [github.com/wangxuzhou666-arch/china-galaxy-securities-quant](https://github.com/wangxuzhou666-arch/china-galaxy-securities-quant).

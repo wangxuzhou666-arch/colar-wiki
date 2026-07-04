@@ -25,8 +25,6 @@ infobox:
         real-time feature engineering,
         model validation
     - section: Links
-    - label: Source code
-      html: '<a href="https://github.com/wangxuzhou666-arch/china-galaxy-securities-quant">github.com/.../china-galaxy-securities-quant</a>'
     - label: Company
       html: '<a href="https://www.chinastock.com.cn/">chinastock.com.cn</a>'
 ---
@@ -55,13 +53,6 @@ Q3 2024 backtest window.
   <img src="/galaxy/eda-returns.png" alt="Boxplot of log returns and AAPL return distribution against a normal reference" />
   <figcaption>Exploratory analysis of log-return distributions across AAPL and four peer equities (MSFT, TSLA, AMZN, SPY), used to characterize the heavy-tailed regime structure of the input series before feature engineering.</figcaption>
 </figure>
-
-The Jupyter notebook and the full set of rendered PDF reports for
-this work — covering EDA, candlestick feature engineering at four
-rolling-window scales, XGBoost / LSTM / hybrid modeling, and the
-linear-regression baseline comparison — have been published as an
-open archive at
-[github.com/wangxuzhou666-arch/china-galaxy-securities-quant](https://github.com/wangxuzhou666-arch/china-galaxy-securities-quant).[^2]
 
 <figure>
   <img src="/galaxy/final-prediction.png" alt="Held-out test prediction of AAPL closing price against validation series" />
@@ -108,4 +99,3 @@ role at ByteDance]].
 
 [^1]: "China Galaxy Securities Co., Ltd.". [chinastock.com.cn](https://www.chinastock.com.cn/).
 
-[^2]: Wang, C. (2024). "Hybrid LSTM-XGBoost Quantitative Research". [github.com/wangxuzhou666-arch/china-galaxy-securities-quant](https://github.com/wangxuzhou666-arch/china-galaxy-securities-quant).
