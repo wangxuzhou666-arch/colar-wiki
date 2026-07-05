@@ -4,6 +4,8 @@ subtitle: 基于 Web 的 AI 智能体配置顾问 (2026)
 description: AgentConfig 是一款由Colar开发的、面向 AI 智能体配置的 Web 顾问工具。
 infobox:
   title: AgentConfig
+  image: /agentconfig/hero.jpg
+  image_caption: 'AgentConfig 首页,标语为"不是你找它,是它帮你想"。'
   rows:
     - label: 在线访问
       html: '<a href="https://agentconfig-theta.vercel.app/">打开应用 →</a>'
@@ -39,10 +41,28 @@ AgentConfig 的核心前提是:大多数非技术用户并不需要"读"或"写"
 翻译成一份具体的智能体配置规格说明,用户可以将其导出到自己使用的
 工具中。
 
+<figure class="figure-portrait">
+  <img src="/agentconfig/interview.jpg" alt="AgentConfig 结构化访谈界面:顶部步骤进度条,配置顾问用非技术语言追问具体任务" />
+  <figcaption>结构化访谈界面。顶部步骤条依次走过职业、常用工具、工作系统与工作场景,"配置顾问"用非技术语言追问具体任务——此处正针对一位电商运营反复处理的数据汇总活儿发问——并支持上传工作文件(Excel、图片、周报等)作为推荐依据。</figcaption>
+</figure>
+
 一个关键的设计决策是:推荐器不允许语言模型自行编造仓库名、软件包或
 安装命令,只能从一份人工筛选的开源项目清单中挑选。Colar将这一约束
 描述为产品主要的幻觉控制机制,也是一个有意的取舍——放弃对小众场景的
 覆盖,换取"每条推荐都可落地、安装步骤可直接运行"的硬保证。
+
+<figure class="figure-portrait">
+  <img src="/agentconfig/recommendation.jpg" alt="AgentConfig 推荐结果卡片:'Excel 自动工坊'方案,标注搭建难度、启动时间与每周节省" />
+  <figcaption>一张推荐结果卡片。最推荐方案(此处为"Excel 自动工坊")标注了搭建难度("新手友好")、启动时间(约 30 分钟)与预计每周可节省的时间,下方"为什么推荐"援引用户自己描述的工作流,并给出一份可选的分步搭建大纲。</figcaption>
+</figure>
+
+被选中的方案还可以打开为一张可编辑的节点式工作流——由数据处理、模型
+与动作三类节点连接而成,可直接运行或调整。
+
+<figure>
+  <img src="/agentconfig/workflow-editor.jpg" alt="AgentConfig 节点式工作流编辑器:数据处理节点接入 DeepSeek 模型节点,再扇出到消息与日志动作,右侧为节点配置面板" />
+  <figcaption>"Excel 自动工坊"方案的节点式工作流编辑器。两个数据处理节点(提取字段、文本替换)接入一个 DeepSeek 模型节点(deepseek-reasoner),再扇出到多个动作节点——企业微信、打印日志、飞书。右侧面板展示所选节点的配置:模型、系统提示词、编排框架、最大 Token 数与 temperature。左侧面板列出可用积木,包括 HTTP 请求、钉钉与邮件动作,以及导出 Excel、生成 PPT、导出 Word。</figcaption>
+</figure>
 
 ## 设计哲学
 

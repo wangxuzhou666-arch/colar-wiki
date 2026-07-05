@@ -56,6 +56,12 @@ Scholarship),该奖学金大约授予国际申请者中前 5% 的学生。[^5]
 
 > *独立产品条目请见 [[KitchenSurvivor]] 和 [[AgentConfig]]。*
 
+### 字节跳动 / TikTok (2026 年夏)
+
+Colar 于 2026 年夏季加入字节跳动 TikTok 部门,在加州圣何塞
+担任[[ByteDance_TikTok_internship|AI 产品运营实习生]],负责大语言
+模型与分类器在未成年人保护中的运营化。
+
 ### KitchenSurvivor (2025 年至今)
 
 2025 年 11 月,Colar创立了
@@ -78,12 +84,6 @@ Scholarship),该奖学金大约授予国际申请者中前 5% 的学生。[^5]
 从事半导体市场分析与 IPO 招股说明书整理;[^10] 2023 年冬至 2024 年初
 在[[CITIC_Futures|中信期货]]从事 Python 策略原型开发与投资治理合规
 框架构建。[^9]
-
-### 字节跳动 / TikTok (2026 年夏)
-
-Colar 于 2026 年夏季加入字节跳动 TikTok 部门,在加州圣何塞
-担任[[ByteDance_TikTok_internship|AI 产品运营实习生]],负责大语言
-模型与分类器在未成年人保护中的运营化。
 
 ## 学术项目
 

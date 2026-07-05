@@ -3,6 +3,42 @@
 Append-only record of ingests, updates, and lint passes.
 Format: `## [YYYY-MM-DD] <type> | <short description>`
 
+## [2026-07-05] update | AgentConfig screenshots landed + Career reorder + lint
+
+- added: public/agentconfig/{hero,interview,recommendation,workflow-editor}.jpg
+  (four real screenshots supplied by author; captions written from the
+  actual images — example build is "Excel 自动工坊", model DeepSeek
+  deepseek-reasoner — not the earlier placeholder "零码速记员")
+- updated: wiki/AgentConfig.md — infobox hero image (.jpg) + three inline
+  figures: structured interview (Concept), recommendation card and
+  node-based workflow editor (Recommendation). Portrait screenshots use
+  figure-portrait.
+- updated: wiki/AgentConfig.zh.md — mirrored
+- updated: wiki/AgentConfig.md — removed duplicate top "Live site" infobox
+  row (kept the one under Links, matching KitchenSurvivor house style)
+- updated: wiki/Colar_Wang.md + .zh.md — Career section reordered to clean
+  reverse-chronological: ByteDance/TikTok (2026) moved to the top, then
+  KitchenSurvivor, China Galaxy Securities, earlier financial roles
+- lint: full infobox/wikilink/image/EN-ZH audit — no empty rows, no
+  duplicate labels, no broken image refs, all pages have zh; only stale
+  refs are [[CICC]] / [[First-principles_thinking]] inside log.md (a
+  non-rendered changelog, so no live red links)
+
+## [2026-07-04] update | AgentConfig screenshots (hero + recommendation + workflow editor)
+
+Author direction: add product screenshots to the AgentConfig page as
+restrained Wikipedia-style figures (chose "克制的百科配图" over a
+product-showcase gallery). The workflow-editor screen documents an
+existing but previously-unwritten feature; body status text unchanged.
+
+- created: public/agentconfig/ — awaiting three files: hero.png,
+  recommendation.png, workflow-editor.png (not yet on disk)
+- updated: wiki/AgentConfig.md — infobox hero image + two inline
+  figures (recommendation results, node-based workflow editor) + one
+  sentence documenting the workflow editor
+- updated: wiki/AgentConfig.zh.md — mirrored (infobox 主图 + 两处
+  figure + 工作流描述)
+
 ## [2026-07-04] update | Content streamlining — de-bloat, de-AI, AI-PM-forward
 
 Author direction: streamline content, minimize "AI flavor", and better

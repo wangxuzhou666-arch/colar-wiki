@@ -63,6 +63,14 @@ August 2027.
 > *For standalone product articles, see [[KitchenSurvivor]] and
 > [[AgentConfig]].*
 
+### ByteDance / TikTok (2026)
+
+In the summer of 2026 Wang joined ByteDance's TikTok division as an
+[[ByteDance_TikTok_internship|AI Product Operations intern]] on the
+Teen Safety team in San Jose, California. The role focuses on
+operationalizing LLM and classifier-based content moderation for the
+protection of minor users on the platform.
+
 ### KitchenSurvivor (2025–present)
 
 In November 2025 Wang founded [[KitchenSurvivor]] (Chinese: 云端小灶),
@@ -92,14 +100,6 @@ IPO prospectus preparation;[^10] and a Futures Department Intern
 position at [[CITIC_Futures|CITIC Futures]] (winter 2023–2024), where
 he worked on Python-based strategy prototyping and investment-governance
 compliance.[^9]
-
-### ByteDance / TikTok (2026)
-
-In the summer of 2026 Wang joined ByteDance's TikTok division as an
-[[ByteDance_TikTok_internship|AI Product Operations intern]] on the
-Teen Safety team in San Jose, California. The role focuses on
-operationalizing LLM and classifier-based content moderation for the
-protection of minor users on the platform.
 
 ## Academic projects
 

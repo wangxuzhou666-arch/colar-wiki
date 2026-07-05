@@ -4,9 +4,9 @@ subtitle: Web-based AI agent configuration advisor (2026)
 description: AgentConfig is a web-based advisory tool for configuring AI agents for Chinese-speaking knowledge workers, built by Colar Wang.
 infobox:
   title: AgentConfig
+  image: /agentconfig/hero.jpg
+  image_caption: 'The AgentConfig landing page. The tagline reads "不是你找它,是它帮你想".'
   rows:
-    - label: Live site
-      html: '<a href="https://agentconfig-theta.vercel.app/">Open application →</a>'
     - label: Developer
       html: '<a href="/wiki/Colar_Wang/">Colar Wang</a>'
     - label: Type
@@ -51,6 +51,11 @@ starter code and install steps. When the initial answers are
 ambiguous, a short chat clarifier ("配置顾问") asks a few targeted
 follow-up questions rather than guessing.
 
+<figure class="figure-portrait">
+  <img src="/agentconfig/interview.jpg" alt="AgentConfig structured-interview screen: a step progress bar and a chat clarifier asking targeted follow-up questions in non-technical language" />
+  <figcaption>The structured interview. A step indicator tracks progress through profession, tools, operating system, and work scenario, while the "配置顾问" ("configuration advisor") asks targeted follow-up questions in plain language — here probing how often an e-commerce-operations worker repeats a data-summary task — and offers to ingest an uploaded work file (Excel, images, weekly reports) to ground the recommendation.</figcaption>
+</figure>
+
 ## Recommendation and hallucination control
 
 Each run returns three ranked agent stacks, each annotated with a
@@ -63,11 +68,25 @@ open-source projects spanning the five layers of an agent stack —
 context, memory, tools, routing, and model — with each entry tagged
 by the professions it best suits.
 
+<figure class="figure-portrait">
+  <img src="/agentconfig/recommendation.jpg" alt="AgentConfig recommendation card for an 'Excel automation workshop' build, annotated with build difficulty, setup time, and weekly time saved" />
+  <figcaption>A recommendation card. The top-ranked build — here an "Excel 自动工坊" ("Excel automation workshop") — carries a build-difficulty label ("新手友好", beginner-friendly), a setup-time estimate (about 30 minutes), and an estimated weekly time saved, above a "为什么推荐" ("why recommended") rationale that quotes the user's own stated workflow and an optional step-by-step build outline.</figcaption>
+</figure>
+
 Wang has described this catalog constraint as the product's primary
 hallucination-control mechanism, and as a deliberate trade-off: the
 product accepts that some niche use cases go unserved in exchange for
 a hard guarantee that every recommendation is buildable and its
 install steps are literally runnable.
+
+A recommended stack can also be opened as an editable node-based
+workflow — data-processing, model, and action blocks wired together —
+which the user can run or adjust directly.
+
+<figure>
+  <img src="/agentconfig/workflow-editor.jpg" alt="AgentConfig node-based workflow editor: data-processing nodes feed a DeepSeek model node that fans out to messaging and logging actions, with the model node's configuration panel open" />
+  <figcaption>The node-based workflow editor for the "Excel 自动工坊" build. Two data-processing nodes (field extraction and text replacement) feed a DeepSeek model node (deepseek-reasoner), which fans out to action nodes — WeChat Work, a log, and Feishu. The right-hand panel exposes the selected node's configuration: model, system prompt, orchestration framework, token ceiling, and temperature. The left palette lists the available blocks, including HTTP requests, DingTalk and email actions, and spreadsheet, slide, and document exports.</figcaption>
+</figure>
 
 ## Design philosophy
 
