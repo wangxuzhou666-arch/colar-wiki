@@ -3,6 +3,24 @@
 Append-only record of ingests, updates, and lint passes.
 Format: `## [YYYY-MM-DD] <type> | <short description>`
 
+## [2026-07-05] update | Infobox trim (medium) + KitchenSurvivor Translation
+
+Author direction: shrink every project/experience infobox ("缩减介绍框").
+Chosen level: medium — trim experience/education infoboxes to ~6 core
+rows, trim products to core facts. Main biography infobox left as-is.
+
+- updated: experience pages — dropped the redundant "Person / 实习生 /
+  学生" back-link row on every page; also dropped Team/Function/Status on
+  ByteDance and Team on China Galaxy (Status was redundant with Dates)
+- updated: product pages — dropped "Target audience / 目标用户" and the
+  low-signal "License / 许可证" (专有) rows on AgentConfig and
+  KitchenSurvivor
+- updated: wiki/KitchenSurvivor.md — Translation row changed from
+  "Cloud-side little stove" to "KitchenSurvivor" (per author). ZH
+  KitchenSurvivor.zh.md — dropped the redundant literal-gloss row
+  (字面释义)
+- unchanged: Colar_Wang infobox (not a project)
+
 ## [2026-07-05] update | AgentConfig screenshots landed + Career reorder + lint
 
 - added: public/agentconfig/{hero,interview,recommendation,workflow-editor}.jpg

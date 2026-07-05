@@ -7,8 +7,6 @@ infobox:
   image: /cicc-logo.png
   image_caption: China International Capital Corporation (CICC, 中金公司)
   rows:
-    - label: Person
-      html: '<a href="/wiki/Colar_Wang/">Colar Wang</a>'
     - label: Employer
       value: |
         China International Capital

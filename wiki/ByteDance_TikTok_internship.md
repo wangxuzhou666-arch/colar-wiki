@@ -7,24 +7,16 @@ infobox:
   image: /bytedance-logo.png
   image_caption: ByteDance Ltd., parent company of TikTok
   rows:
-    - label: Person
-      html: '<a href="/wiki/Colar_Wang/">Colar Wang</a>'
     - label: Employer
       value: ByteDance Ltd. (TikTok)
     - label: Role
       value: AI Product Operations Project Intern (BS / MS, 2026 Start)
-    - label: Team
-      value: TikTok — Platform Responsibility — Teen Experience
-    - label: Function
-      value: Global Operations
     - label: Focus area
       value: TikTok Minor Safety (model strategy &amp; evaluation)
     - label: Location
       value: San Jose, California, U.S.
     - label: Dates
       value: Summer 2026 (in progress, 12-week commitment)
-    - label: Status
-      value: In progress
     - section: Links
     - label: Job posting
       html: '<a href="https://lifeattiktok.com/search/7611950589973186821">lifeattiktok.com</a>'

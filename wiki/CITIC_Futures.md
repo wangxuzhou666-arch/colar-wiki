@@ -7,8 +7,6 @@ infobox:
   image: /citic-logo.png
   image_caption: CITIC Group (parent of CITIC Futures Co., Ltd.)
   rows:
-    - label: Person
-      html: '<a href="/wiki/Colar_Wang/">Colar Wang</a>'
     - label: Employer
       value: CITIC Futures Co., Ltd.
     - label: Role

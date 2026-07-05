@@ -7,14 +7,10 @@ infobox:
   image: /galaxy-logo.png
   image_caption: 中国银河证券股份有限公司
   rows:
-    - label: 实习生
-      html: '<a href="/zh/wiki/Colar_Wang/">Colar (Colar Wang)</a>'
     - label: 雇主
       value: 中国银河证券股份有限公司
     - label: 角色
       value: 量化研究实习生
-    - label: 团队
-      value: 量化研究
     - label: 地点
       value: 中国上海
     - label: 时间

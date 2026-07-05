@@ -7,8 +7,6 @@ infobox:
   image: /upenn-shield.png
   image_caption: Coat of arms of the University of Pennsylvania
   rows:
-    - label: Person
-      html: '<a href="/wiki/Colar_Wang/">Colar Wang</a>'
     - label: Program
       value: Master of Science in Systems Engineering
     - label: School

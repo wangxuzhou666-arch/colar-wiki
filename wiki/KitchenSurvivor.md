@@ -10,7 +10,7 @@ infobox:
     - label: Chinese name
       value: 云端小灶
     - label: Translation
-      value: "\"Cloud-side little stove\""
+      value: KitchenSurvivor
     - label: Developer
       html: '<a href="/wiki/Colar_Wang/">Colar Wang</a>'
     - label: Type
@@ -21,8 +21,6 @@ infobox:
       value: November 2025
     - label: Status
       value: Active development
-    - label: Target audience
-      value: International students, overseas residents
     - label: Stack
       value: Swift / SwiftUI, FastAPI, Firebase
     - label: Models

@@ -7,8 +7,6 @@ infobox:
   image: /citic-logo.png
   image_caption: 中信集团 (中信期货有限公司母公司)
   rows:
-    - label: 实习生
-      html: '<a href="/zh/wiki/Colar_Wang/">Colar (Colar Wang)</a>'
     - label: 雇主
       value: 中信期货有限公司
     - label: 角色

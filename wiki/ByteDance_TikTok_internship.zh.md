@@ -7,20 +7,14 @@ infobox:
   image: /bytedance-logo.png
   image_caption: 字节跳动有限公司,TikTok 母公司
   rows:
-    - label: 实习生
-      html: '<a href="/zh/wiki/Colar_Wang/">Colar (Colar Wang)</a>'
     - label: 雇主
       value: 字节跳动有限公司 (TikTok)
     - label: 角色
       value: AI 产品运营实习生
-    - label: 团队
-      value: 青少年安全 (Trust &amp; Safety)
     - label: 地点
       value: 美国加利福尼亚州圣何塞
     - label: 时间
       value: 2026 年夏 (进行中)
-    - label: 状态
-      value: 进行中
 ---
 
 本条目记录[[Colar Wang|Colar]]于 2026 年夏季加入**字节跳动**

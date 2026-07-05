@@ -7,8 +7,6 @@ infobox:
   image: /nottingham-shield.webp
   image_caption: 诺丁汉大学校徽
   rows:
-    - label: 学生
-      html: '<a href="/zh/wiki/Colar_Wang/">Colar (Colar Wang)</a>'
     - label: 项目
       value: 金融数学理学学士 (荣誉)
     - label: 时间

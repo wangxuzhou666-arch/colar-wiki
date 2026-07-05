@@ -11,8 +11,6 @@ infobox:
       html: '<a href="/wiki/Colar_Wang/">Colar Wang</a>'
     - label: Type
       value: Web application, AI advisory tool
-    - label: Target audience
-      value: Chinese-speaking knowledge workers (non-technical)
     - label: First released
       value: Early 2026
     - label: Stack

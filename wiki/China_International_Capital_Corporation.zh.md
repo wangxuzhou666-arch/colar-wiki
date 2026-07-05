@@ -7,8 +7,6 @@ infobox:
   image: /cicc-logo.png
   image_caption: 中国国际金融公司 (CICC, 中金公司)
   rows:
-    - label: 实习生
-      html: '<a href="/zh/wiki/Colar_Wang/">Colar (Colar Wang)</a>'
     - label: 雇主
       value: |
         中国国际金融公司

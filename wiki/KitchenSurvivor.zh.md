@@ -9,8 +9,6 @@ infobox:
   rows:
     - label: 中文名
       value: 云端小灶
-    - label: 字面释义
-      value: "\"位于云端的小灶台\""
     - label: 开发者
       html: '<a href="/zh/wiki/Colar_Wang/">Colar (Colar Wang)</a>'
     - label: 类型
@@ -27,8 +25,6 @@ infobox:
       value: 边-云混合
     - label: 模型
       value: DeepSeek、OpenAI (双 provider)
-    - label: 许可证
-      value: 专有
     - section: 链接
     - label: App Store
       html: '<a href="https://apps.apple.com/app/id6757759255">apps.apple.com</a>'

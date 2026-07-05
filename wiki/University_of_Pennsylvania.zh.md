@@ -7,8 +7,6 @@ infobox:
   image: /upenn-shield.png
   image_caption: 宾夕法尼亚大学校徽
   rows:
-    - label: 学生
-      html: '<a href="/zh/wiki/Colar_Wang/">Colar (Colar Wang)</a>'
     - label: 项目
       value: 系统工程理学硕士
     - label: 学院

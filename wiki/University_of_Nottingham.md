@@ -7,8 +7,6 @@ infobox:
   image: /nottingham-shield.webp
   image_caption: Coat of arms of the University of Nottingham
   rows:
-    - label: Person
-      html: '<a href="/wiki/Colar_Wang/">Colar Wang</a>'
     - label: Program
       value: BSc (Hons) Financial Mathematics
     - label: Dates

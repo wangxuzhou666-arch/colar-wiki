@@ -7,14 +7,10 @@ infobox:
   image: /galaxy-logo.png
   image_caption: China Galaxy Securities Co., Ltd.
   rows:
-    - label: Person
-      html: '<a href="/wiki/Colar_Wang/">Colar Wang</a>'
     - label: Employer
       value: China Galaxy Securities Co., Ltd.
     - label: Role
       value: Quantitative Research Intern
-    - label: Team
-      value: Quantitative Research
     - label: Location
       value: Shanghai, China
     - label: Dates

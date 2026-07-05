@@ -13,8 +13,6 @@ infobox:
       html: '<a href="/zh/wiki/Colar_Wang/">Colar (Colar Wang)</a>'
     - label: 类型
       value: Web 应用、AI 顾问工具
-    - label: 目标用户
-      value: 中文知识工作者
     - label: 首次发布
       value: 2026 年初
     - label: 技术栈
@@ -23,8 +21,6 @@ infobox:
       value: Claude (Anthropic)、DeepSeek
     - label: 状态
       value: 公开 MVP (不再活跃开发)
-    - label: 许可证
-      value: 专有
 ---
 
 **AgentConfig** 是一款基于 Web 的 AI 智能体配置顾问工具,主要面向
