@@ -3,6 +3,34 @@
 Append-only record of ingests, updates, and lint passes.
 Format: `## [YYYY-MM-DD] <type> | <short description>`
 
+## [2026-07-05] update | Drop References site-wide + AgentConfig figure restructure + caption trim
+
+Session of small layout/content passes on the two product pages plus a
+site-wide citation removal. Root cause of the "empty References" the
+author noticed: remark-gfm relocates footnote definitions into its own
+`sr-only`-titled section at page end, so the hand-written `## References`
+heading rendered with nothing under it. Author judged the
+self-referential citations low-value and chose to delete the layer
+outright rather than fix the rendering.
+
+- updated: wiki/AgentConfig.md, .zh.md — hero figure moved from before
+  the intro to below the Concept section (with `clear: both` to clear the
+  infobox float and remove the whitespace gap); node-based workflow figure
+  relocated from the Recommendation section to Technology (its content —
+  model / orchestration / token / temperature config panel — matches that
+  section); all three figure captions cut to one line
+- replaced: public/agentconfig/hero.jpg — new landing-page screenshot,
+  same filename; deleted public/agentconfig/interview.jpg
+- updated: wiki/KitchenSurvivor.md, .zh.md — both figure captions cut to
+  one line
+- removed: `## References` / `## 参考资料` sections and every inline
+  `[^n]` marker + `[^n]:` definition across all 18 en/zh content pages
+  (Colar_Wang had 8 footnotes; every other page 1). Colar_Wang External
+  links list (LinkedIn / App Store markdown links) kept — body prose, not
+  footnotes
+- shipped: committed e3d014e, pushed origin/main; build verified via
+  static export with app/robots.js + app/sitemap.js moved aside
+
 ## [2026-07-05] update | Infobox trim (medium) + KitchenSurvivor Translation
 
 Author direction: shrink every project/experience infobox ("缩减介绍框").
