@@ -1,7 +1,7 @@
 ---
 title: 字节跳动 / TikTok 实习
-subtitle: Colar即将入职的 AI 产品运营角色 (2026 年夏)
-description: Colar将于 2026 年夏季加入字节跳动 / TikTok 青少年安全团队担任实习生的相关条目。
+subtitle: Colar 的 AI 产品运营角色 (2026 年夏)
+description: Colar 于 2026 年夏季加入字节跳动 / TikTok 青少年安全团队担任实习生的相关条目。
 infobox:
   title: 字节跳动 / TikTok
   image: /bytedance-logo.png
@@ -18,19 +18,17 @@ infobox:
     - label: 地点
       value: 美国加利福尼亚州圣何塞
     - label: 时间
-      value: 2026 年夏 (即将入职)
-    - label: 薪酬
-      value: 25 美元 / 小时
+      value: 2026 年夏 (进行中)
     - label: 状态
-      value: 已接受 offer
+      value: 进行中
 ---
 
-本条目记录[[Colar Wang|Colar]]即将于 2026 年夏季加入**字节跳动**
+本条目记录[[Colar Wang|Colar]]于 2026 年夏季加入**字节跳动**
 (**TikTok** 的母公司)的实习经历。[^1]
 
 ## 角色
 
-Colar将于 2026 年夏季加入 TikTok 的**青少年安全** (Teen Safety)
+Colar 于 2026 年夏季加入 TikTok 的**青少年安全** (Teen Safety)
 团队,在加州圣何塞担任 **AI 产品运营实习生**。[^1] 该角色隶属于
 TikTok 更大的信任与安全 (Trust &amp; Safety) 组织,聚焦于将大语言
 模型与分类器系统在工程上落地,用以保护平台上的未成年用户。
@@ -55,4 +53,4 @@ LSTM-XGBoost 交易系统设计验证与压力测试协议的经历,以及在
 
 ## 参考资料
 
-[^1]: 字节跳动有限公司 (2026). "实习录用通知:AI 产品运营实习生,TikTok 青少年安全团队,2026 年夏季". *内部通信*.
+[^1]: "AI 产品运营项目实习生(TikTok-平台责任-青少年体验)- 2026 年入职(本科/硕士)". *Life at TikTok* 招聘启事. [lifeattiktok.com/search/7611950589973186821](https://lifeattiktok.com/search/7611950589973186821). 检索于 2026 年 4 月 8 日.

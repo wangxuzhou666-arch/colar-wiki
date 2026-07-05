@@ -26,7 +26,7 @@ infobox:
     - label: 架构
       value: 边-云混合
     - label: 模型
-      value: DeepSeek 大语言模型
+      value: DeepSeek、OpenAI (双 provider)
     - label: 许可证
       value: 专有
     - section: 链接
@@ -52,9 +52,10 @@ Colar在 2025 年秋季构思了 KitchenSurvivor,当时他刚从英国搬到费�
 ## 架构
 
 KitchenSurvivor 建立在一套边-云混合管道之上,将设备端的食材识别
-与云端的大语言模型推理解耦。云端推理由 **DeepSeek** LLM 完成,
-结果以 **NDJSON**(换行分隔 JSON)流式推回客户端;原始照片输入
-出于隐私考虑不会上传到云端。
+与云端的大语言模型推理解耦。云端一个 FastAPI 服务位于 **DeepSeek**
+与 **OpenAI** 两个模型提供方之前,可在不改动客户端的情况下切换模型
+或在两者间故障切换;原始照片输入出于隐私考虑在设备端处理,不上传
+云端。
 
 iOS 客户端使用 **Swift** 与 **SwiftUI** 编写,生命周期管理器自动
 清理孤立后台任务,Colar认为这一设计消除了早期内测用户报告的
@@ -76,12 +77,16 @@ iOS 客户端使用 **Swift** 与 **SwiftUI** 编写,生命周期管理器自动
 强制执行硬性的安全边界——例如禁止给出不安全的食物搭配建议、
 规范过敏原披露等。设备端层同样负责执行产品的核心质量指标
 **菜谱可执行性**——即生成的菜谱是否能用用户已声明的食材实际
-烹饪——团队在内部审查中报告该指标约为 95%。
+烹饪——团队在内部审查中报告该指标约为 95%。Colar将这种"先生成、
+再确定性校验"的结构描述为 AI 信任与安全核心问题的小规模预演——把
+概率性的模型输出转化为用户可审计的保证——并将其直接延伸到他在
+[[ByteDance_TikTok_internship|字节跳动 TikTok 的青少年安全工作]]。
 
 ## 参见
 
 - [[Colar Wang|Colar]]
 - [[AgentConfig]]
+- [[ByteDance_TikTok_internship|字节跳动 / TikTok]]
 
 ## 参考资料
 

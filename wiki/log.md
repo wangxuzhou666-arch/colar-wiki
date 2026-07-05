@@ -3,6 +3,52 @@
 Append-only record of ingests, updates, and lint passes.
 Format: `## [YYYY-MM-DD] <type> | <short description>`
 
+## [2026-07-04] update | Content streamlining — de-bloat, de-AI, AI-PM-forward
+
+Author direction: streamline content, minimize "AI flavor", and better
+showcase AI-product-management signal, with EN as the authoritative
+outward-facing version and ZH aligned to it. Informed by a multi-expert
+review panel.
+
+- removed: components/WikiChrome.jsx — the Talk / View source / History tab
+  bar and the now-unused file/issue URL helpers (author request; explicit
+  render-layer change)
+- rewrote: wiki/AgentConfig.md — cut the five-step User-flow list, the
+  APPROVED_REPOS table, and prose framework version numbers; foregrounded
+  the curated-catalog hallucination-control trade-off and the OTP /
+  model-routing / built-in-A-B decisions (~207 → ~110 lines)
+- rewrote: wiki/KitchenSurvivor.md — cut the ## Features catalog (twelve
+  ingredient categories, five-mood table, location-tier bullets); reframed
+  around product decisions and outcomes (on-device OCR cost cut, streaming
+  latency, preference-rec task completion, TestFlight growth); kept the
+  recipe-executability north-star (~95%)
+- rewrote: wiki/ByteDance_TikTok_internship.md — Responsibilities converted
+  from four résumé-style bullets to prose (fixes a body-bullet style
+  violation); work description held at public-job-posting level
+- privacy: wiki/ByteDance_TikTok_internship.zh.md — removed the public
+  hourly-pay infobox row; replaced the internal offer-letter footnote with
+  the public Life at TikTok job-posting citation (matches en)
+- aligned: wiki/KitchenSurvivor.zh.md, wiki/AgentConfig.zh.md — fixed the
+  en/zh model-provider contradiction (dual provider) and restored the
+  hallucination-control decision + ByteDance hub-and-spoke back-reference
+
+Not pushed pending author review.
+
+## [2026-07-04] update | ByteDance internship status incoming → in progress
+
+The internship began in May 2026 and is now under way, so the stale
+"incoming / scheduled to join / offer accepted" framing was corrected to
+"in progress" across all public surfaces. Per author direction the
+work description is deliberately held at the public-job-posting level —
+no internal metrics, methodology, model names, or policy detail — until
+the internship concludes. The "will be updated with first-hand detail
+after the internship concludes" note is retained as the confidentiality
+hold.
+
+- updated: wiki/ByteDance_TikTok_internship.md, .zh.md — subtitle, description, infobox Dates/Status, lead, Role paragraph
+- updated: wiki/Colar_Wang.md, .zh.md — meta description, infobox row label (Upcoming role → Current role / 即将就任 → 现任), lead sentence, Career section heading + prose
+- updated: wiki/index.md — Employment entry (incoming → current)
+
 ## [2026-07-03] update | Galaxy source-code links removed
 
 The GitHub archive formerly linked from the Galaxy entity page has been

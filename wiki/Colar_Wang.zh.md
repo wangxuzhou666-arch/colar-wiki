@@ -1,7 +1,7 @@
 ---
 title: Colar Wang
 subtitle: 宾夕法尼亚大学硕士在读;KitchenSurvivor 与 AgentConfig 的开发者
-description: Colar Wang 的传记条目。宾夕法尼亚大学系统工程硕士在读,KitchenSurvivor 与 AgentConfig 的开发者,2026 年夏季将加入字节跳动 / TikTok 的青少年安全团队担任 AI 产品运营实习生。
+description: Colar Wang 的传记条目。宾夕法尼亚大学系统工程硕士在读,KitchenSurvivor 与 AgentConfig 的开发者,2026 年夏季加入字节跳动 / TikTok 的青少年安全团队担任 AI 产品运营实习生。
 infobox:
   title: Colar Wang
   image: /portrait.jpg
@@ -15,7 +15,7 @@ infobox:
       value: |
         硕士研究生
         独立产品开发者
-    - label: 即将就任
+    - label: 现任
       html: '<a href="/zh/wiki/ByteDance_TikTok_internship/">字节跳动 / TikTok</a> <i>(2026 年夏季实习)</i>'
     - section: 联系方式
     - label: 个人网站
@@ -37,7 +37,7 @@ infobox:
 [[China_International_Capital_Corporation|中金公司]]、
 [[CITIC_Futures|中信期货]]和
 [[China_Galaxy_Securities|中国银河证券]]担任三段连续的研究实习角色。
-他将于 2026 年夏季加入
+他于 2026 年夏季加入
 [[ByteDance_TikTok_internship|字节跳动 / TikTok]],担任 AI 产品运营
 实习生。
 
@@ -79,9 +79,9 @@ Scholarship),该奖学金大约授予国际申请者中前 5% 的学生。[^5]
 在[[CITIC_Futures|中信期货]]从事 Python 策略原型开发与投资治理合规
 框架构建。[^9]
 
-### 字节跳动 / TikTok (2026 年夏,即将入职)
+### 字节跳动 / TikTok (2026 年夏)
 
-Colar将于 2026 年夏季加入字节跳动 TikTok 部门,在加州圣何塞
+Colar 于 2026 年夏季加入字节跳动 TikTok 部门,在加州圣何塞
 担任[[ByteDance_TikTok_internship|AI 产品运营实习生]],负责大语言
 模型与分类器在未成年人保护中的运营化。
 

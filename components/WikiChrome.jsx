@@ -88,20 +88,8 @@ export function WikiTopBar({ slug, pages, lang = "en" }) {
   const otherSlug = slug || "Colar_Wang";
   const otherUrl = wikiHref(otherSlug, otherLang);
 
-  const fileName = lang === "zh" ? `${slug}.zh.md` : `${slug}.md`;
-  const fileEditUrl = slug
-    ? `${GH_BASE}/edit/main/wiki/${fileName}`
-    : `${GH_BASE}`;
-  const fileHistoryUrl = slug
-    ? `${GH_BASE}/commits/main/wiki/${fileName}`
-    : `${GH_BASE}/commits/main`;
-  const issuesUrl = slug
-    ? `${GH_BASE}/issues/new?title=${encodeURIComponent(`Talk: ${slug}`)}`
-    : `${GH_BASE}/issues`;
-
   return (
-    <>
-      <div className="wiki-topbar">
+    <div className="wiki-topbar">
         <div className="wiki-topbar-inner">
           <a
             href={wikiHref("Colar_Wang", lang)}
@@ -120,41 +108,6 @@ export function WikiTopBar({ slug, pages, lang = "en" }) {
           <SearchBox pages={pages || []} lang={lang} />
         </div>
       </div>
-      <div className="wiki-tabs">
-        <div className="wiki-tabs-inner">
-          <a href="#" className="active">
-            {t.article}
-          </a>
-          <a
-            href={issuesUrl}
-            className="external"
-            target="_blank"
-            rel="noreferrer"
-            title={t.talkTitle}
-          >
-            {t.talk}
-          </a>
-          <a
-            href={fileEditUrl}
-            className="external"
-            target="_blank"
-            rel="noreferrer"
-            title={t.sourceTitle}
-          >
-            {t.viewSource}
-          </a>
-          <a
-            href={fileHistoryUrl}
-            className="external"
-            target="_blank"
-            rel="noreferrer"
-            title={t.historyTitle}
-          >
-            {t.history}
-          </a>
-        </div>
-      </div>
-    </>
   );
 }
 

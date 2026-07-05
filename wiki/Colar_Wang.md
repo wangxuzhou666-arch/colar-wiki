@@ -1,7 +1,7 @@
 ---
 title: Colar Wang
 subtitle: Graduate student at the University of Pennsylvania; builder of KitchenSurvivor and AgentConfig
-description: Biographical article on Colar Wang, graduate student at the University of Pennsylvania, builder of KitchenSurvivor and AgentConfig, and incoming AI Product Operations intern at ByteDance / TikTok.
+description: Biographical article on Colar Wang, graduate student at the University of Pennsylvania, builder of KitchenSurvivor and AgentConfig, and AI Product Operations intern at ByteDance / TikTok.
 infobox:
   title: Colar Wang
   image: /portrait.jpg
@@ -15,7 +15,7 @@ infobox:
       value: |
         Graduate student
         Independent product builder
-    - label: Upcoming role
+    - label: Current role
       html: '<a href="/wiki/ByteDance_TikTok_internship/">ByteDance / TikTok</a> <i>(Summer 2026 intern)</i>'
     - section: Contact
     - label: Website
@@ -38,9 +38,9 @@ Financial Mathematics at the [[University of Nottingham]][^5] and held
 three consecutive research roles in the Chinese financial sector, at
 [[China_International_Capital_Corporation|CICC]],
 [[CITIC_Futures|CITIC Futures]], and
-[[China_Galaxy_Securities|China Galaxy Securities]]. He is scheduled to
-join [[ByteDance_TikTok_internship|ByteDance / TikTok]] as an AI Product
-Operations intern in the summer of 2026.
+[[China_Galaxy_Securities|China Galaxy Securities]]. In the summer of
+2026 he joined [[ByteDance_TikTok_internship|ByteDance / TikTok]] as an
+AI Product Operations intern.
 
 ## Education
 
@@ -93,13 +93,13 @@ position at [[CITIC_Futures|CITIC Futures]] (winter 2023–2024), where
 he worked on Python-based strategy prototyping and investment-governance
 compliance.[^9]
 
-### ByteDance / TikTok (incoming, 2026)
+### ByteDance / TikTok (2026)
 
-Wang is scheduled to join ByteDance's TikTok division as an
+In the summer of 2026 Wang joined ByteDance's TikTok division as an
 [[ByteDance_TikTok_internship|AI Product Operations intern]] on the
-Teen Safety team in San Jose, California, for the summer of 2026.
-The role focuses on operationalizing LLM and classifier-based content
-moderation for the protection of minor users on the platform.
+Teen Safety team in San Jose, California. The role focuses on
+operationalizing LLM and classifier-based content moderation for the
+protection of minor users on the platform.
 
 ## Academic projects
 

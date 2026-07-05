@@ -1,7 +1,7 @@
 ---
 title: ByteDance / TikTok internship
-subtitle: Incoming AI Product Operations role of Colar Wang (Summer 2026)
-description: Colar Wang's incoming internship with ByteDance / TikTok on the TikTok Platform Responsibility — Teen Experience team, Summer 2026.
+subtitle: AI Product Operations role of Colar Wang (Summer 2026)
+description: Colar Wang's internship with ByteDance / TikTok on the TikTok Platform Responsibility — Teen Experience team, Summer 2026.
 infobox:
   title: ByteDance / TikTok
   image: /bytedance-logo.png
@@ -22,16 +22,16 @@ infobox:
     - label: Location
       value: San Jose, California, U.S.
     - label: Dates
-      value: Summer 2026 (incoming, 12-week commitment)
+      value: Summer 2026 (in progress, 12-week commitment)
     - label: Status
-      value: Offer accepted
+      value: In progress
     - section: Links
     - label: Job posting
       html: '<a href="https://lifeattiktok.com/search/7611950589973186821">lifeattiktok.com</a>'
 ---
 
-This article documents [[Colar Wang]]'s incoming internship at
-**ByteDance**, the parent company of **TikTok**, scheduled for the
+This article documents [[Colar Wang]]'s internship at
+**ByteDance**, the parent company of **TikTok**, which began in the
 summer of 2026.[^1] Wang has indicated that the article will be
 updated with first-hand detail after the internship concludes; the
 present version is based on the publicly listed role and on Wang's
@@ -39,7 +39,7 @@ own stated motivations for the role.
 
 ## Role
 
-Wang is scheduled to join TikTok as an **AI Product Operations
+Wang joined TikTok as an **AI Product Operations
 Project Intern** on the **Platform Responsibility — Teen Experience**
 team, within the company's **Global Operations** function, based in
 San Jose, California, for a twelve-week placement in the summer of
@@ -51,27 +51,19 @@ teens at global scale."[^1]
 
 ### Responsibilities
 
-The publicly listed responsibilities for the role are the following:[^1]
-
-- **Model strategy and operations for TikTok Minor Safety.** Work
-  closely with cross-functional teams on the end-to-end process of
-  model design, optimization, training, and evaluation; identify
-  performance gaps and vulnerabilities in models; propose effective
-  actions to continuously improve model quality.
-- **Data production lifecycle.** Participate in the full data
-  production lifecycle, including defining dataset standards,
-  executing model evaluations, and ensuring high-quality data
-  delivery.
-- **LLM tooling for data operations.** Explore and adopt the latest
-  large-language-model tools to continuously optimize data
-  production workflows and processes, improving efficiency and
-  scalability; stay up to date with industry trends to help build
-  more intelligent and efficient data systems.
-- **Training methodology research.** Research emerging model
-  training methodologies from academia and industry, identify
-  weaknesses in existing training data, and propose innovative
-  solutions to improve data generalization, production efficiency,
-  and coverage.
+As publicly listed, the role spans the end-to-end model process for
+TikTok Minor Safety: working with cross-functional teams on model
+design, optimization, training, and evaluation, identifying
+performance gaps and vulnerabilities, and proposing actions to improve
+model quality.[^1] It also covers the full data-production lifecycle —
+from defining dataset standards through running model evaluations to
+ensuring high-quality data delivery — and the adoption of current
+large-language-model tooling to make those data workflows more
+efficient and scalable. A research thread runs alongside the
+operational work: surveying emerging training methodologies from
+academia and industry, identifying weaknesses in existing training
+data, and proposing ways to improve its generalization, efficiency,
+and coverage.
 
 ### Qualifications cited
 

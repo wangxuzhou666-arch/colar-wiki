@@ -19,7 +19,7 @@ LLM on every ingest (see `CLAUDE.md` → Operations → Ingest).
 
 ## Employment
 
-- [[ByteDance_TikTok_internship]] — AI Product Operations Project Intern, TikTok Platform Responsibility — Teen Experience (Summer 2026, incoming)
+- [[ByteDance_TikTok_internship]] — AI Product Operations Project Intern, TikTok Platform Responsibility — Teen Experience (Summer 2026, current)
 - [[China Galaxy Securities]] — Quantitative Research Intern (Summer 2024)
 
 ## Meta
