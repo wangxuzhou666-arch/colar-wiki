@@ -19,14 +19,11 @@ infobox:
       value: |
         Python strategy prototyping,
         compliance framework design
-    - section: Links
-    - label: Company
-      html: '<a href="https://www.citicsf.com/">citicsf.com</a>'
 ---
 
 Between December 2023 and February 2024, [[Colar Wang]] completed a
 winter internship in the Futures Department of **CITIC Futures Co.,
-Ltd.** (中信期货) in Shanghai.[^1] The internship was Wang's first
+Ltd.** (中信期货) in Shanghai. The internship was Wang's first
 formal exposure to the derivatives side of Chinese institutional
 finance, and ran concurrently with his undergraduate studies at the
 [[University of Nottingham]].
@@ -68,7 +65,3 @@ during his undergraduate years.
 - [[China_International_Capital_Corporation]]
 - [[China Galaxy Securities]]
 - [[University of Nottingham]]
-
-## References
-
-[^1]: "CITIC Futures Co., Ltd.". [citicsf.com](https://www.citicsf.com/).

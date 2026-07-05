@@ -22,20 +22,17 @@ infobox:
         金融数学、
         统计推断、
         风险管理
-    - section: 链接
-    - label: 项目主页
-      html: '<a href="https://www.nottingham.ac.uk/">nottingham.ac.uk</a>'
 ---
 
 本条目记录[[Colar Wang|Colar]]在**诺丁汉大学**的本科学习经历。
 他于 2022 年 9 月至 2025 年 6 月期间完成金融数学理学学士学位
-(荣誉)。[^1]
+(荣誉)。
 
 ## 入学与奖学金
 
 Colar于 2022 年 9 月被诺丁汉大学数学科学学院的金融数学专业录取,
 获得**国际预科奖学金 (International Orientation Scholarship)**,
-该奖学金大约授予国际申请者中前 5% 的学生。[^1]
+该奖学金大约授予国际申请者中前 5% 的学生。
 
 ## 课程
 
@@ -81,7 +78,3 @@ Colar将该项目描述为他第一次在公开工作中明确转向"数据自�
 - [[China Galaxy Securities|中国银河证券]]
 - [[CITIC_Futures|中信期货]]
 - [[China_International_Capital_Corporation|中金公司]]
-
-## 参考资料
-
-[^1]: "BSc Financial Mathematics". [诺丁汉大学](https://www.nottingham.ac.uk/).

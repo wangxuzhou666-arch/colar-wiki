@@ -25,7 +25,6 @@ infobox:
       value: 边-云混合
     - label: 模型
       value: DeepSeek、OpenAI (双 provider)
-    - section: 链接
     - label: App Store
       html: '<a href="https://apps.apple.com/app/id6757759255">apps.apple.com</a>'
 ---
@@ -33,7 +32,7 @@ infobox:
 **KitchenSurvivor**(中文:**云端小灶**,字面意思为"位于云端的
 小灶台")是一款由[[Colar Wang|Colar]]开发的多模态生成式 AI iOS
 应用,2025 年 11 月在 Apple App Store 上线,截至 2026 年 4 月已
-获得超过 100 条评分。[^1] 该应用定位为面向海外学生的"AI 厨房
+获得超过 100 条评分。 该应用定位为面向海外学生的"AI 厨房
 OS",将冰箱、AI 菜谱生成、多模态采集与地理感知社交 feed 四个通常
 分立的产品面整合在"今晚我能吃什么?"这一日常决策周围。
 
@@ -59,12 +58,12 @@ iOS 客户端使用 **Swift** 与 **SwiftUI** 编写,生命周期管理器自动
 
 <figure class="figure-portrait">
   <img src="/kitchensurvivor/app-home-feed.jpg" alt="云灶台主页与菜谱卡片" />
-  <figcaption>KitchenSurvivor 主页(云灶台)。菜谱卡片按学校、心情与制作时间筛选,下方是用户上传菜品的社区 feed。Tagline "做饭是最便宜的解压方式" 出现在搜索栏下方。</figcaption>
+  <figcaption>KitchenSurvivor 主页(云灶台):菜谱卡片按学校、心情与制作时间筛选,下方为用户菜品的社区 feed。</figcaption>
 </figure>
 
 <figure class="figure-portrait">
   <img src="/kitchensurvivor/share-card-lobster.jpg" alt="用户分享菜谱卡片(柠檬黄油芝士焗龙虾)" />
-  <figcaption>用户分享的菜谱卡片(柠檬黄油芝士焗龙虾),通过 AI 菜谱流水线生成,并导出为带二维码深链的微信友好分享格式。</figcaption>
+  <figcaption>用户分享的菜谱卡片(柠檬黄油芝士焗龙虾),导出为带二维码深链的微信分享格式。</figcaption>
 </figure>
 
 ## 信任与安全
@@ -83,7 +82,3 @@ iOS 客户端使用 **Swift** 与 **SwiftUI** 编写,生命周期管理器自动
 - [[Colar Wang|Colar]]
 - [[AgentConfig]]
 - [[ByteDance_TikTok_internship|字节跳动 / TikTok]]
-
-## 参考资料
-
-[^1]: "KitchenSurvivor (云端小灶)". [Apple App Store](https://apps.apple.com/app/id6757759255). 检索于 2026 年 4 月 7 日.

@@ -20,14 +20,11 @@ infobox:
         LSTM–XGBoost trading system,
         real-time feature engineering,
         model validation
-    - section: Links
-    - label: Company
-      html: '<a href="https://www.chinastock.com.cn/">chinastock.com.cn</a>'
 ---
 
 In the summer of 2024, [[Colar Wang]] served as a **Quantitative
 Research Intern** at **China Galaxy Securities Co., Ltd.** in
-Shanghai.[^1] The internship, which ran from July to September 2024,
+Shanghai. The internship, which ran from July to September 2024,
 was Wang's principal exposure to institutional quantitative research
 and directly informed the validation-oriented engineering style he
 has carried into his subsequent AI product work.
@@ -90,8 +87,3 @@ role at ByteDance]].
 - [[University of Nottingham]] — concurrent institution
 - [[KitchenSurvivor]]
 - [[ByteDance_TikTok_internship]]
-
-## References
-
-[^1]: "China Galaxy Securities Co., Ltd.". [chinastock.com.cn](https://www.chinastock.com.cn/).
-

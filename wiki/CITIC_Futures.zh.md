@@ -19,13 +19,10 @@ infobox:
       value: |
         Python 策略原型、
         合规框架设计
-    - section: 链接
-    - label: 公司主页
-      html: '<a href="https://www.citicsf.com/">citicsf.com</a>'
 ---
 
 2023 年 12 月至 2024 年 2 月,[[Colar Wang|Colar]]在**中信期货
-有限公司** (中信期货) 上海总部的期货部完成了一段寒假实习。[^1] 该
+有限公司** (中信期货) 上海总部的期货部完成了一段寒假实习。 该
 实习是Colar首次正式接触中国机构金融的衍生品业务,与他在
 [[University of Nottingham|诺丁汉大学]]的本科学业并行进行。
 
@@ -59,7 +56,3 @@ Colar还参与设计了一套面向部门交易活动的投资治理合规框架
 - [[China_International_Capital_Corporation|中金公司]]
 - [[China Galaxy Securities|中国银河证券]]
 - [[University of Nottingham|诺丁汉大学]]
-
-## 参考资料
-
-[^1]: "中信期货有限公司". [citicsf.com](https://www.citicsf.com/).

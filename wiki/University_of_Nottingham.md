@@ -22,22 +22,19 @@ infobox:
         Mathematical finance,
         statistical inference,
         risk management
-    - section: Links
-    - label: Program page
-      html: '<a href="https://www.nottingham.ac.uk/">nottingham.ac.uk</a>'
 ---
 
 This article documents [[Colar Wang]]'s undergraduate study at the
 **University of Nottingham**, where he completed a Bachelor of Science
 with Honours in Financial Mathematics between September 2022 and June
-2025.[^1]
+2025.
 
 ## Admission and award
 
 Wang was admitted to the Financial Mathematics program at Nottingham's
 School of Mathematical Sciences in September 2022 and received the
 **International Orientation Scholarship**, granted to approximately
-the top five percent of international applicants.[^1]
+the top five percent of international applicants.
 
 ## Coursework
 
@@ -91,7 +88,3 @@ operationally (through the parallel internships).
 - [[China Galaxy Securities]]
 - [[CITIC_Futures]]
 - [[China_International_Capital_Corporation]]
-
-## References
-
-[^1]: "BSc Financial Mathematics". [University of Nottingham](https://www.nottingham.ac.uk/).

@@ -20,14 +20,11 @@ infobox:
         Applied machine learning,
         systems modeling,
         marketing analytics
-    - section: Links
-    - label: Program page
-      html: '<a href="https://ese.seas.upenn.edu/">ese.seas.upenn.edu</a>'
 ---
 
 This article documents [[Colar Wang]]'s graduate study at the
 **University of Pennsylvania** (UPenn), which he entered in August 2025
-as a candidate for the Master of Science in Systems Engineering.[^1]
+as a candidate for the Master of Science in Systems Engineering.
 
 ## Program
 
@@ -86,7 +83,3 @@ relevant to the
 - [[University of Nottingham]] — previous institution
 - [[KitchenSurvivor]]
 - [[AgentConfig]]
-
-## References
-
-[^1]: "Master of Science in Systems Engineering". [University of Pennsylvania — Electrical and Systems Engineering](https://ese.seas.upenn.edu/).

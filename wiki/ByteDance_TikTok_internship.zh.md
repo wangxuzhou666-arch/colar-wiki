@@ -18,12 +18,12 @@ infobox:
 ---
 
 本条目记录[[Colar Wang|Colar]]于 2026 年夏季加入**字节跳动**
-(**TikTok** 的母公司)的实习经历。[^1]
+(**TikTok** 的母公司)的实习经历。
 
 ## 角色
 
 Colar 于 2026 年夏季加入 TikTok 的**青少年安全** (Teen Safety)
-团队,在加州圣何塞担任 **AI 产品运营实习生**。[^1] 该角色隶属于
+团队,在加州圣何塞担任 **AI 产品运营实习生**。 该角色隶属于
 TikTok 更大的信任与安全 (Trust &amp; Safety) 组织,聚焦于将大语言
 模型与分类器系统在工程上落地,用以保护平台上的未成年用户。
 
@@ -44,7 +44,3 @@ LSTM-XGBoost 交易系统设计验证与压力测试协议的经历,以及在
 - [[Colar Wang|Colar]]
 - [[KitchenSurvivor]] — Colar在 AI 信任与安全方面的早期工作
 - [[China Galaxy Securities|中国银河证券]] — 此前的量化验证经历
-
-## 参考资料
-
-[^1]: "AI 产品运营项目实习生(TikTok-平台责任-青少年体验)- 2026 年入职(本科/硕士)". *Life at TikTok* 招聘启事. [lifeattiktok.com/search/7611950589973186821](https://lifeattiktok.com/search/7611950589973186821). 检索于 2026 年 4 月 8 日.

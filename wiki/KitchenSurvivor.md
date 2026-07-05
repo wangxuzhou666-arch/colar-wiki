@@ -25,7 +25,6 @@ infobox:
       value: Swift / SwiftUI, FastAPI, Firebase
     - label: Models
       value: DeepSeek, OpenAI (dual provider)
-    - section: Links
     - label: App Store
       html: '<a href="https://apps.apple.com/app/id6757759255">apps.apple.com</a>'
 ---
@@ -33,7 +32,7 @@ infobox:
 **KitchenSurvivor** (Chinese: 云端小灶, lit. *"cloud-side little stove"*)
 is a multimodal generative-AI iOS application and social cooking
 platform developed by [[Colar Wang]], released on the Apple App Store
-in November 2025 and reaching over 100 ratings by April 2026.[^1]
+in November 2025 and reaching over 100 ratings by April 2026.
 Positioned as an "AI Kitchen OS" for international students, it
 collapses four surfaces usually shipped separately — a smart fridge,
 an AI recipe generator, multimodal capture, and a geo-aware social
@@ -74,7 +73,7 @@ TestFlight-driven interface redesign roughly doubled active users.
 
 <figure class="figure-portrait">
   <img src="/kitchensurvivor/app-home-feed.jpg" alt="KitchenSurvivor home feed showing recipe cards filtered by school and mood" />
-  <figcaption>The KitchenSurvivor home feed (云灶台). Recipe cards filter by school, mood, and prep time, with a community feed of user-posted dishes underneath. The tagline reads "做饭是最便宜的解压方式" — "cooking is the cheapest way to decompress".</figcaption>
+  <figcaption>The KitchenSurvivor home feed (云灶台): recipe cards filtered by school, mood, and prep time, above a community feed of user-posted dishes.</figcaption>
 </figure>
 
 ## Architecture
@@ -88,7 +87,7 @@ fail over between them without any client-side change.
 
 <figure class="figure-portrait">
   <img src="/kitchensurvivor/share-card-lobster.jpg" alt="A user-shared recipe card for lemon-butter cheese baked lobster with QR-code deep link" />
-  <figcaption>A user-shared recipe card for 柠檬黄油芝士焗龙虾 (lemon-butter cheese baked lobster), generated through the AI recipe pipeline and exported as a WeChat-friendly share format with a QR-code deep link back to the in-app recipe.</figcaption>
+  <figcaption>A user-shared recipe card for 柠檬黄油芝士焗龙虾 (lemon-butter cheese baked lobster), exported as a WeChat-friendly card with a QR-code deep link back to the recipe.</figcaption>
 </figure>
 
 ## Trust and safety
@@ -111,7 +110,3 @@ guarantee — and has drawn a direct line from it to his
 - [[Colar Wang]]
 - [[AgentConfig]]
 - [[ByteDance_TikTok_internship]]
-
-## References
-
-[^1]: "KitchenSurvivor (云端小灶)". [Apple App Store](https://apps.apple.com/app/id6757759255). Retrieved 7 April 2026.

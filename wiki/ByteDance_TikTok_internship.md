@@ -17,14 +17,11 @@ infobox:
       value: San Jose, California, U.S.
     - label: Dates
       value: Summer 2026 (in progress, 12-week commitment)
-    - section: Links
-    - label: Job posting
-      html: '<a href="https://lifeattiktok.com/search/7611950589973186821">lifeattiktok.com</a>'
 ---
 
 This article documents [[Colar Wang]]'s internship at
 **ByteDance**, the parent company of **TikTok**, which began in the
-summer of 2026.[^1] Wang has indicated that the article will be
+summer of 2026. Wang has indicated that the article will be
 updated with first-hand detail after the internship concludes; the
 present version is based on the publicly listed role and on Wang's
 own stated motivations for the role.
@@ -35,11 +32,11 @@ Wang joined TikTok as an **AI Product Operations
 Project Intern** on the **Platform Responsibility — Teen Experience**
 team, within the company's **Global Operations** function, based in
 San Jose, California, for a twelve-week placement in the summer of
-2026.[^1] The position is the internship track of TikTok's internal
+2026. The position is the internship track of TikTok's internal
 **Minor Safety** program, which the company has publicly described
 as "building the next generation of content safety and governance
 systems at TikTok, with a strong focus on protecting minors and
-teens at global scale."[^1]
+teens at global scale."
 
 ### Responsibilities
 
@@ -47,7 +44,7 @@ As publicly listed, the role spans the end-to-end model process for
 TikTok Minor Safety: working with cross-functional teams on model
 design, optimization, training, and evaluation, identifying
 performance gaps and vulnerabilities, and proposing actions to improve
-model quality.[^1] It also covers the full data-production lifecycle —
+model quality. It also covers the full data-production lifecycle —
 from defining dataset standards through running model evaluations to
 ensuring high-quality data delivery — and the adoption of current
 large-language-model tooling to make those data workflows more
@@ -64,10 +61,10 @@ availability in 2026, active enrollment in an undergraduate or
 master's program in computer science, data science, product
 management, or a related field, and a working or strongly
 self-motivated understanding of large language models and basic
-API usage.[^1] The listing names **Trust & Safety, content
+API usage. The listing names **Trust & Safety, content
 moderation, or content safety compliance** experience as a strong
 preferred qualification, alongside hands-on experience in data
-analysis or model optimization.[^1]
+analysis or model optimization.
 
 ## Context
 
@@ -118,7 +115,3 @@ management than it is to standard product QA.
 - [[Colar Wang]]
 - [[KitchenSurvivor]] — Wang's prior work on AI trust and safety
 - [[China Galaxy Securities]] — prior quantitative validation work
-
-## References
-
-[^1]: "AI Product Operations Project Intern (TikTok-Platform Responsibility-Teen Experience) - 2026 Start (BS/MS)". *Life at TikTok* job posting. [lifeattiktok.com/search/7611950589973186821](https://lifeattiktok.com/search/7611950589973186821). Retrieved 8 April 2026.

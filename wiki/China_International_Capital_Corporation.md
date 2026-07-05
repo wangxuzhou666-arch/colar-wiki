@@ -21,14 +21,11 @@ infobox:
       value: |
         Semiconductor market analysis,
         IPO prospectus support
-    - section: Links
-    - label: Company
-      html: '<a href="https://www.cicc.com/">cicc.com</a>'
 ---
 
 In the summer of 2023, [[Colar Wang]] served as an **Investment Bank
 Intern** at **China International Capital Corporation** (CICC, 中金
-公司) in Shanghai, from June through July 2023.[^1] The internship
+公司) in Shanghai, from June through July 2023. The internship
 was Wang's earliest professional role in Chinese institutional
 finance.
 
@@ -63,7 +60,3 @@ Chinese financial sector.
 - [[Colar Wang]]
 - [[CITIC_Futures]]
 - [[China Galaxy Securities]]
-
-## References
-
-[^1]: "China International Capital Corporation". [cicc.com](https://www.cicc.com/).

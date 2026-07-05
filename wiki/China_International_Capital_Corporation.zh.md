@@ -21,14 +21,11 @@ infobox:
       value: |
         半导体行业市场分析、
         IPO 招股说明书支持
-    - section: 链接
-    - label: 公司主页
-      html: '<a href="https://www.cicc.com/">cicc.com</a>'
 ---
 
 2023 年夏,[[Colar Wang|Colar]]于**中国国际金融公司** (CICC,
 中金公司) 上海总部担任**投资银行实习生**,实习时间为 2023 年 6 月
-至 7 月。[^1] 这是Colar在中国机构金融业最早的一段正式工作经历。
+至 7 月。 这是Colar在中国机构金融业最早的一段正式工作经历。
 
 ## 工作内容
 
@@ -55,7 +52,3 @@ Colar还协助首次公开发行 (IPO) 招股说明书的整理与交付工作,�
 - [[Colar Wang|Colar]]
 - [[CITIC_Futures|中信期货]]
 - [[China Galaxy Securities|中国银河证券]]
-
-## 参考资料
-
-[^1]: "中国国际金融公司". [cicc.com](https://www.cicc.com/).

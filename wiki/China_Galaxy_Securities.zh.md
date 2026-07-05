@@ -20,13 +20,10 @@ infobox:
         LSTM-XGBoost 交易系统、
         实时特征工程、
         模型验证
-    - section: 链接
-    - label: 公司主页
-      html: '<a href="https://www.chinastock.com.cn/">chinastock.com.cn</a>'
 ---
 
 2024 年夏,[[Colar Wang|Colar]]在**中国银河证券股份有限公司**上海
-总部担任**量化研究实习生**。[^1] 该实习时间为 2024 年 7 月至 9 月,
+总部担任**量化研究实习生**。 该实习时间为 2024 年 7 月至 9 月,
 是Colar首次正式接触机构化量化研究的经历,直接塑造了他后来在 AI
 产品工作中所贯彻的"以验证为先"的工程风格。
 
@@ -82,8 +79,3 @@ Colar将这次实习视作"以验证为先"的工程实践的奠基性经历,并
 - [[University of Nottingham|诺丁汉大学]] — 同期就读机构
 - [[KitchenSurvivor]]
 - [[ByteDance_TikTok_internship|字节跳动 / TikTok 实习]]
-
-## 参考资料
-
-[^1]: "中国银河证券股份有限公司". [chinastock.com.cn](https://www.chinastock.com.cn/).
-

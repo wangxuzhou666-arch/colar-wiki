@@ -20,13 +20,10 @@ infobox:
         应用机器学习、
         系统建模、
         营销分析
-    - section: 链接
-    - label: 项目主页
-      html: '<a href="https://ese.seas.upenn.edu/">ese.seas.upenn.edu</a>'
 ---
 
 本条目记录[[Colar Wang|Colar]]在**宾夕法尼亚大学** (UPenn) 的研究生
-学习经历。他于 2025 年 8 月入学,攻读系统工程理学硕士学位。[^1]
+学习经历。他于 2025 年 8 月入学,攻读系统工程理学硕士学位。
 
 ## 项目
 
@@ -74,7 +71,3 @@ Colar于 2025 年 8 月迁居费城,这一时间紧接[[KitchenSurvivor]]于
 - [[University of Nottingham|诺丁汉大学]] — 上一所学校
 - [[KitchenSurvivor]]
 - [[AgentConfig]]
-
-## 参考资料
-
-[^1]: "Master of Science in Systems Engineering". [宾夕法尼亚大学电气与系统工程系](https://ese.seas.upenn.edu/).

@@ -17,24 +17,17 @@ infobox:
         Independent product builder
     - label: Current role
       html: '<a href="/wiki/ByteDance_TikTok_internship/">ByteDance / TikTok</a> <i>(Summer 2026 intern)</i>'
-    - section: Contact
-    - label: Website
-      html: '<a href="https://colar-wiki.vercel.app/wiki/Colar_Wang/">colar-wiki.vercel.app</a>'
-    - label: LinkedIn
-      html: '<a href="https://www.linkedin.com/in/xuzhou-wang/">linkedin.com/in/xuzhou-wang</a>'
-    - label: GitHub
-      html: '<a href="https://github.com/wangxuzhou666-arch">github.com/wangxuzhou666-arch</a>'
 ---
 
 **Colar Wang** is a graduate student and independent product builder
-based in the United States.[^1] He is enrolled in the Master of Science
-in Systems Engineering program at the [[University of Pennsylvania]],[^2]
+based in the United States. He is enrolled in the Master of Science
+in Systems Engineering program at the [[University of Pennsylvania]],
 and is the builder of the multimodal generative-AI consumer product
-[[KitchenSurvivor]][^3] and the agent-configuration advisory tool
-[[AgentConfig]].[^4]
+[[KitchenSurvivor]] and the agent-configuration advisory tool
+[[AgentConfig]].
 
 Before his graduate studies Wang completed a Bachelor of Science in
-Financial Mathematics at the [[University of Nottingham]][^5] and held
+Financial Mathematics at the [[University of Nottingham]] and held
 three consecutive research roles in the Chinese financial sector, at
 [[China_International_Capital_Corporation|CICC]],
 [[CITIC_Futures|CITIC Futures]], and
@@ -49,13 +42,13 @@ United Kingdom for his undergraduate studies. He received a Bachelor of
 Science with Honours in Financial Mathematics from the
 [[University of Nottingham]] in June 2025, graduating with an
 International Orientation Scholarship awarded to approximately the top
-five percent of international applicants.[^5]
+five percent of international applicants.
 
 In August 2025 he enrolled in the Master of Science in Systems
 Engineering program at the [[University of Pennsylvania]]'s School of
 Engineering and Applied Science, where his coursework emphasizes
 applied machine learning, statistics for data science, simulation
-modeling, and marketing analytics.[^2] His expected graduation is
+modeling, and marketing analytics. His expected graduation is
 August 2027.
 
 ## Career
@@ -75,12 +68,12 @@ protection of minor users on the platform.
 
 In November 2025 Wang founded [[KitchenSurvivor]] (Chinese: 云端小灶),
 a multimodal generative-AI consumer product aimed at the daily
-"grocery-to-dining" problem faced by international students.[^3] As
+"grocery-to-dining" problem faced by international students. As
 Founder and Product Lead, he owns the full discovery-to-launch loop
 and elevated "recipe executability" — whether a generated recipe is
 physically cookable with declared ingredients — as the product's
 north-star metric. Detailed architecture and performance figures are
-documented in the [[KitchenSurvivor|main article]].[^3]
+documented in the [[KitchenSurvivor|main article]].
 
 ### China Galaxy Securities (2024)
 
@@ -88,7 +81,7 @@ In the summer of 2024 Wang served as a Quantitative Research Intern at
 [[China_Galaxy_Securities|China Galaxy Securities]] in Shanghai, where
 he productized a hybrid LSTM–XGBoost modeling framework for an
 automated trading system. A simulated backtest returned
-approximately 33 percent over the Q3 2024 window.[^7]
+approximately 33 percent over the Q3 2024 window.
 
 ### Earlier financial roles (2023–2024)
 
@@ -96,10 +89,10 @@ Before his quantitative research work, Wang held two internships in
 Chinese institutional finance: an Investment Bank Intern position at
 [[China_International_Capital_Corporation|CICC]] in Shanghai (summer
 2023), where he conducted semiconductor-market analysis and supported
-IPO prospectus preparation;[^10] and a Futures Department Intern
+IPO prospectus preparation; and a Futures Department Intern
 position at [[CITIC_Futures|CITIC Futures]] (winter 2023–2024), where
 he worked on Python-based strategy prototyping and investment-governance
-compliance.[^9]
+compliance.
 
 ## Academic projects
 
@@ -149,21 +142,3 @@ of 1.3 under backtest. The full project report is available as a
 - [LinkedIn](https://www.linkedin.com/in/xuzhou-wang/)
 - [KitchenSurvivor on the App Store](https://apps.apple.com/app/id6757759255)
 - [AgentConfig — live application](https://agentconfig-theta.vercel.app/)
-
-## References
-
-[^1]: "Colar Wang". [LinkedIn](https://www.linkedin.com/in/xuzhou-wang/). Retrieved 7 April 2026.
-
-[^2]: "Master of Science in Systems Engineering". [University of Pennsylvania — Electrical and Systems Engineering](https://ese.seas.upenn.edu/).
-
-[^3]: "KitchenSurvivor (云端小灶)". [Apple App Store](https://apps.apple.com/app/id6757759255). Retrieved 7 April 2026.
-
-[^4]: "AgentConfig". [agentconfig-theta.vercel.app](https://agentconfig-theta.vercel.app/). Retrieved 7 April 2026.
-
-[^5]: "BSc Financial Mathematics". [University of Nottingham](https://www.nottingham.ac.uk/).
-
-[^7]: "China Galaxy Securities Co., Ltd.". [chinastock.com.cn](https://www.chinastock.com.cn/).
-
-[^9]: "CITIC Futures Co., Ltd.". [citicsf.com](https://www.citicsf.com/).
-
-[^10]: "China International Capital Corporation". [cicc.com](https://www.cicc.com/).
