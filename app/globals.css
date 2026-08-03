@@ -84,10 +84,12 @@ a.external::after {
   color: var(--wiki-text);
 }
 .wiki-logo span { color: var(--wiki-text-soft); font-size: 12px; display: block; line-height: 1; margin-top: 2px; }
-.wiki-search {
-  flex: 1;
-  max-width: 420px;
+/* 顶栏右侧按钮组（原搜索框位置）：语言切换 + 简历 PDF */
+.wiki-topbar-actions {
   margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .lang-toggle {
   font-family: var(--font-sans);
@@ -104,16 +106,6 @@ a.external::after {
 .lang-toggle:hover {
   background: var(--wiki-bg-alt);
   text-decoration: none;
-}
-.wiki-search input {
-  width: 100%;
-  padding: 6px 10px;
-  border: 1px solid var(--wiki-border);
-  background: var(--wiki-bg);
-  color: var(--wiki-text);
-  font-family: inherit;
-  font-size: 13px;
-  border-radius: 0;
 }
 .wiki-tabs {
   border-bottom: 1px solid var(--wiki-border-light);

@@ -3,12 +3,7 @@
 // it through the same chrome with lang="zh".
 
 import { notFound } from "next/navigation";
-import {
-  getPage,
-  getPageSlugs,
-  getSlugsSet,
-  getAllPagesForSearch,
-} from "@/lib/wiki";
+import { getPage, getPageSlugs, getSlugsSet } from "@/lib/wiki";
 import WikiPage from "@/components/WikiPage";
 import { WikiTopBar, WikiSidebar, WikiFooter } from "@/components/WikiChrome";
 
@@ -33,11 +28,10 @@ export default async function WikiArticleZh({ params }) {
   if (!page) return notFound();
 
   const slugsSet = getSlugsSet();
-  const allPages = getAllPagesForSearch("zh");
 
   return (
     <>
-      <WikiTopBar slug={slug} pages={allPages} lang="zh" />
+      <WikiTopBar slug={slug} lang="zh" />
       <div className="wiki-shell">
         <WikiSidebar lang="zh" />
         <WikiPage

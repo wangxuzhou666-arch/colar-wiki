@@ -2,12 +2,7 @@
 // Reads markdown from /wiki/<slug>.md at build time and renders it.
 
 import { notFound } from "next/navigation";
-import {
-  getPage,
-  getPageSlugs,
-  getSlugsSet,
-  getAllPagesForSearch,
-} from "@/lib/wiki";
+import { getPage, getPageSlugs, getSlugsSet } from "@/lib/wiki";
 import WikiPage from "@/components/WikiPage";
 import { WikiTopBar, WikiSidebar, WikiFooter } from "@/components/WikiChrome";
 
@@ -33,11 +28,10 @@ export default async function WikiArticle({ params }) {
   if (!page) return notFound();
 
   const slugsSet = getSlugsSet();
-  const allPages = getAllPagesForSearch();
 
   return (
     <>
-      <WikiTopBar slug={slug} pages={allPages} />
+      <WikiTopBar slug={slug} />
       <div className="wiki-shell">
         <WikiSidebar />
         <WikiPage

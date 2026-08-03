@@ -1,12 +1,13 @@
 // Bilingual Wikipedia-style shell.
 // Pass `lang` ("en" | "zh") to control all interface strings and the
-// language toggle button (top-left, next to the logo).
-
-import SearchBox from "./SearchBox";
+// language toggle button (top bar, right side, next to the résumé link).
 
 const GH_OWNER = "wangxuzhou666-arch";
 const GH_REPO = "colar-wiki";
 const GH_BASE = `https://github.com/${GH_OWNER}/${GH_REPO}`;
+
+// 简历 PDF 放在 public/,静态导出后直接由站点根路径提供
+const RESUME_PDF = "/Colar_Wang_Resume.pdf";
 
 const STRINGS = {
   en: {
@@ -34,6 +35,8 @@ const STRINGS = {
     contact: "Contact",
     langToggle: "中文",
     langToggleTitle: "切换到中文版本",
+    resume: "Résumé",
+    resumeTitle: "Open the PDF résumé",
     upenn: "U. of Pennsylvania",
     nottingham: "U. of Nottingham",
     bytedance: "ByteDance / TikTok",
@@ -67,6 +70,8 @@ const STRINGS = {
     contact: "联系方式",
     langToggle: "EN",
     langToggleTitle: "Switch to English",
+    resume: "简历",
+    resumeTitle: "打开 PDF 简历",
     upenn: "宾夕法尼亚大学",
     nottingham: "诺丁汉大学",
     bytedance: "字节跳动 / TikTok",
@@ -81,7 +86,7 @@ function wikiHref(slug, lang) {
   return lang === "zh" ? `/zh/wiki/${slug}/` : `/wiki/${slug}/`;
 }
 
-export function WikiTopBar({ slug, pages, lang = "en" }) {
+export function WikiTopBar({ slug, lang = "en" }) {
   const t = STRINGS[lang] || STRINGS.en;
 
   const otherLang = lang === "zh" ? "en" : "zh";
@@ -98,14 +103,24 @@ export function WikiTopBar({ slug, pages, lang = "en" }) {
           >
             {t.siteName}
           </a>
-          <a
-            href={otherUrl}
-            title={t.langToggleTitle}
-            className="lang-toggle"
-          >
-            {t.langToggle}
-          </a>
-          <SearchBox pages={pages || []} lang={lang} />
+          <div className="wiki-topbar-actions">
+            <a
+              href={RESUME_PDF}
+              title={t.resumeTitle}
+              className="lang-toggle"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {t.resume}
+            </a>
+            <a
+              href={otherUrl}
+              title={t.langToggleTitle}
+              className="lang-toggle"
+            >
+              {t.langToggle}
+            </a>
+          </div>
         </div>
       </div>
   );
