@@ -1,20 +1,10 @@
-"use client";
+import RootRedirect from "@/components/RootRedirect";
+import { shareMetadata } from "@/lib/action/share";
 
-// Root → comic landing page (/action/); the wiki stays one click away via
-// its SERIOUS mode and header link. Client component redirect, so we don't
-// need next.config redirects() (which is unsupported under output:'export').
-import { useEffect } from "react";
+// Server component so the root can export the comic page's link-preview
+// metadata; the redirect itself lives in the client component.
+export const metadata = shareMetadata("/");
 
-export default function RootRedirect() {
-  useEffect(() => {
-    window.location.replace("/action/");
-  }, []);
-  return (
-    <div style={{ fontFamily: "Georgia, serif", padding: 24 }}>
-      <p>
-        Redirecting to <a href="/action/">Colar in Action</a>… or read the{" "}
-        <a href="/wiki/Colar_Wang/">wiki</a>.
-      </p>
-    </div>
-  );
+export default function RootPage() {
+  return <RootRedirect />;
 }
