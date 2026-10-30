@@ -1,0 +1,232 @@
+@import './wiki-snapshot.css';
+@font-face { font-family: 'Bangers'; src: url('/action/fonts/bangers.ttf') format('truetype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Comic Neue'; src: url('/action/fonts/comic-neue.ttf') format('truetype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Comic Neue'; src: url('/action/fonts/comic-neue-bold.ttf') format('truetype'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Shantell Sans'; src: url('/action/fonts/shantell-sans.ttf') format('truetype'); font-weight: 300 800; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Shantell Sans'; src: url('/action/fonts/shantell-sans-italic.ttf') format('truetype'); font-weight: 300 800; font-style: italic; font-display: swap; }
+/* 注册成 <length> 才能让墨框粗细 3→5px 过渡，并被内层 clip-path 继承读取。 */
+@property --frame { syntax: '<length>'; inherits: true; initial-value: 3px; }
+
+/* 站点 app/globals.css 对所有路由生效，所以这页的全局选择器都收进 #colar-app，
+   html/body 级规则用 :has(#colar-app) 守卫，保证不会漏到 wiki 页。 */
+#colar-app, #colar-app * { box-sizing: border-box; }
+html:has(#colar-app) { background: #242528; }
+/* 站点 body 自带白底会盖住 html 的深色底，这里还原成透明。 */
+body:has(#colar-app) { margin: 0; padding: 24px 0; background: transparent; }
+#colar-app button, #colar-app a { -webkit-tap-highlight-color: transparent; }
+#colar-app {
+  --ink: #242528;
+  --paper: #f6efd9;
+  --red: #d84a3c;
+  --blue: #2859aa;
+  --yellow: #ffd05a;
+  --panel-ink: var(--ink);
+  --caption: var(--yellow);
+  --letter: 'Shantell Sans', 'Comic Neue', sans-serif;
+  --gutter: 10px;
+  --slant: 14px;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  max-width: 1100px;
+  margin: auto;
+  padding: 24px 30px 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: 'Comic Neue', 'Trebuchet MS', sans-serif;
+  color-scheme: light;
+  /* 站点 body 设了 line-height 1.65 与 antialiased，这里还原成原页面（独立站点）里的浏览器默认值。 */
+  line-height: normal;
+  -webkit-font-smoothing: auto;
+}
+#colar-app [hidden] { display: none !important; }
+#colar-app button, #colar-app a { font: inherit; color: inherit; }
+#colar-app button { cursor: pointer; }
+#colar-app a { text-decoration: none; }
+#colar-app button:focus-visible, #colar-app a:focus-visible { outline: 3px solid var(--blue); outline-offset: 5px; }
+#colar-app .ch-header { display: flex; align-items: center; justify-content: space-between; gap: 22px; margin-bottom: 20px; }
+#colar-app .ch-brand { font: 900 32px 'Bangers', Impact, sans-serif; padding: 2px 11px 6px; color: var(--paper); background: var(--red); border: 2px solid var(--ink); box-shadow: 3px 3px var(--ink); transform: rotate(-4deg); }
+#colar-app .cd-switch { display: flex; gap: 2px; padding: 3px; margin-left: auto; border: 1.5px solid var(--ink); background: #e4dcc8; box-shadow: 2px 2px var(--ink); }
+#colar-app .cd-switch button { border: 0; background: transparent; min-height: 38px; padding: 6px 14px; font-size: 12px; }
+#colar-app .cd-switch button[aria-pressed=true] { background: var(--ink); color: #fff4dc; }
+#colar-app .ch-header nav { display: flex; gap: 16px; font-size: 12px; }
+#colar-app .ch-header nav a:hover { text-decoration: underline; text-underline-offset: 4px; }
+#colar-app .ch-cover { height: 350px; border: 3px solid var(--ink); box-shadow: 6px 6px var(--ink); background: var(--yellow); position: relative; isolation: isolate; }
+#colar-app .ch-cover::before { content: ''; position: absolute; inset: 0; z-index: -2; background: radial-gradient(#6c4a1833 .7px, transparent .9px); background-size: 5px 5px; }
+#colar-app .ch-copy { position: absolute; top: 33px; left: 31px; z-index: 1; }
+#colar-app .ch-copy>span { font: 800 11px 'Bangers', sans-serif; letter-spacing: 2px; }
+#colar-app h1 { font: 900 102px/.85 'Bangers', Impact, sans-serif; letter-spacing: -1px; margin: 18px 0 22px; transform: rotate(-3deg); }
+#colar-app h1 em { font-style: normal; color: var(--paper); -webkit-text-stroke: 1.5px var(--ink); text-shadow: 3px 3px var(--red); font-size: 76px; }
+#colar-app .ch-copy p { font-size: 16px; font-weight: 700; margin: 0; transform: rotate(-3deg); }
+#colar-app .ch-rays { position: absolute; inset: 0 0 0 48%; z-index: -1; background: repeating-conic-gradient(from 4deg at 56% 50%, color-mix(in srgb, var(--red) 20%, transparent) 0deg 4deg, transparent 4deg 22deg); }
+#colar-app .ch-photo { position: absolute; width: 204px; right: 12%; top: 23px; background: var(--paper); border: 2.5px solid var(--ink); box-shadow: 6px 7px var(--ink); padding: 7px 7px 0; transform: rotate(7deg); z-index: 2; }
+#colar-app .ch-photo::before { content: ''; position: absolute; width: 76px; height: 24px; left: 62px; top: -12px; background: #ece1bdbb; transform: rotate(-12deg); z-index: 1; border: 1px solid #b1a88266; }
+#colar-app .ch-photo img { width: 100%; height: 228px; object-fit: cover; object-position: 50% 26%; display: block; filter: contrast(1.06) saturate(.88); border: 1px solid var(--ink); }
+#colar-app .ch-photo>span { display: block; padding: 9px; font: 800 12px 'Bangers', sans-serif; letter-spacing: 1.3px; }
+/* 整页一张漫画：一个页框 + 一个硬投影，格与格之间是纸色 gutter，竖向 gutter 斜切且相邻两边共用同一斜率。 */
+#colar-app .ch-cards { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); column-gap: 0; row-gap: var(--gutter); padding: var(--gutter); background: var(--paper); border: 3px solid var(--ink); box-shadow: 6px 6px var(--ink); }
+/* 斜边放在左上(--sl)与右下(--sr)：同一斜率的两条平行边；右邻格用负边距吃掉多出的斜量，水平间距仍是 --gutter。 */
+#colar-app .ch-card { --sl: 0px; --sr: 0px; --st: 0px; --sb: 0px; grid-column: span 2; position: relative; display: block; text-align: left; padding: 0; border: 0; border-radius: 0; background: var(--panel-ink); clip-path: polygon(var(--sl) var(--st), 100% 0, calc(100% - var(--sr)) calc(100% - var(--sb)), 0 100%); transition: --frame .14s ease-out; }
+#colar-app .ch-card:nth-child(n+4) { grid-column: span 3; }
+#colar-app .ch-card:nth-child(1), #colar-app .ch-card:nth-child(2), #colar-app .ch-card:nth-child(4) { --sr: var(--slant); }
+#colar-app .ch-card:nth-child(2), #colar-app .ch-card:nth-child(3), #colar-app .ch-card:nth-child(5) { --sl: var(--slant); margin-left: calc(var(--gutter) - var(--slant)); }
+#colar-app .ch-panel { position: relative; display: block; height: 100%; padding-bottom: 52px; background: var(--panel-bg); transition: background .3s; clip-path: polygon(calc(var(--sl) + var(--frame)) calc(var(--st) + var(--frame)), calc(100% - var(--frame)) var(--frame), calc(100% - var(--sr) - var(--frame)) calc(100% - var(--sb) - var(--frame)), var(--frame) calc(100% - var(--frame))); }
+#colar-app .ch-study { --panel-bg: #cfdee6; }
+#colar-app .ch-finance { --panel-bg: #b9cbbd; }
+#colar-app .ch-product { --panel-bg: #e6ac91; }
+#colar-app .ch-kitchen { --panel-bg: #f0ddaa; }
+#colar-app .ch-life { --panel-bg: #dad3e6; }
+#colar-app .ch-card[aria-pressed=true] { --panel-bg: #fff1c7; }
+/* 网点印刷层压在画面上（与封面同密度）；集中线层平时隐藏，悬停/键盘聚焦时出现。 */
+#colar-app .ch-panel::before { content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: radial-gradient(#6c4a1833 20%, transparent 26%) 0 0 / 5px 5px; mix-blend-mode: multiply; transition: background-size .14s ease-out; }
+#colar-app .ch-panel::after { content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none; opacity: 0; transform: scale(1.06); background: repeating-conic-gradient(from 0deg at 50% 42%, color-mix(in srgb, var(--panel-ink) 50%, transparent) 0deg 1.4deg, transparent 1.4deg 10deg); mask: radial-gradient(ellipse 58% 52% at 50% 42%, transparent 62%, #000 100%); transition: opacity .16s ease-out, transform .16s ease-out; }
+@media (hover: hover) and (pointer: fine) {
+  #colar-app .ch-card:hover { --frame: 5px; }
+  #colar-app .ch-card:hover .ch-panel::after { opacity: 1; transform: none; }
+  #colar-app .ch-card:hover .ch-panel::before { background-size: 7px 7px; }
+}
+/* 外部 outline 会被 clip-path 裁掉，所以焦点指示改为框内：墨框加粗并变蓝。 */
+#colar-app .ch-card:focus-visible { outline: none; --frame: 5px; background: var(--blue); }
+#colar-app .ch-card:focus-visible .ch-panel::after { opacity: 1; transform: none; }
+#colar-app .ch-card:focus-visible .ch-panel::before { background-size: 7px 7px; }
+/* 旁白框：直角黄底墨框，压在左下地板区（左上有 logo/窗户）；当前格反白为墨底黄字。 */
+#colar-app .ch-caption { position: absolute; z-index: 2; left: calc(var(--frame) + var(--sl) / 4); bottom: calc(var(--frame) + var(--sb)); max-width: calc(100% - 2 * var(--frame) - 24px); display: flex; flex-direction: column; gap: 3px; padding: 7px 11px 8px; color: var(--ink); background: var(--caption); border: 2px solid var(--panel-ink); border-radius: 0; pointer-events: none; }
+#colar-app .ch-caption strong { font: italic 400 24px/1.05 'Bangers', Impact, sans-serif; letter-spacing: .8px; }
+/* 11.4px 与原 Comic Neue 12px 等大写字高（Shantell 字身更大）。 */
+#colar-app .ch-caption small { font: italic 500 11.4px/1.4 var(--letter); }
+#colar-app .ch-card[aria-pressed=true] .ch-caption { background: var(--panel-ink); color: var(--caption); }
+#colar-app .cs-scene { display: block; position: relative; width: 100%; height: auto; aspect-ratio: 330 / 237; max-height: 237px; pointer-events: none; }
+#colar-app .cs-logo { position: absolute; z-index: 2; left: 22px; top: 15px; width: 42px; height: 42px; object-fit: cover; border: 1.5px solid var(--ink); border-radius: 9px; pointer-events: none; }
+#colar-app .cs-tiktok { position: absolute; z-index: 2; top: 31px; left: 31px; width: 35px; height: 35px; filter: invert(1); pointer-events: none; }
+#colar-app .ch-flight { position: absolute; inset: 0; pointer-events: none; z-index: 10; }
+#colar-app .ch-status, #colar-app .ch-photo-description { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+#colar-app .cd-fun>footer { padding: 23px 0 20px; display: flex; align-items: center; justify-content: space-between; font-size: 11px; }
+#colar-app .cd-fun>footer>span { font: 800 italic 16px 'Bangers', sans-serif; letter-spacing: 1px; }
+
+/* 严肃面沿用原网页的内容与排版，仅隔离外层样式。 */
+#colar-app .cs-wiki { background: #fff; color: #202122; margin: 0 -30px; font: 16px/1.65 Georgia, serif; }
+#colar-app[data-mode=serious] { background: #fff; padding-bottom: 0; }
+#colar-app[data-mode=serious]>.ch-header { font-family: Arial, sans-serif; }
+#colar-app[data-mode=serious] .ch-brand { font: 24px Georgia, serif; background: transparent; color: #202122; border: 0; box-shadow: none; transform: none; padding: 0; }
+#colar-app[data-mode=serious] .cd-switch { box-shadow: none; background: #f8f9fa; border: 1px solid #a2a9b1; }
+#colar-app[data-mode=serious] .cd-switch button[aria-pressed=true] { background: #eaf3ff; color: #0645ad; }
+#colar-app[data-mode=serious] .ch-flight { display: none; }
+#colar-app .cs-wiki .wiki-title { transform: none; letter-spacing: normal; font: 400 1.8em/1.2 var(--font-serif); margin: 0 0 2px; }
+#colar-app .cs-wiki a { font: inherit; color: var(--wiki-link); text-decoration: none; }
+#colar-app .cs-wiki a:hover { text-decoration: underline; }
+#colar-app .cs-wiki .wiki-footer { display: block; }
+#colar-app .cs-wiki img { max-width: 100%; }
+#colar-app .cs-wiki .wiki-sidebar { min-width: 0; }
+#colar-app .cs-wiki .wiki-title-sub { font-size: .85em; }
+#colar-app .cs-wiki .wiki-body p, #colar-app .cs-wiki .wiki-body li { font-family: var(--font-serif); }
+
+@media (max-width: 760px) {
+  body:has(#colar-app) { padding: 0; }
+  #colar-app { padding: 16px 20px 0; }
+  #colar-app .ch-header { flex-wrap: wrap; gap: 12px; }
+  #colar-app .ch-header nav { font-size: 11px; }
+  #colar-app .ch-cover { height: 320px; }
+  #colar-app .ch-copy { left: 22px; top: 40px; }
+  #colar-app h1 { font-size: 84px; }
+  #colar-app h1 em { font-size: 57px; }
+  #colar-app .ch-photo { width: 170px; right: 8%; top: 25px; }
+  #colar-app .ch-photo img { height: 204px; }
+  #colar-app .ch-copy p { font-size: 14px; }
+  #colar-app .ch-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #colar-app .ch-card, #colar-app .ch-card:nth-child(n+4) { grid-column: span 1; }
+  #colar-app .ch-card:last-child { grid-column: span 2; }
+  /* 两列：1|2、3|4 之间斜切，第 5 格独占一行保持方正。 */
+  #colar-app .ch-card:nth-child(n) { --sl: 0px; --sr: 0px; margin-left: 0; }
+  #colar-app .ch-card:nth-child(1), #colar-app .ch-card:nth-child(3) { --sr: var(--slant); }
+  #colar-app .ch-card:nth-child(2), #colar-app .ch-card:nth-child(4) { --sl: var(--slant); margin-left: calc(var(--gutter) - var(--slant)); }
+  #colar-app .cs-wiki { margin: 0 -20px; }
+}
+@media (max-width: 560px) {
+  #colar-app { padding: 13px 15px 0; }
+  #colar-app .ch-header nav { order: 3; width: 100%; justify-content: flex-end; gap: 14px; padding: 2px 0; }
+  #colar-app .ch-brand { font-size: 28px; padding-inline: 8px; }
+  #colar-app .cd-switch button { padding: 6px 12px; }
+  #colar-app .ch-cover { height: 405px; }
+  #colar-app .ch-copy { top: 21px; left: 18px; }
+  #colar-app .ch-copy>span { font-size: 10px; }
+  #colar-app h1 { font-size: 72px; margin: 12px 0; }
+  #colar-app h1 em { font-size: 46px; }
+  #colar-app .ch-copy p { font-size: 12px; }
+  #colar-app .ch-photo { width: 132px; right: 15%; top: 194px; }
+  #colar-app .ch-photo img { height: 145px; }
+  #colar-app .ch-photo>span { font-size: 10px; padding: 7px; }
+  #colar-app .ch-photo::before { left: 35px; width: 50px; height: 18px; top: -9px; }
+  /* 单列：斜切移到上下边，坡度减到 8px；上邻格的下边与下邻格的上边平行。 */
+  #colar-app { --slant: 8px; }
+  #colar-app .ch-cards { grid-template-columns: 1fr; row-gap: 0; }
+  #colar-app .ch-card, #colar-app .ch-card:nth-child(n+4), #colar-app .ch-card:last-child { grid-column: span 1; }
+  #colar-app .ch-card:nth-child(n) { --sl: 0px; --sr: 0px; --st: 0px; --sb: var(--slant); margin: 0; }
+  #colar-app .ch-card:nth-child(n+2) { --st: var(--slant); margin-top: calc(var(--gutter) - var(--slant)); }
+  #colar-app .ch-card:last-child { --sb: 0px; }
+  #colar-app .ch-caption strong { font-size: 22px; }
+  #colar-app .cs-logo { left: 16px; top: 16px; }
+  #colar-app .cs-wiki { margin: 0 -15px; }
+}
+@media (pointer: coarse) {
+  #colar-app .ch-header nav a { padding: 10px 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #colar-app *, #colar-app *::before, #colar-app *::after { animation: none !important; transition: none !important; }
+}
+
+/* 照片翻面是隐藏入口，卡片区不放演示控制条。 */
+#colar-app .ch-cards { margin-top: 30px; }
+#colar-app .ch-copy h1 em { text-shadow: 4px 4px var(--red); }
+#colar-app .ch-photo > .ch-photo-window { display: block; position: relative; height: 228px; padding: 0; overflow: hidden; }
+#colar-app .ch-photo-real { position: absolute; inset: 0; }
+#colar-app .ch-photo-alter { position: absolute; inset: 0; display: block; opacity: 0; background: radial-gradient(circle at 50% 38%, #fff0b6 0, #efbb53 45%, #d3664b 100%); border: 1px solid var(--ink); }
+#colar-app .ch-photo-avatar { display: block; width: 100%; height: 100%; object-fit: contain; }
+#colar-app .ch-photo[data-transformed=true] .ch-photo-real { opacity: 0; }
+#colar-app .ch-photo[data-transformed=true] .ch-photo-alter { opacity: 1; }
+#colar-app .ch-photo.is-transforming { animation: photo-turn .86s ease-in-out both; }
+@keyframes photo-turn {
+  0% { transform: perspective(650px) rotate(7deg) rotateY(0deg) scale(1); }
+  28% { transform: perspective(650px) rotate(4deg) rotateY(90deg) scale(1.035); }
+  29% { transform: perspective(650px) rotate(4deg) rotateY(-90deg) scale(1.035); }
+  76% { transform: perspective(650px) rotate(5deg) rotateY(0deg) scale(1.02); }
+  100% { transform: perspective(650px) rotate(7deg) rotateY(0deg) scale(1); }
+}
+@media(max-width:760px) { #colar-app .ch-photo > .ch-photo-window { height: 204px; } }
+@media(max-width:560px) { #colar-app .ch-photo > .ch-photo-window { height: 145px; } #colar-app .ch-cards { margin-top: 24px; } }
+@media(pointer:coarse) { #colar-app .cd-switch button { min-height: 44px; } }
+@media(prefers-reduced-motion:reduce) { #colar-app .ch-photo.is-transforming { animation: none; } }
+
+/* 大标题用美漫封面字，短说明用手写对话字；原文区域独立。 */
+#colar-app .cd-fun { padding-bottom: 28px; }
+#colar-app .ch-brand, #colar-app h1, #colar-app .ch-copy>span, #colar-app .ch-photo>span { font-weight: 400; }
+#colar-app h1 { letter-spacing: 1px; font-size: 98px; }
+#colar-app h1 em { font-size: 73px; }
+#colar-app .ch-copy p { font: 700 18px 'Comic Neue', sans-serif; }
+#colar-app .cd-switch button { font: 400 20px 'Bangers', Impact, sans-serif; letter-spacing: 1px; min-width: 70px; }
+#colar-app[data-mode=fun] .cd-switch button[aria-pressed=true] { background: var(--red); color: #fff5dc; box-shadow: 2px 2px var(--ink); transform: rotate(-2deg); }
+#colar-app[data-mode=serious] .cd-switch button { font: 700 12px Arial,sans-serif; letter-spacing: .8px; }
+/* 静音开关紧跟模式开关；关闭态划线；正式版没有音效所以隐藏。 */
+#colar-app .cd-sound { margin-left: 0; }
+#colar-app .cd-sound button[aria-pressed=false] { text-decoration: line-through 2px; opacity: .72; }
+#colar-app[data-mode=serious] .cd-sound { display: none; }
+#colar-app .ch-header nav { font-weight: 700; }
+@media(max-width:760px) { #colar-app h1 { font-size: 82px; } #colar-app h1 em { font-size: 56px; } }
+@media(max-width:560px) { #colar-app h1 { font-size: 71px; } #colar-app h1 em { font-size: 47px; } #colar-app .ch-copy p { font-size: 15px; } }
+
+/* 平台在左，双面切换在右；窄屏仍保持这个阅读次序。 */
+#colar-app .ch-header nav { order: 0; width: auto; justify-content: flex-start; font-family: 'Comic Neue', sans-serif; font-weight: 700; font-size: 15px; gap: 20px; }
+#colar-app .cd-switch { order: 1; margin-left: auto; }
+@media(max-width:560px) {
+ #colar-app .ch-header { gap: 12px; }
+ #colar-app .ch-header nav { font-size: 13px; gap: 13px; }
+ #colar-app .cd-switch { padding: 2px; gap: 0; }
+ #colar-app .cd-switch button { min-width: 53px; padding: 5px 7px; font-size: 17px; }
+}
+
+/* FUN ⇄ SERIOUS 翻页：旧页叠在上面绕左侧书脊翻走（回 FUN 时 FUN 页从书脊翻回），header 不动；翻页中不画英雄。 */
+#colar-app[data-turning] .ch-flight { visibility: hidden; }
+#colar-app .pg-leaf { position: relative; z-index: 3; transform-origin: 0 50%; backface-visibility: hidden; will-change: transform; background: var(--paper); pointer-events: none; }
+#colar-app .pg-leaf::after { content: ''; position: absolute; inset: 0 0 0 auto; width: 40%; pointer-events: none; opacity: 0; background: radial-gradient(var(--ink) 20%, transparent 26%) 0 0 / 5px 5px; mask: linear-gradient(to right, transparent, #000); }
+#colar-app .pg-under { position: absolute; z-index: 1; }
+/* 卷页阴影的网点比封面粗一号：它只在约 150ms 内扫过，太细读不出是阴影。 */
+#colar-app .pg-curl { position: absolute; z-index: 2; width: 48px; pointer-events: none; opacity: 0; background: radial-gradient(var(--ink) 34%, transparent 42%) 0 0 / 5px 5px; mask: linear-gradient(to right, #000, transparent); }

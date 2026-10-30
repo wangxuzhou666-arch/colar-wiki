@@ -40,7 +40,21 @@ appending the change log.
 - **react-markdown** + **remark-gfm** + **rehype-raw** + **rehype-slug**
 - **gray-matter** for YAML frontmatter
 - Custom `[[WikiLink]]` preprocessor with automatic red links
-- Zero client-side JavaScript beyond the root redirect
+- Zero client-side JavaScript beyond the root redirect and the `/action/` page
+
+## /action/ — "Colar in Action"
+
+A self-contained comic-book landing page at `/action/` (canvas scenes,
+FUN / SERIOUS page turn). It is independent of the wiki content layer:
+
+- `app/action/page.jsx` — route + metadata
+- `components/action/` — client component and its CSS (scoped under
+  `#colar-app`; html/body rules are guarded with `:has(#colar-app)` so
+  they cannot leak into wiki pages)
+- `lib/action/` — scene engine, motion/sound math, and
+  `wiki-content.js`, a **static snapshot** of the Colar_Wang article used
+  by the SERIOUS face (re-generate it by hand if the bio changes)
+- `public/action/` — its own assets and OFL-licensed fonts
 
 ## Local development
 
